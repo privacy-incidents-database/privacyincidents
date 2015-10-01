@@ -1,7 +1,3 @@
 AuthType WRAP
 require affiliation ncsu.edu
-<<<<<<< HEAD
 require user jnstaddo yyang21 lvue
-=======
-require user 
->>>>>>> f01ee0b02d59bb6cc86f2b7225a15c03c1a62c53
