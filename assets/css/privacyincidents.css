@@ -1,0 +1,43 @@
+/**
+	about.php css 
+*/
+
+#team {
+	margin-top: 25px;	
+	overflow: hidden;
+	text-align: center;
+}
+
+#team-info {
+	margin-bottom: 50px;
+}
+
+.bio {
+	float: left;
+	margin-right: 15%;
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	background: grey;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+h4 {
+	text-align: center;
+}
+
+/**
+	index.php css
+*/
+
+#about {
+	margin-top: 25px;
+}
+
+.bold-text {
+	font-weight: bold;
+}
