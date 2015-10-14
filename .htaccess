@@ -1,0 +1,4 @@
+AuthType shibboleth
+ShibCompatWith24 on
+ShibRequestSetting requireSession 1
+require shib-user jnstaddo@ncsu.edu lvue@ncsu.edu yyang21@ncsu.edu
