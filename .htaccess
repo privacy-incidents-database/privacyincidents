@@ -1,4 +1,3 @@
-AuthType shibboleth
-ShibCompatWith24 on
-ShibRequestSetting requireSession 1
-require shib-user jnstaddo@ncsu.edu lvue@ncsu.edu yyang21@ncsu.edu
+AuthType WRAP
+require affiliation ncsu.edu
+require user jnstaddo yyang21 lvue

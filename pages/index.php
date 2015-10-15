@@ -7,28 +7,69 @@
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
           <div class="item active">
-              <div class="fill" style="background-image:url('');"></div>
+              <div class="fill" style="background-image:url('/privacyincidents/assets/imgs/snapchat.jpg');">
+              </div>
               <div class="carousel-caption">
-                  <h2>Caption 1</h2>
+                <h3 class="caption">Snapchat's claims of the ephemerality of snaps found to be misleading.</h3>
+                <p class="tags">#5/2014, #World, #SnapChat, #UnexpectedProductBehavior, #Citizens</p>
               </div>
           </div>
           <div class="item">
-              <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+              <div class="fill" style="background-image:url('/privacyincidents/assets/imgs/president.jpg');">
+              </div>
               <div class="carousel-caption">
-                  <h2>Caption 2</h2>
+                <h3 class="caption">Presidential candidate web sites found to often be poor on privacy (e.g. no privacy policy or inappropriate policies).</h3>
+                <p class="tags">#9/2015, #World, #PresidentialCandidateSites, #PrivacyPolicy, #Citizens</p>
               </div>
           </div>
           <div class="item">
-              <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+              <div class="fill" style="background-image:url('/privacyincidents/assets/imgs/facebook.jpg');">
+              </div>
               <div class="carousel-caption">
-                  <h2>Caption 3</h2>
+                <h3 class="caption">Facebook begins using views of pages containing the Like button to target advertising.</h3>
+                <p class="tags">#9/2015, #World, #Facebook, #Ads, #UnexpectedProductBehavior, #Citizens</p>
               </div>
           </div>
+          <div class="item">
+              <div class="fill" style="background-image:url('/privacyincidents/assets/imgs/google_transgender.jpg');">
+              </div>
+              <div class="carousel-caption">
+                <h3 class="caption">Unexpected linking of text to a Google+ account accidentally outed a transgender women when sending a text.</h3>
+                <p class="tags">#1/2014, #USA, #Google, #Misunderstanding, #Citizens</p>
+              </div>
+          </div>
+          <!--
+          <div class="item">
+              <div class="fill">
+                <img src=""/ alt="">
+              </div>
+              <div class="carousel-caption">
+                  <h2 class="caption"></h2>
+              </div>
+          </div>
+          <div class="item">
+              <div class="fill">
+                <img src=""/ alt="">
+              </div>
+              <div class="carousel-caption">
+                  <h2 class="caption"></h2>
+              </div>
+          </div>
+          <div class="item">
+              <div class="fill">
+                <img src=""/ alt="">
+              </div>
+              <div class="carousel-caption">
+                  <h2 class="caption"></h2>
+              </div>
+          </div>
+          -->
       </div>
 
       <!-- Controls -->
