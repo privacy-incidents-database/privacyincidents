@@ -47,6 +47,11 @@ header.carousel .fill {
     /*background-position: center;*/
     background-color: grey;
     background-size: cover;
+    opacity: .7;
+}
+
+.carousel-caption {
+	color: #050505;
 }
 
 /**
