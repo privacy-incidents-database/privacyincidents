@@ -44,32 +44,6 @@
                 <p class="tags">#1/2014, #USA, #Google, #Misunderstanding, #Citizens</p>
               </div>
           </div>
-          <!--
-          <div class="item">
-              <div class="fill">
-                <img src=""/ alt="">
-              </div>
-              <div class="carousel-caption">
-                  <h2 class="caption"></h2>
-              </div>
-          </div>
-          <div class="item">
-              <div class="fill">
-                <img src=""/ alt="">
-              </div>
-              <div class="carousel-caption">
-                  <h2 class="caption"></h2>
-              </div>
-          </div>
-          <div class="item">
-              <div class="fill">
-                <img src=""/ alt="">
-              </div>
-              <div class="carousel-caption">
-                  <h2 class="caption"></h2>
-              </div>
-          </div>
-          -->
       </div>
 
       <!-- Controls -->

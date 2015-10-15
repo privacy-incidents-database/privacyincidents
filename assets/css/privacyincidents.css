@@ -65,3 +65,17 @@ header.carousel .fill {
 .bold-text {
 	font-weight: bold;
 }
+
+/** 
+	incidents.php
+*/
+
+#incidents-title {
+	margin-left: 19px;
+}
+
+.incident-content {
+	background-color: lightgrey;
+	margin: 20px;
+	height: 100px;
+}
