@@ -1,4 +1,11 @@
-<?php include 'layout/header.html';?>
+<?php 
+	include 'layout/header.html';
+	include 'db.php';
+
+	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database.');
+	mysql_select_db(db);
+?>	
+
 <div class="container">
 	<div>
 		<h2 id="incidents-title">Privacy Incidents</h2>
