@@ -51,6 +51,10 @@ header.carousel .fill {
 }
 
 .carousel-caption {
+	float: left; 
+	display: inline;
+	left: 60%;
+	bottom: 23%;
 	color: #050505;
 }
 

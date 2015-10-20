@@ -13,13 +13,27 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
           <div class="item active">
-              <div class="fill" style="background-image:url('/privacyincidents/assets/imgs/snapchat.jpg');">
+              <!--<div class="fill" style="background-image:url('/privacyincidents/assets/imgs/snapchat.jpg');">
+              </div>
+              <div class="carousel-img">
+              	<img src="/privacyincidents/assets/imgs/snapchat.jpg" alt="Snapchat">
               </div>
               <div class="carousel-caption">
                 <h3 class="caption">Snapchat's claims of the ephemerality of snaps found to be misleading.</h3>
                 <p class="tags">#5/2014, #World, #SnapChat, #UnexpectedProductBehavior, #Citizens</p>
+              </div>-->
+
+              <div class="row">
+              	<div class="col-md-6" style="margin-left: 20%; margin-right: -25%; margin-top: 3.5%;">
+              		<img src="/privacyincidents/assets/imgs/snapchat.jpg" alt="Snapchat" style="width: 45%;">
+              	</div>
+              	<div class="col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
+              		<h3 class="caption">Snapchat's claims of the ephemerality of snaps found to be misleading.</h3>
+                	<p class="tags">#5/2014, #World, #SnapChat, #UnexpectedProductBehavior, #Citizens</p>
+              	</div>
               </div>
           </div>
+          <!--
           <div class="item">
               <div class="fill" style="background-image:url('/privacyincidents/assets/imgs/president.jpg');">
               </div>
@@ -43,7 +57,7 @@
                 <h3 class="caption">Unexpected linking of text to a Google+ account accidentally outed a transgender women when sending a text.</h3>
                 <p class="tags">#1/2014, #USA, #Google, #Misunderstanding, #Citizens</p>
               </div>
-          </div>
+          </div>-->
       </div>
 
       <!-- Controls -->
