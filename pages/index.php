@@ -24,7 +24,7 @@
               </div>-->
 
               <div class="row">
-              	<div class="col-md-6" style="margin-left: 20%; margin-right: -25%; margin-top: 3.5%;">
+              	<div class="col-md-6" style="margin-left: 20%; margin-right: -25%; margin-top: 5.5%;">
               		<img src="/privacyincidents/assets/imgs/snapchat.jpg" alt="Snapchat" style="width: 45%;">
               	</div>
               	<div class="col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
@@ -33,6 +33,18 @@
               	</div>
               </div>
           </div>
+          <div class="item">
+              <div class="row">
+              	<div class="col-md-6" style="margin-left: 20%; margin-right: -25%; margin-top: 5.5%;">
+              		<img src="/privacyincidents/assets/imgs/president.jpg" alt="Presidential campaigns" style="width: 45%;">
+              	</div>
+              	<div class="col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
+                	<h3 class="caption">Presidential candidate web sites found to often be poor on privacy (e.g. no privacy policy or inappropriate policies).</h3>
+                	<p class="tags">#9/2015, #World, #PresidentialCandidateSites, #PrivacyPolicy, #Citizens</p>
+              	</div>
+              </div>
+          </div>
+
           <!--
           <div class="item">
               <div class="fill" style="background-image:url('/privacyincidents/assets/imgs/president.jpg');">
@@ -41,7 +53,7 @@
                 <h3 class="caption">Presidential candidate web sites found to often be poor on privacy (e.g. no privacy policy or inappropriate policies).</h3>
                 <p class="tags">#9/2015, #World, #PresidentialCandidateSites, #PrivacyPolicy, #Citizens</p>
               </div>
-          </div>
+          </div>-->
           <div class="item">
               <div class="fill" style="background-image:url('/privacyincidents/assets/imgs/facebook.jpg');">
               </div>
@@ -57,7 +69,7 @@
                 <h3 class="caption">Unexpected linking of text to a Google+ account accidentally outed a transgender women when sending a text.</h3>
                 <p class="tags">#1/2014, #USA, #Google, #Misunderstanding, #Citizens</p>
               </div>
-          </div>-->
+          </div>
       </div>
 
       <!-- Controls -->
