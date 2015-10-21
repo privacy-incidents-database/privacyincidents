@@ -19,27 +19,30 @@
 	</div>
 
 <?php 
-	echo '<div class="row incident-row">';
-	for ($a = 0; $a < 3; $a++) {
-		while ($i = mysql_fetch_row($incidents)) {
-			$date = $i[0];
-			$descr = $i[1];
-			$link = $i[2];
-			$tags = $i[3] . $i[4] . $i[5] . $i[6] . $i[7];
-			$tags = str_replace(',', '', $tags);
-
-			echo '<div class="col-md-4 incident-content">';
-			echo '<div>';
-			echo '<p class="date" style="text-align: right;"> Approx date of incident: ' . $date . '</p>';
-
-			echo '<p class="descr" style="text-align: center;">' . $descr. '</p>';
-			echo '<p class="link" style="font-size: 11px; text-align: left;"><a href="' . $link . '">' . $link . '</a></p>';
-			echo '<p class="tags" style="bottom: 0; text-align: left;">' . $tags . '</p>';
-
-			echo '</div></div>';
+		echo '<div class="row incident-row">';
+		for ($a = 1; $a <= 3; $a++) {
+			while ($i = mysql_fetch_row($incidents)) {
+				$date = $i[0];
+				$descr = $i[1];
+				$link = $i[2];
+				$tags = $i[3] . $i[4] . $i[5] . $i[6] . $i[7];
+				$tags = str_replace(',', '', $tags);
+	
+				echo '<div class="col-md-4 incident-content">';
+				echo '<div class="top">';
+				echo '<p class="date" style="text-align: right;"> Approx date of incident: ' . $date . '</p></div>';
+	
+				echo '<div class="mid"><p class="descr" style="text-align: center;">' . $descr. '</p></div';
+				echo '<div class=""><p class="link" style="font-size: 11px; text-align: left;"><a href="' . $link . '">' . $link . '</a></p>';
+				echo '<p class="tags" style="bottom: 0; text-align: left;">' . $tags . '</p>';
+	
+				echo '</div></div>';
+				if ($a%3 == 0) {
+					break;
+				}
+			}
+			echo '</div><div class="row incident-row">';
 		}
-		echo '</div>';
-	}
 
 
 	//echo $incidents; 
