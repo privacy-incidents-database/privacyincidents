@@ -32,9 +32,9 @@
 				echo '<div class="top">';
 				echo '<p class="date" style="text-align: right;"> Approx date of incident: ' . $date . '</p></div>';
 	
-				echo '<div class="mid"><p class="descr" style="text-align: center;">' . $descr. '</p></div';
-				echo '<div class=""><p class="link" style="font-size: 11px; text-align: left;"><a href="' . $link . '">' . $link . '</a></p>';
-				echo '<p class="tags" style="bottom: 0; text-align: left;">' . $tags . '</p>';
+				echo '<div class="mid"><p class="descr" style="text-align: center; margin: 10% 0% 10% 0%;">' . $descr. '</p></div>';
+				echo '<div class="bottom"><p class="link" style="font-size: 11px; text-align: left;"><a href="' . $link . '">' . $link . '</a></p>';
+				echo '<p class="tags" style="bottom: 0; text-align: left; margin-top: 15%;">' . $tags . '</p>';
 	
 				echo '</div></div>';
 				if ($a%3 == 0) {
