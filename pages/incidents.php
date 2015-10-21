@@ -1,6 +1,7 @@
 <?php 
 	include 'layout/header.html';
 	include 'db.php';
+	echo 'test';
 	/*
 	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
 	mysql_select_db(db);*/
