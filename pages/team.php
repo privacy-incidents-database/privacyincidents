@@ -24,7 +24,9 @@
 			</div>
 			
 			<div class="bio col-md-4">
-				<div class="circle"></div>
+				<div class="img">
+					<img src="/privacyincidents/assets/imgs/yyang21.png">
+				</div>
 				<h4>Yuxu Yang</h4>
 				<p>Research Associate</p>
 			</div>	

@@ -25,5 +25,5 @@
 	  	Incident content
 	  </div>
 	</div>
-</div>
+
 <?php include 'layout/footer.html';?>
