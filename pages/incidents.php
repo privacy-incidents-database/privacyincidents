@@ -2,12 +2,9 @@
 	include 'layout/header.html';
 	include 'db.php';
 
-	@mysql_connect(host,user,pw);// or die('Could not connect to MySQL database. ');
-	mysql_select_db(db);
+	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
+	mysql_select_db(database);
 
-	echo mysql_error();
-
-	die();
 
 ?>	
 
