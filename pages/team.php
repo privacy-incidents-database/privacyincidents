@@ -7,7 +7,8 @@
 		</div>	
 		<div class="row">	
 			<div class="bio col-md-4">
-				<!--<div class="circle"></div>-->
+				<!-- Used as a place holder for team members w/o images
+				<div class="circle"> </div>-->
 				<div class="img">
 					<img src="/privacyincidents/assets/imgs/jnstaddo.png">
 				</div>

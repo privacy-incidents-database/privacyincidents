@@ -19,7 +19,7 @@
 	text-align: center;
 }
 
-.circle {
+.circle { /* Use as placeholder for team members w/o pictures! */
 	width: 200px;
 	height: 200px;
 	background: grey;
@@ -84,6 +84,7 @@ header.carousel .fill {
 
 .incident-content {
 	background-color: lightgrey;
-	margin: 20px;
-	height: 100px;
+	margin: 15px 40px 15px 50px;
+	height: 300px;
+	width: 300px;
 }

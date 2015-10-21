@@ -10,20 +10,39 @@
 	<div>
 		<h2 id="incidents-title">Privacy Incidents</h2>
 	</div>
-	<div class="row incident-content">
-	  <div class="col-md-4">
+
+	<div class="row incident-row">
+	  <div class="col-md-4 incident-content">
+	  	Incident content
+	  </div>
+	  <div class="col-md-4 incident-content">
+	  	Incident content
+	  </div> 
+	  <div class="col-md-4 incident-content">
 	  	Incident content
 	  </div>
 	</div>
-	<div class="row incident-content">
-	  <div class="col-md-4">
+	<div class="row incident-row">
+	  <div class="col-md-4 incident-content">
+	  	Incident content
+	  </div>
+	  <div class="col-md-4 incident-content">
+	  	Incident content
+	  </div> 
+	  <div class="col-md-4 incident-content">
 	  	Incident content
 	  </div>
 	</div>
-	<div class="row incident-content">
-	  <div class="col-md-4">
+	<div class="row incident-row">
+	  <div class="col-md-4 incident-content">
 	  	Incident content
 	  </div>
-	</div>
+	  <div class="col-md-4 incident-content">
+	  	Incident content
+	  </div> 
+	  <div class="col-md-4 incident-content">
+	  	Incident content
+	  </div>
+	</div>	
 
 <?php include 'layout/footer.html';?>
