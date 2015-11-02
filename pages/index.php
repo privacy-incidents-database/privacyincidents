@@ -101,21 +101,23 @@ In the context of this research project, a privacy incident is:
 		</div>
 	
 
-	<div id=“need”>
+	<div id="need">
 		<h3>Why do we need a database?</h3>
 		<p>With a shared database we can answer questions like, "What is the most common cause of privacy incidents?”, “How do privacy incidents vary by country?” and “Which entities (e.g. companies, governments, etc.) are most commonly involved in privacy incidents) in a repeatable, transparent manner. 
 
 In this initial stage, the database is not public and contributions are by invitation only, but eventually it will be publicly accessible and crowd-sourced to ensure broad coverage of privacy incidents.</p>
 	</div>
 	
-	<div id=“use”>
+	<div id="use">
 		<h3>What can I do with the database?</h3>
 		
-		<p><span class="bold-text">Contribute</span>: We need your incident suggestions.</p>
+		<p><b><i>Contribute</b></i>: We need your incident suggestions. Please add them using the form below.</p>
 		
-		<p><span class="bold-text">Feedback</span>: <a href="https://docs.google.com/a/ncsu.edu/forms/d/17VLUHAU5hiJGkZVZ1uxkHmzQ0cmV3Ljv798RlbQanK4/viewform">Send us comments, ideas and questions.</a></p>
+		<p><b><i>Feedback</b></i>: <a href="https://docs.google.com/a/ncsu.edu/forms/d/17VLUHAU5hiJGkZVZ1uxkHmzQ0cmV3Ljv798RlbQanK4/viewform">Send us comments, ideas and questions.</a></p>
 
-		<p><span class="bold-text">Analytics</span>: Understand trends and frequency rates through data visualizations. <b><i>[Coming soon!]</b></i>
+		<p><b><i>Analytics</b></i>: Understand trends and frequency rates through data visualizations. <b><i>[Coming soon!]</b></i></p>
+		
+		<p><b><i>Download</b></i>: Grab a csv of the incidents to do your own analysis. <b><i>[Coming soon!]</b></i></p>
 	</div>
 		
 
@@ -142,4 +144,6 @@ Example: <a href="http://www.cultofmac.com/157641/this-creepy-app-isnt-just-stal
 			<h3>Project Status</h3>
 			<p>We are currently in the works of examining online resources for privacy incidents to be included in our database. </p>-->
 		</div>
+		
+<iframe src="https://docs.google.com/a/ncsu.edu/forms/d/1ycbugMdf8ROaCRO0oGS52o0k-2Rd3mloE302NeRu44I/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 <?php include 'layout/footer.html';?>
