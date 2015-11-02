@@ -79,7 +79,7 @@
 			<p>This project will begin building a database of privacy incidents (as documented in the press and company/organization public statements) so that the analysis needed to answer questions such as, "What is the most common cause of privacy incidents? What Internet company impacts the most users through privacy mishaps?" can be done in a repeatable, transparent manner. The database will be crowd-sourced, but moderated, to ensure past and future privacy incidents are represented without duplication.</p>
 				
 		</div>
-—>
+-->
 		<div id="definitions">
 			<h3>What is a privacy incident?</h3>
 In the context of this research project, a privacy incident is:
@@ -98,6 +98,7 @@ In the context of this research project, a privacy incident is:
 <ul>
 	<li>Information is either being collected, used or shared in digital form</li>
 </ul>
+		</div>
 	
 
 	<div id=“need”>
@@ -105,7 +106,8 @@ In the context of this research project, a privacy incident is:
 		<p>With a shared database we can answer questions like, "What is the most common cause of privacy incidents?”, “How do privacy incidents vary by country?” and “Which entities (e.g. companies, governments, etc.) are most commonly involved in privacy incidents) in a repeatable, transparent manner. 
 
 In this initial stage, the database is not public and contributions are by invitation only, but eventually it will be publicly accessible and crowd-sourced to ensure broad coverage of privacy incidents.</p>
-
+	</div>
+	
 	<div id=“use”>
 		<h3>What can I do with the database?</h3>
 		
@@ -114,13 +116,13 @@ In this initial stage, the database is not public and contributions are by invit
 		<p><span class="bold-text">Feedback</span>: <a href="https://docs.google.com/a/ncsu.edu/forms/d/17VLUHAU5hiJGkZVZ1uxkHmzQ0cmV3Ljv798RlbQanK4/viewform">Send us comments, ideas and questions.</a></p>
 
 		<p><span class="bold-text">Analytics</span>: Understand trends and frequency rates through data visualizations. <b><i>[Coming soon!]</b></i>
-
+	</div>
 		
 
 
 
 
-<!—-			<p><span class="bold-text">Contained Digital Privacy Incident</span>: One-time/contained events involving the accidental or unauthorized collection, use or exposure of sensitive digital information or events creating the perception that unauthorized collection, use or exposure of sensitive digital information is likely. Example: <a href="http://www.theguardian.com/technology/2015/sep/02/london-clinic-accidentally-reveals-hiv-status-of-780-patients">London clinic accidentally discloses names and email addresses of patients</a></p>
+<!--			<p><span class="bold-text">Contained Digital Privacy Incident</span>: One-time/contained events involving the accidental or unauthorized collection, use or exposure of sensitive digital information or events creating the perception that unauthorized collection, use or exposure of sensitive digital information is likely. Example: <a href="http://www.theguardian.com/technology/2015/sep/02/london-clinic-accidentally-reveals-hiv-status-of-780-patients">London clinic accidentally discloses names and email addresses of patients</a></p>
 
 			<p><span class="bold-text">Extended Internet Digital Incident</span>: A privacy incident as defined above, that has a clear start date, but either (1) still ongoing or (2) occurred for a sufficiently long period of time (e.g. months) that it would be confusing to represent it in the same visualizations as one-time events.
 Example: <a href="http://www.cultofmac.com/157641/this-creepy-app-isnt-just-stalking-women-without-their-knowledge-its-a-wake-up-call-about-facebook-privacy/">Creation of the Girls Around Me app</a></p>
@@ -138,6 +140,6 @@ Example: <a href="http://www.cultofmac.com/157641/this-creepy-app-isnt-just-stal
 		</div>
 		<div id="projectstatus">
 			<h3>Project Status</h3>
-			<p>We are currently in the works of examining online resources for privacy incidents to be included in our database. </p>—->
+			<p>We are currently in the works of examining online resources for privacy incidents to be included in our database. </p>-->
 		</div>
 <?php include 'layout/footer.html';?>
