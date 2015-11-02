@@ -79,7 +79,7 @@
 			<p>This project will begin building a database of privacy incidents (as documented in the press and company/organization public statements) so that the analysis needed to answer questions such as, "What is the most common cause of privacy incidents? What Internet company impacts the most users through privacy mishaps?" can be done in a repeatable, transparent manner. The database will be crowd-sourced, but moderated, to ensure past and future privacy incidents are represented without duplication.</p>
 				
 		</div>
-—->
+—>
 		<div id="definitions">
 			<h3>What is a privacy incident?</h3>
 In the context of this research project, a privacy incident is:
