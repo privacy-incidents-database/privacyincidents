@@ -16,6 +16,7 @@
 <div class="container">
 	<div>
 		<h2 id="incidents-title">Privacy Incidents</h2>
+		<iframe src='//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1enCq3hewy7vr2_Jq6mHj1kkA0kLZ2DTNe-kSN1BhndI&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
 	</div>
 
 <?php 
