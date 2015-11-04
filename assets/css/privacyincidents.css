@@ -82,9 +82,8 @@ header.carousel .fill {
 	margin-left: 19px;
 }
 
-.incident-content {
-	background-color: lightgrey;
-	margin: 15px 40px 15px 50px;
-	height: 300px;
-	width: 300px;
+.incidents-content {
+	width: 80%;
+	word-wrap: break-word;
+	/*overflow: scroll;*/
 }

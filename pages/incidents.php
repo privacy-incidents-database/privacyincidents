@@ -5,7 +5,7 @@
 	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
 	mysql_select_db(database);
 
-	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause` FROM `Privacy incidents` ORDER BY date_occurred DESC LIMIT 9");
+	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause` FROM `Privacy incidents` ORDER BY date_occurred DESC LIMIT 50");
 	if (mysql_num_rows($incidents) == 0) {
 		echo 'No incidents found!'; 
 		die();
@@ -13,7 +13,7 @@
 
 ?>
 
-<div class="container">
+<div class="container container-fluid">
 	<div>
 		<h2 id="incidents-title">Privacy Incidents</h2>
 	</div>
@@ -24,7 +24,7 @@
 	*/
 ?>
 
-	<div class="row incident-row">
+	<div class="incidents-content">
 		<table class="table table-striped">
 			<thead>
 				<tr>
@@ -35,24 +35,25 @@
 				</tr>
 			</thead>
 			<tbody>
-<?php 
+		<?php 
 			while ($i = mysql_fetch_row($incidents)) {
 				$date = $i[0];
 				$descr = $i[1];
 				$link = $i[2];
 				$tags = $i[3] . $i[4] . $i[5] . $i[6] . $i[7];
-				$tags = str_replace(',', " ", $tags);
+
+				$tags = str_replace(", ", "&nbsp", $tags);
 
 				echo '<tr>';
 				echo '<td>' . $date . '</td>';
 	
-				echo '<td class="incident-descr">' . $descr. '</td>';
-				echo '<td><a href="' . $link . '">' . $link . '</a></td>';
+				echo '<td>' . $descr. '</td>';
+				echo '<td><a href=#"' . $link . '">' . $link . '</a></td>';
 				echo '<td>' . $tags . '</td>';
 	
 				echo '</tr>';
 			}
-?>	
+		?>	
 
 			</tbody>
 		</table>

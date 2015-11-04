@@ -72,7 +72,7 @@
   </header>
 
 
-  <div class="container">
+  <div class="container container-fluid">
 <!--
 		<div id="about">
 			<h3>About Privacy Incidents Database</h3>
