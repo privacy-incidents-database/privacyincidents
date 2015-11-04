@@ -43,6 +43,9 @@
 				$tags = $i[3] . $i[4] . $i[5] . $i[6] . $i[7];
 
 				$tags = str_replace(", ", "&nbsp", $tags);
+				$newTags = explode('#', $tags);
+				$tags = implode("#", $newTags);
+
 
 				echo '<tr>';
 				echo '<td>' . $date . '</td>';
