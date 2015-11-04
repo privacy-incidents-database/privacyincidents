@@ -24,17 +24,17 @@
 	*/
 ?>
 
-	<div class="incidents-content">
+	<div>
 		<table class="table table-striped">
 			<thead>
 				<tr>
 					<th>Date Incident Acknowledged</th>
-					<th>Description</th>
-					<th>Resource</th>
-					<th>Tags</th>
+					<th class="descr">Description</th>
+					<th class="resource">Resource</th>
+					<th class="tags">Tags</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody class="incidents-content">
 		<?php 
 			while ($i = mysql_fetch_row($incidents)) {
 				$date = $i[0];
@@ -59,16 +59,4 @@
 		</table>
 	</div>
 
-<!--
-	<div class="row incident-row">
-	  <div class="col-md-4 incident-content">
-	  	Incident content
-	  </div>
-	  <div class="col-md-4 incident-content">
-	  	Incident content
-	  </div> 
-	  <div class="col-md-4 incident-content">
-	  	Incident content
-	  </div>
-	</div>-->
 <?php include 'layout/footer.html';?>

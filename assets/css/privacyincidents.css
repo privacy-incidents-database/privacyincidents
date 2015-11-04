@@ -83,7 +83,21 @@ header.carousel .fill {
 }
 
 .incidents-content {
-	width: 80%;
 	word-wrap: break-word;
-	/*overflow: scroll;*/
+}
+
+table {
+	table-layout: fixed;
+}
+
+th.descr {
+	width: 40%;
+}
+
+th.resource {
+	width: 25%;
+}
+
+th.tags{
+	width: 25%;
 }
