@@ -24,36 +24,39 @@
 	*/
 ?>
 
+	<div class="row incident-row">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Date Incident Acknowledged</th>
+					<th>Description</th>
+					<th>Resource</th>
+					<th>Tags</th>
+				</tr>
+			</thead>
+			<tbody>
 <?php 
-		echo '<div class="row incident-row">';
-		for ($a = 1; $a <= 3; $a++) {
 			while ($i = mysql_fetch_row($incidents)) {
 				$date = $i[0];
 				$descr = $i[1];
 				$link = $i[2];
 				$tags = $i[3] . $i[4] . $i[5] . $i[6] . $i[7];
-				$tags = str_replace(',', '', $tags);
+				$tags = str_replace(',', " ", $tags);
+
+				echo '<tr>';
+				echo '<td>' . $date . '</td>';
 	
-				echo '<div class="col-md-4 incident-content">';
-				echo '<div class="top">';
-				echo '<p class="date" style="text-align: right;"> Approx date of incident: ' . $date . '</p></div>';
+				echo '<td class="incident-descr">' . $descr. '</td>';
+				echo '<td><a href="' . $link . '">' . $link . '</a></td>';
+				echo '<td>' . $tags . '</td>';
 	
-				echo '<div class="mid"><p class="descr" style="text-align: center; margin: 10% 0% 10% 0%;">' . $descr. '</p></div>';
-				echo '<div class="bottom"><p class="link" style="font-size: 11px; text-align: left;"><a href="' . $link . '">' . $link . '</a></p>';
-				echo '<p class="tags" style="bottom: 0; text-align: left; margin-top: 15%;">' . $tags . '</p>';
-	
-				echo '</div></div>';
-				if ($a%3 == 0) {
-					break;
-				}
+				echo '</tr>';
 			}
-			echo '</div><div class="row incident-row">';
-		}
-
-
-	//echo $incidents; 
-	
 ?>	
+
+			</tbody>
+		</table>
+	</div>
 
 <!--
 	<div class="row incident-row">
