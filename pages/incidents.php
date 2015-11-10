@@ -5,7 +5,7 @@
 	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
 	mysql_select_db(database);
 
-	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause` FROM `Privacy incidents` ORDER BY date_occurred DESC LIMIT 50");
+	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause` FROM `Privacy incidents` ORDER BY date_occurred DESC");
 	if (mysql_num_rows($incidents) == 0) {
 		echo 'No incidents found!'; 
 		die();
@@ -47,11 +47,10 @@
 
 				foreach ($newTags as &$tag) {
 					if ($index = strpos($tag, "countrygovernment") == 0) {
-						//$len = strlen($tag) - $index; 
 						$tag = substr($tag, 0, 17);
 					}
 				}
-				$tags = implode("#", $newTags);
+				$tags = implode(" #", $newTags);
 
 
 				echo '<tr>';
