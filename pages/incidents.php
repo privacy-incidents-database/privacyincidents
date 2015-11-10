@@ -51,7 +51,7 @@
 				echo '<td>' . $date . '</td>';
 	
 				echo '<td>' . $descr. '</td>';
-				echo '<td><a href=#"' . $link . '">' . $link . '</a></td>';
+				echo '<td><a href="' . $link . '" target=_blank>' . $link . '</a></td>';
 				echo '<td>' . $tags . '</td>';
 	
 				echo '</tr>';
