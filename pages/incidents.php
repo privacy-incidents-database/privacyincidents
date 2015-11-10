@@ -44,6 +44,13 @@
 
 				$tags = str_replace(", ", "&nbsp", $tags);
 				$newTags = explode('#', $tags);
+
+				foreach ($newTags as &$tag) {
+					if ($index = strpos($tag, "countrygovernment") == 0) {
+						//$len = strlen($tag) - $index; 
+						$tag = substr($tag, 0, 17);
+					}
+				}
 				$tags = implode("#", $newTags);
 
 
