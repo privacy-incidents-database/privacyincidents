@@ -12,12 +12,16 @@
 	    $Company = $_POST['which_company'];
 	    $Contributor_Name = $_POST['Contributor_Name'];
 	    $Contributor_Email = $_POST['Contributor_Email'];
-	   /* echo '<tr>';
+	    echo '<tr>';
 				echo '<td>' . $description . '</td>';
 	
 				echo '<td>' . $PublicLink. '</td>';
-	
-		echo '</tr>';*/
+				
+				echo '<td>' . $Occurred_Date. '</td>'; 
+				echo '<td>' . $Company. '</td>';
+				echo '<td>' . $Contributor_Name. '</td>';
+				echo '<td>' . $Contributor_Email. '</td>';
+		echo '</tr>';
 	    $query = mysql_query("INSERT INTO `Privacy incidents` (`Descr`,`link`,`date_occurred`, 
 	    	`who_company`,`contributor_name`,`Contributor_email`) VALUES ('$description','$PublicLink',
 	    	'Occurred_Date','Company','Contributor_Name','Contributor_Email')");
