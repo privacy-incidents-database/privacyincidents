@@ -8,7 +8,7 @@
 
 	    $description = $_POST['description'];
 	    $PublicLink = $_POST['PublicLink'];
-	    $occurred_Date = $_POST['Occurred_Date'];
+	    $occurred_date = $_POST['Occurred_Date'];
 	    $company = $_POST['which_company'];
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
@@ -17,7 +17,7 @@
 	
 				echo '<td>' . $PublicLink. '</td>';
 				
-				echo '<td>' . $occurred_Date. '</td>'; 
+				echo '<td>' . $occurred_date. '</td>'; 
 				echo '<td>' . $company. '</td>';
 				echo '<td>' . $contributor_name. '</td>';
 				echo '<td>' . $contributor_email. '</td>';
