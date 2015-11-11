@@ -8,23 +8,21 @@
 
 	    $description = $_POST['description'];
 	    $PublicLink = $_POST['PublicLink'];
-	    $Occurred_Date = $_POST['Occurred_Date'];
-	    $Company = $_POST['which_company'];
-	    $Contributor_Name = $_POST['Contributor_Name'];
-	    $Contributor_Email = $_POST['Contributor_Email'];
+	    $occurred_Date = $_POST['Occurred_Date'];
+	    $company = $_POST['which_company'];
+	    $contributor_name = $_POST['Contributor_Name'];
+	    $contributor_email = $_POST['Contributor_Email'];
 	    echo '<tr>';
 				echo '<td>' . $description . '</td>';
 	
 				echo '<td>' . $PublicLink. '</td>';
 				
-				echo '<td>' . $Occurred_Date. '</td>'; 
-				echo '<td>' . $Company. '</td>';
-				echo '<td>' . $Contributor_Name. '</td>';
-				echo '<td>' . $Contributor_Email. '</td>';
+				echo '<td>' . $occurred_Date. '</td>'; 
+				echo '<td>' . $company. '</td>';
+				echo '<td>' . $contributor_Name. '</td>';
+				echo '<td>' . $contributor_Email. '</td>';
 		echo '</tr>';
-	    $query = mysql_query("INSERT INTO `Privacy incidents` (`Descr`,`link`,`date_occurred`, 
-	    	`who_company`,`contributor_name`,`Contributor_email`) VALUES ('$description','$PublicLink',
-	    	'Occurred_Date','Company','Contributor_Name','Contributor_Email')");
+	    $query = mysql_query("INSERT INTO `Privacy incidents` (`Descr`,`link`,`date_occurred`,`who_company`,`contributor_name`,`Contributor_email`) VALUES ('$description','$PublicLink','$occurred_date','$company','$contributor_name','$contributor_email')");
 	    if (mysql_num_rows($query) != 0) {
 		echo 'INSERT FAILURE!'; 
 		die();
