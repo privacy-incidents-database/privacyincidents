@@ -11,10 +11,9 @@
 				echo '<td>' . $PublicLink. '</td>';
 	
 		echo '</tr>';*/
-		$query = "INSERT INTO `Privacy incidents` (`Descr`,`link`) VALUES ('$description','$PublicLink')"
-	    $result = mysql_query($query);
-	    if (!$result) {
-		   echo 'INSERT FAILURE!'; 
+	    $query = mysql_query("INSERT INTO `Privacy incidents` (`Descr`,`link`) VALUES ('$description','$PublicLink')");
+	    if (mysql_num_rows($query) != 0) {
+		echo 'INSERT FAILURE!'; 
 		die();
 	}
 ?>
