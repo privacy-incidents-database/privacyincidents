@@ -1,4 +1,7 @@
 <?php
+	include 'layout/header.html';
+?>
+<?php
 	include 'db.php';
 	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
 	mysql_select_db(database);
@@ -17,3 +20,4 @@
 		die();
 	}
 ?>
+<?php include 'layout/footer.html';?>
