@@ -5,41 +5,96 @@
 </head>
 <body>
 
-<h1>Please contribute privacy incidents to our database!</h1>
-<p>The Privacy community often speculates about the rate of privacy incidents and which companies are involved in the most privacy incidents. We don't know the answers to those questions because we don't have a database of incidents to analyze.<br>
+<h3>Please contribute privacy incidents to our database!</h3>
+<p><strong>The Privacy community often speculates about the rate of privacy incidents and which companies are involved in the most privacy incidents. We don't know the answers to those questions because we don't have a database of incidents to analyze.<strong><br>
 <br>
-We're building the Information Privacy Incident Database to answer those questions and more. Here is an example database entry:
+We're building the Information Privacy Incident Database to answer those questions and more.<br> Here is an example database entry:
 <br>
+Description: NHS-accredited health apps found to be sending unencrypted personal information.<br>
+Link: http://www.theguardian.com/society/2015/sep/25/nhs-accredited-health-apps-putting-users-privacy-at-risk-study-finds<br>
+Tags: #9/2015, #UK, #WHSmith, #accident, #Pii-leak, #Citizens<br>
+Contributor: Jessica Staddon<br>
+Contributor Email: example@google.com<br>
 <br>
-Description: WHSmith accidentally emailed the personal details of customers completing a form to all the customers in their mailing list.
-Tags: #9/2015, #UK, #WHSmith, #accident, #Pii-leak, #Citizens
+The vision for the database is a crowd-sourced, collaborative environment like Wikipedia, but since we're starting from scratch, it's now a curated database with contributions by invitation.<br>
+We need your help! If you see or hear of a publicly known privacy incident, please enter what you know about it here. <br>
 <br>
-<br>
-The vision for the database is a crowd-sourced, collaborative environment like Wikipedia, but since we're starting from scratch, it's now a curated database with contributions by invitation.
-<br>
-<br>
-We need your help! If you see or hear of a publicly known privacy incident, please enter what you know about it here. 
-<br>
-<br>
-Thanks very much for your help!
-Jessica Staddon,Linda Vue, Yuxu Yang.</p>
+Thanks very much for your help!<br>
+Jessica Staddon, Linda Vue, Yuxu Yang.</p>
 <br>
 
 <form class="form-horizontal" role="form" method="post" action="actions.php">
     <div class="form-group">
         <label for="" class="col-sm-2 control-label">Description</label>
-        <div class="col-sm-10">
-            <textarea class="form-control" rows="4" id="description" name="description" placeholder="Please provide a 1-2 sentence description of the privacy incident." value=""></textarea>
+        <div class="col-sm-7">
+            <textarea class="form-control input-sm" rows="3" id="description" name="description" placeholder="Please provide a 1-2 sentence description of the privacy incident." value=""></textarea>
         </div>
     </div>
     <div class="form-group">
         <label for="PublicLink" class="col-sm-2 control-label">Public Link</label>
-        <div class="col-sm-10">
-            <input type="url" class="form-control" id="PublicLink" name="PublicLink" placeholder="example: http://google.com" value="">
+        <div class="col-sm-7">
+            <input type="url" class="form-control input-sm" id="PublicLink" name="PublicLink" placeholder="example: http://google.com" value="">
         </div>
     </div>
     <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
+        <label for="Occurred_Date" class="col-sm-2 control-label">Occurred_Date</label>
+        <div class="col-sm-7">
+            <input type="date" class="form-control input-sm" id="Occurred_Date" name="Occurred_Date" placeholder="2015-10-22" value="">
+        </div>
+    </div>
+    <div class ="form-group">
+    	<label> Which company involved in the incident</label>
+    	<div class="checkbox-inline">
+  			<label>
+    		<input type="checkbox" name= "which_company" value="Alibaba">
+    		Alibaba
+  			</label>
+		</div>
+		<div class="checkbox-inline">
+  			<label>
+    		<input type="checkbox" name= "which_company" value="Amazon">
+    		Amazon
+  			</label>
+		</div>
+		<div class="checkbox-inline">
+  			<label>
+    		<input type="checkbox" name= "which_company" value="Asos">
+    		Asos
+  			</label>
+		</div>
+		<div class="checkbox-inline">
+  			<label>
+    		<input type="checkbox" name= "which_company" value="Baidu">
+    		Baidu
+  			</label>
+		</div>
+		<div class="checkbox-inline">
+  			<label>
+    		<input type="checkbox" name= "which_company" value="Ebay">
+    		Ebay
+  			</label>
+		</div>
+		<div class="checkbox-inline">
+  			<label>
+    		<input type="checkbox" name= "which_company" value="Expedia">
+    		Expedia
+  			</label>
+		</div>
+	</div>
+	<div class="form-group">
+        <label for="Contributor Name" class="col-sm-2 control-label">Contributor Name</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control input-sm" id="Contributor_Name" name="Contributor_Name" placeholder="FirstName LastName" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Contributor Email" class="col-sm-2 control-label">Contributor Email</label>
+        <div class="col-sm-7">
+            <input type="email" class="form-control input-sm" id="Contributor_Email" name="Contributor_Email" placeholder="google@gmail.com" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-7 col-sm-offset-2">
             <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
         </div>
     </div>
