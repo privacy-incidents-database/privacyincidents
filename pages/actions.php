@@ -13,6 +13,7 @@
 	    $company = $_POST['which_company'];
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
+	    $who_role = $_POST['which_role'];
 	    echo '<tr>';
 				echo '<td>' . $description . '</td>';
 	
@@ -23,7 +24,8 @@
 				echo '<td>' . $contributor_name. '</td>';
 				echo '<td>' . $contributor_email. '</td>';
 		echo '</tr>';
-	    $query = mysql_query("INSERT INTO `Privacy incidents` (`date_submitted`,`Descr`,`link`,`date_occurred`,`who_company`,`contributor_name`,`Contributor_email`) VALUES ('$today','$description','$PublicLink','$occurred_date','$company','$contributor_name','$contributor_email')");
+	    $query = mysql_query("INSERT INTO `Privacy incidents` (`date_submitted`,`Descr`,`link`,`date_occurred`,`who_company`,`contributor_name`,`Contributor_email`,`who_role`) 
+	    	VALUES ('$today','$description','$PublicLink','$occurred_date','$company','$contributor_name','$contributor_email','$who_role')");
 	    if (mysql_num_rows($query) != 0) {
 		echo 'INSERT FAILURE!'; 
 		die();
