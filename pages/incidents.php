@@ -1,6 +1,6 @@
 <?php
 	include 'layout/header.html';
-	include 'db.php';
+	include 'db_r.php';
 
 	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
 	mysql_select_db(database);
