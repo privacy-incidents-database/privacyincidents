@@ -63,8 +63,6 @@
 					$tag = str_replace(' ', '', $tag);
 				}
 
-				//var_dump($newTags);
-
 				$tags2 = implode("&nbsp", $newTags);
 				
 				echo '<tr>';
