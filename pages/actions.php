@@ -10,8 +10,7 @@
 	    $description = $_POST['description'];
 	    $PublicLink = $_POST['PublicLink'];
 	    $occurred_date = $_POST['Occurred_Date'];
-	    $company1 = implode(' #', $_POST['which_company']);
-	    $company = $selected;
+	    $company = implode(',#', $_POST['which_company']);
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
 	    $who_role = $_POST['which_role'];
