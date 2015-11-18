@@ -11,15 +11,6 @@
 	    $PublicLink = $_POST['PublicLink'];
 	    $occurred_date = $_POST['Occurred_Date'];
 	    $company1 = implode(' #', $_POST['which_company']);
-	    if(!empty($_POST['which_company'])) {
-		// Counting number of checked checkboxes.
-			$checked_count = count($_POST['which_company']);
-			echo "You have selected following ".$checked_count." option(s): <br/>";
-		// Loop to store and display values of individual checked checkbox.
-			foreach($_POST['which_company'] as $selected) {
-				echo "<td>".$selected ."</td>";
-			}
-	 	}	
 	    $company = $selected;
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
