@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<style type="text/css">
-#SendForm .has-error .control-label,
-#SendForm .has-error .help-block,
-#SendForm .has-error .form-control-feedback {
-    color: #f39c12;
-}
-
-#SendForm .has-success .control-label,
-#SendForm .has-success .help-block,
-#SendForm .has-success .form-control-feedback {
-    color: #18bc9c;
-}
 </style>
 <html>
 <head>
@@ -46,13 +33,13 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
     <div class="form-group">
         <label for="PublicLink" class="col-xs-3 control-label">Public Link</label>
         <div class="col-xs-5">
-            <input type="url" class="form-control" required="" name="PublicLink" placeholder="example: http://google.com">
+            <input type="url" class="form-control input-sm" required="" name="PublicLink" placeholder="example: http://google.com">
         </div>
     </div>
     <div class="form-group">
         <label for="Occurred_Date" class="col-sm-2 control-label">Occurred_Date</label>
         <div class="col-sm-7">
-            <input type="date" class="form-control input-sm" id="Occurred_Date" name="Occurred_Date" placeholder="2015-10-22" value="">
+            <input type="date" class="form-control input-sm" required="" id="Occurred_Date" name="Occurred_Date" placeholder="2015-10-22" value="">
         </div>
     </div>
     <div class ="form-group">
@@ -208,18 +195,24 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
         	<input type="checkbox" name= "which_role[]" value="Politician">
        		 Politician
         	</label>
+        	<label>
+    				<div class="col-sm-7">
+    					<input type="checkbox" name= "which_role_checkbox">
+            			<input type="text" class="form-control input-sm" name = "which_role_custom">
+        			</div>
+  			</label>
         </div>
  	</div>
 	<div class="form-group">
         <label for="Contributor Name" class="col-sm-2 control-label">Contributor Name</label>
         <div class="col-sm-7">
-            <input type="text" class="form-control input-sm" id="Contributor_Name" name="Contributor_Name" placeholder="FirstName LastName" value="">
+            <input type="text" class="form-control input-sm" required="We need your Contributor name"id="Contributor_Name" name="Contributor_Name" placeholder="FirstName LastName" value="">
         </div>
     </div>
     <div class="form-group">
         <label for="Contributor Email" class="col-sm-2 control-label">Contributor Email</label>
         <div class="col-sm-7">
-            <input type="email" class="form-control input-sm" id="Contributor_Email" name="Contributor_Email" placeholder="google@gmail.com" value="">
+            <input type="email" class="form-control input-sm" required="We need your contacting email" id="Contributor_Email" name="Contributor_Email" placeholder="google@gmail.com" value="">
         </div>
     </div>
     <div class="form-group">
@@ -231,31 +224,3 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
 
 </body>
 </html>
-<script>
-$(document).ready(function() {
-    $('#SendForm').formValidation({
-        framework: 'bootstrap',
-        icon: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            description: {
-                validators: {
-                    notEmpty: {
-                        message: 'Description is required'
-                    }
-                }
-            },
-            PublicLink: {
-                validators: {
-                    notEmpty: {
-                        message: 'The Link is required'
-                    }
-                }
-            }
-        }
-    });
-});
-</script>

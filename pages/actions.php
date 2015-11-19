@@ -34,7 +34,28 @@
 	    }
 	    $company = $frontSY.$companyOriginal.$companycheckbox;
 	    // this section handle the who_role part for multiple actor.
-	    $who_role = implode(',#', $_POST['which_role']);
+	    if(isset($_POST['which_role'])){
+	    	$frontroleSY = "#";
+	    } else {
+	    	$frontroleSY = NULL;
+	    }
+	    $which_roleOriginal = implode(',#', $_POST['which_role']);
+	    if(isset($_POST['which_role_checkbox'])){
+	    		$roleThree = $_POST['which_role_custom'];
+	    		if ($frontroleSY != NULL){
+	    			$roleTwo = ",#";
+	    		} else {
+	    			$roleTwo = "#";
+	    		}
+	    		if($roleThree != NULL){
+	    			$rolecheckbox = $roleTwo.$roleThree;
+	    		} else {
+	    			$rolecheckbox = NULL;
+	    		}
+	    } else {
+	    	$rolecheckbox = NULL;
+	    }
+	    $which_role = $frontroleSY.$which_roleOriginal.$rolecheckbox;
 
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
