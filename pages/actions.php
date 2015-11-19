@@ -10,7 +10,12 @@
 	    $description = $_POST['description'];
 	    $PublicLink = $_POST['PublicLink'];
 	    $occurred_date = $_POST['Occurred_Date'];
-	    $company = implode(',#', $_POST['which_company']);
+	    $companyone = implode(',#', $_POST['which_company']);
+	    if(isset($_POST['which_company_checkbox'])){
+	    	$companyTwo = $_POST['which_company_custom'];
+	    	$companyThree = ",#"
+	    	$company= $companyone.$companyTwo.$companyThree;
+	    }
 	    $who_role = implode(',#', $_POST['which_role']);
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
