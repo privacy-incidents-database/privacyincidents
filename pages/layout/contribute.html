@@ -37,7 +37,7 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
 <br>
 </div>
 <form id ="SendForm" class="form-horizontal" role="form" method="post" action="actions.php">
-    <div class="form-group has-error">
+    <div class="form-group">
         <label for="" class="col-xs-3 control-label">Description</label>
         <div class="col-xs-5">
             <textarea class="form-control input-sm" rows="3" id="description" name="description" placeholder="Please provide a 1-2 sentence description of the privacy incident." value=""></textarea>
@@ -46,7 +46,7 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
     <div class="form-group">
         <label for="PublicLink" class="col-xs-3 control-label">Public Link</label>
         <div class="col-xs-5">
-            <input type="url" class="form-control input-sm" name="PublicLink" placeholder="example: http://google.com" value="">
+            <input type="url" class="form-control" name="PublicLink" placeholder="example: http://google.com">
         </div>
     </div>
     <div class="form-group">
@@ -229,6 +229,9 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
     </div>
 </form>
 
+</body>
+</html>
+
 <script>
 $(document).ready(function() {
     $('#SendForm').formValidation({
@@ -257,7 +260,3 @@ $(document).ready(function() {
     });
 });
 </script>
-
-
-</body>
-</html>
