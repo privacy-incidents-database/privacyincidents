@@ -11,7 +11,7 @@
 	    $PublicLink = $_POST['PublicLink'];
 	    $occurred_date = $_POST['Occurred_Date'];
 	    if(isset($_POST['which_company'])){
-	    	$sy = "#"
+	    	$sy = "#";
 	    	$companyOriginal = implode(',#', $_POST['which_company']);
 	    	$companyone = $sy.$companyOriginal;
 	    	if(isset($_POST['which_company_checkbox'])){
