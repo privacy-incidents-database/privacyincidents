@@ -33,7 +33,7 @@
 	    	$companycheckbox = NULL;
 	    }
 	    $company = $frontSY.$companyOriginal.$companycheckbox;
-	    // this section handle the who_role part for multiple actor.
+	    // this section handle the who_role part for multiple selection.
 	    if(isset($_POST['which_role'])){
 	    	$frontroleSY = "#";
 	    } else {
@@ -56,6 +56,29 @@
 	    	$rolecheckbox = NULL;
 	    }
 	    $who_role = $frontroleSY.$which_roleOriginal.$rolecheckbox;
+	    // this section handle the what_kind part of multiple selection.
+	    if(isset($_POST['what_kind'])){
+	    	$frontkindSY = "#";
+	    } else {
+	    	$frontkindSY = NULL;
+	    }
+	    $what_kindOriginal = implode(',#', $_POST['what_kind']);
+	    if(isset($_POST['what_kind_checkbox'])){
+	    		$roleThree = $_POST['what_kind_custom'];
+	    		if ($frontkindSY != NULL){
+	    			$kindTwo = ",#";
+	    		} else {
+	    			$kindTwo = "#";
+	    		}
+	    		if($kindThree != NULL){
+	    			$knidCheckbox = $kindTwo.$kindThree;
+	    		} else {
+	    			$knidCheckbox = NULL;
+	    		}
+	    } else {
+	    	$knidCheckbox = NULL;
+	    }
+	    $what_kind = $frontkindSY.$what_kindOriginal.$knidCheckbox;
 
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
@@ -68,8 +91,8 @@
 				echo '<td>' . $contributor_name. '</td>';
 				echo '<td>' . $contributor_email. '</td>';
 		echo '</tr>';
-	    $query = mysql_query("INSERT INTO `Privacy incidents` (`date_submitted`,`Descr`,`link`,`date_occurred`,`who_company`,`contributor_name`,`Contributor_email`,`who_role`) 
-	    	VALUES ('$today','$description','$PublicLink','$occurred_date','$company','$contributor_name','$contributor_email','$who_role')");
+	    $query = mysql_query("INSERT INTO `Privacy incidents` (`what_kind`,`date_submitted`,`Descr`,`link`,`date_occurred`,`who_company`,`contributor_name`,`Contributor_email`,`who_role`) 
+	    	VALUES ('$what_kind','$today','$description','$PublicLink','$occurred_date','$company','$contributor_name','$contributor_email','$who_role')");
 	    if (mysql_num_rows($query) != 0) {
 		echo 'INSERT FAILURE!'; 
 		die();
