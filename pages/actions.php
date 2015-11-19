@@ -18,7 +18,11 @@
 	    $companyOriginal = implode(',#', $_POST['which_company']);
 	    if(isset($_POST['which_company_checkbox'])){
 	    		$companyThree = $_POST['which_company_custom'];
-	    		$companyTwo = ",#";
+	    		if ($sy != NULL){
+	    			$companyTwo = ",#";
+	    		} else {
+	    			$companyTwo = "#";
+	    		}
 	    		$companycheckbox = $companyTwo.$companyThree;
 	    } else {
 	    	$companycheckbox = NULL;
