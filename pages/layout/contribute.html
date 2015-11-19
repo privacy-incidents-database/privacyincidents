@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+<style type="text/css">
+#SendForm .has-error .control-label,
+#SendForm .has-error .help-block,
+#SendForm .has-error .form-control-feedback {
+    color: #f39c12;
+}
+
+#SendForm .has-success .control-label,
+#SendForm .has-success .help-block,
+#SendForm .has-success .form-control-feedback {
+    color: #18bc9c;
+}
+</style>
 <html>
 <head>
 <title>Contribute</title>
@@ -23,17 +36,17 @@ Thanks very much for your help!<br>
 Jessica Staddon, Linda Vue, Yuxu Yang.</p>
 <br>
 </div>
-<form class="form-horizontal" role="form" method="post" action="actions.php">
-    <div class="form-group">
-        <label for="" class="col-sm-2 control-label">Description</label>
-        <div class="col-sm-7">
+<form id ="SendForm" class="form-horizontal" role="form" method="post" action="actions.php">
+    <div class="form-group has-error">
+        <label for="" class="col-xs-3 control-label">Description</label>
+        <div class="col-xs-5">
             <textarea class="form-control input-sm" rows="3" id="description" name="description" placeholder="Please provide a 1-2 sentence description of the privacy incident." value=""></textarea>
         </div>
     </div>
     <div class="form-group">
-        <label for="PublicLink" class="col-sm-2 control-label">Public Link</label>
-        <div class="col-sm-7">
-            <input type="url" class="input-validation-error form-control input-sm" data-val="true" data-val-required="Link is required" id="PublicLink" name="PublicLink" placeholder="example: http://google.com" value="">
+        <label for="PublicLink" class="col-xs-3 control-label">Public Link</label>
+        <div class="col-xs-5">
+            <input type="url" class="form-control input-sm" name="PublicLink" placeholder="example: http://google.com" value="">
         </div>
     </div>
     <div class="form-group">
@@ -216,6 +229,34 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
     </div>
 </form>
 
+<script>
+$(document).ready(function() {
+    $('#SendForm').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            description: {
+                validators: {
+                    notEmpty: {
+                        message: 'Description is required'
+                    }
+                }
+            },
+            PublicLink: {
+                validators: {
+                    notEmpty: {
+                        message: 'The Link is required'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
 
 
 </body>
