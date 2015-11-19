@@ -101,3 +101,12 @@ th.resource {
 th.tags{
 	width: 25%;
 }
+
+/**
+* Analytics.php
+*/
+
+path.unit:hover {
+    stroke: black;
+    stroke-width: 1.3px;
+}
