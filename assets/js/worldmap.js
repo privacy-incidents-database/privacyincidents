@@ -1,7 +1,11 @@
 var format = function(d) {
     // d = d / 1000000;
     // return d3.format(',.02f')(d) + 'M';
-    return d3.format(',.0f')(d) + ' incidents';
+    if (d <= 1) {
+        return d3.format(',.0f')(d) + ' incident';
+    } else {
+        return d3.format(',.0f')(d) + ' incidents';
+    } 
 }
 
 var map = d3.geomap.choropleth()
