@@ -10,8 +10,7 @@
 	    $description = $_POST['description'];
 	    $PublicLink = $_POST['PublicLink'];
 	    $occurred_date = $_POST['Occurred_Date'];
-	    $company1 = implode(',#', $_POST['which_company']);
-	    $company="#$company1";
+	    $company = implode(',#', $_POST['which_company']);
 	    $who_role = implode(',#', $_POST['which_role']);
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
@@ -26,7 +25,7 @@
 				echo '<td>' . $contributor_email. '</td>';
 		echo '</tr>';
 	    $query = mysql_query("INSERT INTO `Privacy incidents` (`date_submitted`,`Descr`,`link`,`date_occurred`,`who_company`,`contributor_name`,`Contributor_email`,`who_role`) 
-	    	VALUES ('$today','$description','$PublicLink','$occurred_date','$company','$contributor_name','$contributor_email','$who_role')");
+	    	VALUES ('$today','$description','$PublicLink','$occurred_date','#$company','$contributor_name','$contributor_email','#$who_role')");
 	    if (mysql_num_rows($query) != 0) {
 		echo 'INSERT FAILURE!'; 
 		die();
