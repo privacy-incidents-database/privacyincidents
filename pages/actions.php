@@ -10,26 +10,32 @@
 	    $description = $_POST['description'];
 	    $PublicLink = $_POST['PublicLink'];
 	    $occurred_date = $_POST['Occurred_Date'];
+	    // this is the section help handle multiple company selection and the input data.
 	    if(isset($_POST['which_company'])){
-	    	$sy = "#";
+	    	$frontSY = "#";
 	    } else {
-	    	$sy = NULL;
+	    	$frontSY = NULL;
 	    }
 	    $companyOriginal = implode(',#', $_POST['which_company']);
 	    if(isset($_POST['which_company_checkbox'])){
 	    		$companyThree = $_POST['which_company_custom'];
-	    		if ($sy != NULL){
+	    		if ($frontSY != NULL){
 	    			$companyTwo = ",#";
 	    		} else {
 	    			$companyTwo = "#";
 	    		}
-	    		$companycheckbox = $companyTwo.$companyThree;
+	    		if(companyThree != NULL){
+	    			$companycheckbox = $companyTwo.$companyThree;
+	    		} else {
+	    			$companycheckbox = NULL;
+	    		}
 	    } else {
 	    	$companycheckbox = NULL;
 	    }
-	    $company = $sy.$companyOriginal.$companycheckbox;
-	    
+	    $company = $frontSY.$companyOriginal.$companycheckbox;
+	    // this section handle the who_role part for multiple actor.
 	    $who_role = implode(',#', $_POST['which_role']);
+
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
 	    echo '<tr>';
