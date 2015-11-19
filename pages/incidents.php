@@ -21,7 +21,7 @@
 		<table class="table table-striped">
 			<thead>
 				<tr>
-					<th>Date Incident First Known/th>
+					<th>Date Incident First Known</th>
 					<th class="descr">Description</th>
 					<th class="resource">Resource</th>
 					<th class="tags">Tags</th>
