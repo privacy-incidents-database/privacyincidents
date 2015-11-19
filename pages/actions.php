@@ -10,11 +10,11 @@
 	    $description = $_POST['description'];
 	    $PublicLink = $_POST['PublicLink'];
 	    $occurred_date = $_POST['Occurred_Date'];
-	    $company = implode(',#', $_POST['which_company']);
-	    $company = "#".$company;
+	    $company1 = implode(',#', $_POST['which_company']);
+	    $company="#$company1"
+	    $who_role = implode(',#', $_POST['which_role']);
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
-	    $who_role = $_POST['which_role'];
 	    echo '<tr>';
 				echo '<td>' . $description . '</td>';
 	
