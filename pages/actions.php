@@ -12,23 +12,19 @@
 	    $occurred_date = $_POST['Occurred_Date'];
 	    if(isset($_POST['which_company'])){
 	    	$sy = "#";
-	    	$companyOriginal = implode(',#', $_POST['which_company']);
-	    	$companyone = $sy.$companyOriginal;
-	    	if(isset($_POST['which_company_checkbox'])){
+	    } else {
+	    	$sy = NULL;
+	    }
+	    $companyOriginal = implode(',#', $_POST['which_company']);
+	    if(isset($_POST['which_company_checkbox'])){
 	    		$companyThree = $_POST['which_company_custom'];
 	    		$companyTwo = ",#";
-	    		$company= $companyone.$companyTwo.$companyThree;
-	    	} else {
-	    		$company= $companyone;
-	    	}
+	    		$companycheckbox = $companyTwo.$companyThree;
 	    } else {
-	    	if(isset($_POST['which_company_checkbox'])){
-	    		$companyThree = $_POST['which_company_custom'];
-	    		$companyTwo = "#";
-	    		$company= $companyTwo.$companyThree;
-	    	} else {
-	    		$company= "";
+	    	$companycheckbox = NULL;
 	    }
+	    $company = $sy.$companyOriginal.$companycheckbox;
+	    
 	    $who_role = implode(',#', $_POST['which_role']);
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
