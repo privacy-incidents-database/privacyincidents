@@ -1,0 +1,4 @@
+SELECT Location, COUNT(*) as 'count' FROM `Privacy incidents` group by location;
+
+
+SELECT * FROM `Privacy incidents` WHERE Location like "%#world%";
