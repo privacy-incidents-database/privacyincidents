@@ -64,21 +64,21 @@
 	    }
 	    $what_kindOriginal = implode(',#', $_POST['what_kind']);
 	    if(isset($_POST['what_kind_checkbox'])){
-	    		$roleThree = $_POST['what_kind_custom'];
+	    		$kindThree = $_POST['what_kind_custom'];
 	    		if ($frontkindSY != NULL){
 	    			$kindTwo = ",#";
 	    		} else {
 	    			$kindTwo = "#";
 	    		}
 	    		if($kindThree != NULL){
-	    			$knidCheckbox = $kindTwo.$kindThree;
+	    			$kindCheckbox = $kindTwo.$kindThree;
 	    		} else {
-	    			$knidCheckbox = NULL;
+	    			$kindCheckbox = NULL;
 	    		}
 	    } else {
 	    	$knidCheckbox = NULL;
 	    }
-	    $what_kind = $frontkindSY.$what_kindOriginal.$knidCheckbox;
+	    $what_kind = $frontkindSY.$what_kindOriginal.$kindCheckbox;
 
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
