@@ -13,7 +13,7 @@
 	    $companyone = implode(',#', $_POST['which_company']);
 	    if(isset($_POST['which_company_checkbox'])){
 	    	$companyTwo = $_POST['which_company_custom'];
-	    	$companyThree = ",#"
+	    	$companyThree = ",#";
 	    	$company= $companyone.$companyTwo.$companyThree;
 	    }
 	    $who_role = implode(',#', $_POST['which_role']);
