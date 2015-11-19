@@ -55,7 +55,7 @@
 	    } else {
 	    	$rolecheckbox = NULL;
 	    }
-	    $which_role = $frontroleSY.$which_roleOriginal.$rolecheckbox;
+	    $who_role = $frontroleSY.$which_roleOriginal.$rolecheckbox;
 
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
