@@ -130,7 +130,7 @@
 	    $contributor_email = $_POST['Contributor_Email'];
 
 	    $query = mysql_query("INSERT INTO `Privacy incidents` (`Location`,`incident_root_cause`,`what_kind`,`date_submitted`,`Descr`,`link`,`date_occurred`,`who_company`,`contributor_name`,`Contributor_email`,`who_role`) 
-	    	VALUES ('$who_Location','$incident_root_cause','$what_kind','$today','$description','$PublicLink','$occurred_date','$company','$contributor_name','$contributor_email','$who_role')");
+	    	VALUES ('$where_Location','$incident_root_cause','$what_kind','$today','$description','$PublicLink','$occurred_date','$company','$contributor_name','$contributor_email','$who_role')");
 	    if (mysql_num_rows($query) != 0) {
 		echo 'INSERT FAILURE!'; 
 		die();
