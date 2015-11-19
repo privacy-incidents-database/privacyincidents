@@ -18,7 +18,6 @@
 				echo '<td>' . $description . '</td>';
 	
 				echo '<td>' . $PublicLink. '</td>';
-				echo '<td>' . $company1. '</td>';
 				echo '<td>' . $occurred_date. '</td>'; 
 				echo '<td>' . $company. '</td>';
 				echo '<td>' . $contributor_name. '</td>';
