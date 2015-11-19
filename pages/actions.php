@@ -11,6 +11,7 @@
 	    $PublicLink = $_POST['PublicLink'];
 	    $occurred_date = $_POST['Occurred_Date'];
 	    $company = implode(',#', $_POST['which_company']);
+	    $company = "#".$company;
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
 	    $who_role = $_POST['which_role'];
