@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<style type="text/css">
-#SendForm .has-error .control-label,
-#SendForm .has-error .help-block,
-#SendForm .has-error .form-control-feedback {
-    color: #f39c12;
-}
-
-#SendForm .has-success .control-label,
-#SendForm .has-success .help-block,
-#SendForm .has-success .form-control-feedback {
-    color: #18bc9c;
-}
 </style>
 <html>
 <head>
@@ -37,26 +24,27 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
 <br>
 </div>
 <form id ="SendForm" class="form-horizontal" role="form" method="post" action="actions.php">
-    <div class="form-group has-error">
+    <div class="form-group">
         <label for="" class="col-xs-3 control-label">Description</label>
         <div class="col-xs-5">
-            <textarea class="form-control input-sm" rows="3" id="description" name="description" placeholder="Please provide a 1-2 sentence description of the privacy incident." value=""></textarea>
+            <textarea class="form-control input-sm" required="" rows="3" id="description" name="description" placeholder="Please provide a 1-2 sentence description of the privacy incident." value=""></textarea>
         </div>
     </div>
     <div class="form-group">
         <label for="PublicLink" class="col-xs-3 control-label">Public Link</label>
         <div class="col-xs-5">
-            <input type="url" class="form-control input-sm" name="PublicLink" placeholder="example: http://google.com" value="">
+            <input type="url" class="form-control input-sm" required="" name="PublicLink" placeholder="example: http://google.com">
         </div>
     </div>
     <div class="form-group">
-        <label for="Occurred_Date" class="col-sm-2 control-label">Occurred_Date</label>
-        <div class="col-sm-7">
-            <input type="date" class="form-control input-sm" id="Occurred_Date" name="Occurred_Date" placeholder="2015-10-22" value="">
+        <label for="Occurred_Date" class="col-xs-3 control-label">Occurred_Date</label>
+        <div class="col-sm-5">
+            <input type="date" class="form-control input-sm" required="" id="Occurred_Date" name="Occurred_Date" placeholder="2015-10-22" value="">
         </div>
     </div>
     <div class ="form-group">
-    	<label for="which_company[]" class="col-sm-2 col-sm-10"> Which Company has involved </label>
+    	<label for="which_company[]" class="col-xs-3 control-label" > Which Company has involved :</label>
+    	<div class="col-xs-offset-3 col-xs-10">
     	<div class="checkbox">
   			<label>
     		<input type="checkbox" name= "which_company[]" value="Alibaba">
@@ -79,7 +67,8 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
     		Ebay
   			</label>
 		</div>
-		<div class="col-sm-offset-2 col-sm-10">
+		</div>
+		<div class="col-xs-offset-3 col-xs-10">
 		<div class="checkbox">
   			<label>
     		<input type="checkbox" name= "which_company[]" value="Expedia">
@@ -103,7 +92,7 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
   			</label>
 		</div>
 		</div>
-		<div class="col-sm-offset-2 col-sm-10">
+		<div class="col-xs-offset-3 col-xs-10">
 		<div class="checkbox">
   			<label>
     		<input type="checkbox" name= "which_company[]" value="HealthcareCompany">
@@ -127,7 +116,7 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
   			</label>
 		</div>
 		</div>
-		<div class="col-sm-offset-2 col-sm-10">
+		<div class="col-xs-offset-3 col-xs-10">
 		<div class="checkbox">
   			<label>
     		<input type="checkbox" name= "which_company[]" value="Netease">
@@ -151,7 +140,7 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
   			</label>
 		</div>
 		</div>
-		<div class="col-sm-offset-2 col-sm-10">
+		<div class="col-xs-offset-3 col-xs-10">
 		<div class="checkbox">
   			<label>
     		<input type="checkbox" name= "which_company[]" value="Salesforce">
@@ -174,8 +163,9 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
     		Yahoo
   			</label>
   			<label>
-    				<div class="col-sm-7">
+    				<div class="col-xs-offset-3">
     					<input type="checkbox" name= "which_company_checkbox">
+    					other:
             			<input type="text" class="form-control input-sm" name = "which_company_custom">
         			</div>
   			</label>
@@ -183,7 +173,8 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
 		</div>
 	</div>
 	<div class ="form-group">
-    	<label for="which_role[]" class="col-sm-3 col-sm-10"> Who was impact by the incident? </label>
+    	<label for="which_role[]" class="col-xs-3 control-label"> Who was impact by the incident :</label>
+    	<div class ="col-xs-offset-3 col-xs-10">
     	<div class="checkbox">
   			<label>
     		<input type="checkbox" name= "which_role[]" value="Adolescent"> Adolescent
@@ -209,55 +200,450 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
        		 Politician
         	</label>
         </div>
+        </div>
+        <div class ="col-xs-offset-3 col-xs-10">
+        <div class ="checkbox">
+        	<label>
+    				<div class="col-xs-offset-3">
+    					<input type="checkbox" name= "which_role_checkbox">
+    					other:
+            			<input type="text" class="form-control input-sm" name = "which_role_custom">
+        			</div>
+  			</label>
+  		</div>
+  		</div>
  	</div>
+ 	<div class ="form-group">
+    	<label for="what_kind[]" class="col-xs-3 control-label" > Which of these terms describe the incident :</label>
+    	<div class="col-xs-offset-3 col-xs-10">
+    	<div class="checkbox">
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="Ads">Ads
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="ContactAccess">ContactAccess
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="Cookies">Cookies
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="CyberBullying">
+    		CyberBullying
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="CyberStalking">
+    		CyberStalking
+  			</label>
+		</div>
+		</div>
+		<div class="col-xs-offset-3 col-xs-10">
+		<div class="checkbox">
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="DataAggregation">
+    		DataAggregation
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="DataCollection">
+    		DataCollection
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="DataSharing">
+    		DataSharing
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="DataUsage">
+    		DataUsage
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="Defamation">
+    		Defamation
+  			</label>
+		</div>
+		</div>
+		<div class="col-xs-offset-3 col-xs-10">
+		<div class="checkbox">
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="DocumentAccess">
+    		DocumentAccess
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="Drone">
+    		Drone
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="EmailAccess">
+    		EmailAccess
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="LocationSharing">
+    		LocationSharing
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="OverSharing">
+    		OverSharing
+  			</label>
+		</div>
+		</div>
+		<div class="col-xs-offset-3 col-xs-10">
+		<div class="checkbox">
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="PersonalInfoLeak">
+    		PersonalInfoLeak
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="PhotoAccess">
+    		PhotoAccess
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="PrivacyPolicy">
+    		PrivacyPolicy
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="RemovedPrivacyToolOrFeature">
+    		RemovedPrivacyToolOrFeature
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="RevengePorn">
+    		RevengePorn
+  			</label>
+		</div>
+		</div>
+		<div class="col-xs-offset-3 col-xs-10">
+		<div class="checkbox">
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="RightToBeForgotten">
+    		RightToBeForgotten
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="Surveillance">
+    		Surveillance
+  			</label>
+  			<label>			
+    		<input type="checkbox" name= "what_kind[]" value="TextAccess">
+    		TextAccess
+  			</label>
+  			<label>
+    		<input type="checkbox" name= "what_kind[]" value="VideoAccess">
+    		VideoAccess
+  			</label>
+  			<label>
+    				<div class="col-xs-offset-3">
+    					<input type="checkbox" name= "what_kind_checkbox">
+    					other:
+            			<input type="text" class="form-control input-sm" name = "what_kind_custom">
+        			</div>
+  			</label>
+		</div>	
+		</div>
+	</div>
+	  <div class ="form-group">
+      <label for="incident_root_cause[]" class="col-xs-3 control-label"> How did the incident happen : </label>
+      <div class ="col-xs-offset-3 col-xs-10">
+      <div class="checkbox">
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="3rdPartyApps"> 3rdPartyApps
+        </label>
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="Accident">
+        Accident
+        </label>
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="Attack">
+        Attack
+        </label>
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="Bug">
+        Bug
+        </label>
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="InsiderAttack">
+        InsiderAttack
+        </label>
+        <label>
+          <input type="checkbox" name= "incident_root_cause[]" value="LawEnforcement">
+          LawEnforcement
+          </label>
+        </div>
+        </div>
+      <div class ="col-xs-offset-3 col-xs-10">
+      <div class="checkbox">
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="Legal">Legal
+        </label>
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="Malware">
+        Malware
+        </label>
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="Misunderstanding">
+        Misunderstanding
+        </label>
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="SecurityVulnerability">
+        SecurityVulnerability
+        </label>
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="SocialMedia">
+        SocialMedia
+        </label>
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="StolenDevice">
+        StolenDevice
+        </label>
+      </div>
+      </div>
+      <div class ="col-xs-offset-3 col-xs-10">
+      <div class="checkbox">
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="UnexpectedProductBehavior">UnexpectedProductBehavior
+        </label>
+        <label>
+        <input type="checkbox" name= "incident_root_cause[]" value="UnclearConsent">
+        UnclearConsent
+        </label>
+        <label>
+            <div class="col-xs-offset-3">
+              <input type="checkbox" name= "incident_root_cause_checkbox">
+              other:
+                  <input type="text" class="form-control input-sm" name = "incident_root_cause_custom">
+              </div>
+        </label>
+      </div>
+      </div>
+  </div>
+  <div class ="form-group">
+      <label for="where_Location[]" class="col-xs-3 control-label" > Where are most of the people affected by the incident located :</label>
+      <div class="col-xs-offset-3 col-xs-10">
+      <div class="checkbox">
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Algeria">
+        Algeria
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Argentina">
+        Argentina
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Bangladesh">
+        Bangladesh
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Brazil">
+        Brazil
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Canada">
+        Canada
+        </label>
+    </div>
+    </div>
+    <div class="col-xs-offset-3 col-xs-10">
+    <div class="checkbox">
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="China">
+        China
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Colombia">
+        Colombia
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Congo">
+        Congo
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Egypt">
+        Egypt
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Ethiopia">
+        Ethiopia
+        </label>
+    </div>
+    </div>
+    <div class="col-xs-offset-3 col-xs-10">
+    <div class="checkbox">
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="France">
+        France
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Germany">
+        Germany
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="India">
+        India
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Indoesia">
+        Indoesia
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Iran">
+        Iran
+        </label>
+    </div>
+    </div>
+    <div class="col-xs-offset-3 col-xs-10">
+    <div class="checkbox">
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Iraq">
+        Iraq
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Italy">
+        Italy
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Japan">
+        Japan
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Kenya">
+        Kenya
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Mexico">
+        Mexico
+        </label>
+    </div>
+    </div>
+    <div class="col-xs-offset-3 col-xs-10">
+    <div class="checkbox">
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Morocco">
+        Morocco
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Myanmar">
+        Myanmar
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Nigeria">
+        Nigeria
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Pakistan">
+        Pakistan
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Philippines">
+        Philippines
+        </label>
+    </div>
+    </div>
+    <div class="col-xs-offset-3 col-xs-10">
+    <div class="checkbox">
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Poland">
+        Poland
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Russia">
+        Russia
+        </label>
+        <label>     
+        <input type="checkbox" name= "where_Location[]" value="Saudiarabia">
+        Saudiarabia
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="SouthAfrica">
+        SouthAfrica
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="SouthKorea">
+        SouthKorea
+        </label>
+    </div>
+    </div>
+    <div class="col-xs-offset-3 col-xs-10">
+    <div class="checkbox">
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Spain">
+        Spain
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Sudan">
+        Sudan
+        </label>
+        <label>     
+        <input type="checkbox" name= "where_Location[]" value="Tanzania">
+        Tanzania
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Thailand">
+        Thailand
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Turkey">
+        Turkey
+        </label>
+    </div>
+    </div>
+    <div class="col-xs-offset-3 col-xs-10">
+    <div class="checkbox">
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Uganda">
+        Uganda
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="UK">
+        UK
+        </label>
+        <label>     
+        <input type="checkbox" name= "where_Location[]" value="Ukraine">
+        Ukraine
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="USA">
+        USA
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="Vietnam">
+        Vietnam
+        </label>
+        <label>
+        <input type="checkbox" name= "where_Location[]" value="World">
+        World
+        </label>
+        <label>
+            <div class="col-xs-offset-3">
+              <input type="checkbox" name= "where_Location_checkbox">
+              other:
+                  <input type="text" class="form-control input-sm" name = "where_Location_custom">
+            </div>
+        </label>
+    </div>  
+    </div>
+  </div>
 	<div class="form-group">
-        <label for="Contributor Name" class="col-sm-2 control-label">Contributor Name</label>
+        <label for="Contributor Name" class="col-xs-3 control-label">Contributor Name</label>
         <div class="col-sm-7">
-            <input type="text" class="form-control input-sm" id="Contributor_Name" name="Contributor_Name" placeholder="FirstName LastName" value="">
+            <input type="text" class="form-control input-sm" required="We need your Contributor name"id="Contributor_Name" name="Contributor_Name" placeholder="FirstName LastName" value="">
         </div>
     </div>
     <div class="form-group">
-        <label for="Contributor Email" class="col-sm-2 control-label">Contributor Email</label>
+        <label for="Contributor Email" class="col-xs-3 control-label">Contributor Email</label>
         <div class="col-sm-7">
-            <input type="email" class="form-control input-sm" id="Contributor_Email" name="Contributor_Email" placeholder="google@gmail.com" value="">
+            <input type="email" class="form-control input-sm" required="We need your contacting email" id="Contributor_Email" name="Contributor_Email" placeholder="google@gmail.com" value="">
         </div>
     </div>
     <div class="form-group">
-        <div class="col-sm-7 col-sm-offset-2">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        <div class="col-xs-offset-3 col-xs-10">
+        <label for="include_contributor" class="col-xs-3">
+        <input type="checkbox" name= "include_contributor">
+        Thank you for your contribution! Can we include you as a collaborator on our site when we add your incident?</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-3 control-label">
+         <label class="col-xs-3 control-label">
+            <button type="submit" class="btn btn-primary"> Send Form</button> 
+         </label>
         </div>
     </div>
 </form>
-
-<script>
-$(document).ready(function() {
-    $('#SendForm').formValidation({
-        framework: 'bootstrap',
-        icon: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            description: {
-                validators: {
-                    notEmpty: {
-                        message: 'Description is required'
-                    }
-                }
-            },
-            PublicLink: {
-                validators: {
-                    notEmpty: {
-                        message: 'The Link is required'
-                    }
-                }
-            }
-        }
-    });
-});
-</script>
-
 
 </body>
 </html>
