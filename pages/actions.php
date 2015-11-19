@@ -76,23 +76,61 @@
 	    			$kindCheckbox = NULL;
 	    		}
 	    } else {
-	    	$knidCheckbox = NULL;
+	    	$kindCheckbox = NULL;
 	    }
 	    $what_kind = $frontkindSY.$what_kindOriginal.$kindCheckbox;
+	    //this section handle the incident_root_cause part of multple selection.
+	    if(isset($_POST['incident_root_cause'])){
+	    	$frontRootSY = "#";
+	    } else {
+	    	$frontRootSY = NULL;
+	    }
+	    $incident_root_causeOriginal = implode(',#', $_POST['incident_root_cause']);
+	    if(isset($_POST['incident_root_cause_checkbox'])){
+	    		$RootThree = $_POST['incident_root_cause_custom'];
+	    		if ($frontRootSY != NULL){
+	    			$RootTwo = ",#";
+	    		} else {
+	    			$RootTwo = "#";
+	    		}
+	    		if($RootThree != NULL){
+	    			$RootCheckbox = $RootTwo.$RootThree;
+	    		} else {
+	    			$RootCheckbox = NULL;
+	    		}
+	    } else {
+	    	$RootCheckbox = NULL;
+	    }
+	    $incident_root_cause = $frontRootSY.$incident_root_causeOriginal.$RootCheckbox;
+	    // this section handle the Location part of multiple selection.
+	    if(isset($_POST['where_Location'])){
+	    	$frontLocationSY = "#";
+	    } else {
+	    	$frontLocationSY = NULL;
+	    }
+	    $where_LocationOriginal = implode(',#', $_POST['where_Location']);
+	    if(isset($_POST['where_Location_checkbox'])){
+	    		$LocationThree = $_POST['where_Location_custom'];
+	    		if ($frontLocationSY != NULL){
+	    			$LocationTwo = ",#";
+	    		} else {
+	    			$LocationTwo = "#";
+	    		}
+	    		if($LocationThree != NULL){
+	    			$LocationCheckbox = $LocationTwo.$LocationThree;
+	    		} else {
+	    			$LocationCheckbox = NULL;
+	    		}
+	    } else {
+	    	$LocationCheckbox = NULL;
+	    }
+	    $where_Location = $frontLocationSY.$where_LocationOriginal.$LocationCheckbox;
 
 	    $contributor_name = $_POST['Contributor_Name'];
 	    $contributor_email = $_POST['Contributor_Email'];
-	    echo '<tr>';
-				echo '<td>' . $description . '</td>';
-	
-				echo '<td>' . $PublicLink. '</td>';
-				echo '<td>' . $occurred_date. '</td>'; 
-				echo '<td>' . $company. '</td>';
-				echo '<td>' . $contributor_name. '</td>';
-				echo '<td>' . $contributor_email. '</td>';
-		echo '</tr>';
-	    $query = mysql_query("INSERT INTO `Privacy incidents` (`what_kind`,`date_submitted`,`Descr`,`link`,`date_occurred`,`who_company`,`contributor_name`,`Contributor_email`,`who_role`) 
-	    	VALUES ('$what_kind','$today','$description','$PublicLink','$occurred_date','$company','$contributor_name','$contributor_email','$who_role')");
+
+	    $query = mysql_query("INSERT INTO `Privacy incidents` (`Location`,`incident_root_cause`,`what_kind`,`date_submitted`,`Descr`,`link`,`date_occurred`,`who_company`,`contributor_name`,`Contributor_email`,`who_role`) 
+	    	VALUES ('$who_Location','$incident_root_cause','$what_kind','$today','$description','$PublicLink','$occurred_date','$company','$contributor_name','$contributor_email','$who_role')");
 	    if (mysql_num_rows($query) != 0) {
 		echo 'INSERT FAILURE!'; 
 		die();
