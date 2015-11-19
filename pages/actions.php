@@ -136,4 +136,9 @@
 		die();
 	}
 ?>
+<html>
+<div class="col-sm-offset-1 col-sm-10">
+<h3>Do you have any suggestions for improving this form? If so, please click the Contact button on the right top.</h3>
+</div>
+</html>
 <?php include 'layout/footer.html';?>
