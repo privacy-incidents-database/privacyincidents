@@ -12,9 +12,11 @@
 	    $occurred_date = $_POST['Occurred_Date'];
 	    $companyone = implode(',#', $_POST['which_company']);
 	    if(isset($_POST['which_company_checkbox'])){
-	    	$companyTwo = $_POST['which_company_custom'];
-	    	$companyThree = ",#";
+	    	$companyThree = $_POST['which_company_custom'];
+	    	$companyTwo = ",#";
 	    	$company= $companyone.$companyTwo.$companyThree;
+	    } else {
+	    	$company= $companyone;
 	    }
 	    $who_role = implode(',#', $_POST['which_role']);
 	    $contributor_name = $_POST['Contributor_Name'];
