@@ -24,7 +24,7 @@
 	    		} else {
 	    			$companyTwo = "#";
 	    		}
-	    		if(companyThree != NULL){
+	    		if($companyThree != NULL){
 	    			$companycheckbox = $companyTwo.$companyThree;
 	    		} else {
 	    			$companycheckbox = NULL;
