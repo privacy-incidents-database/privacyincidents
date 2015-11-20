@@ -1,3 +1,7 @@
+# AuthType shibboleth
+# ShibCompatWith24 on
+# ShibRequestSetting requireSession 1
+# require shib-session
+
 AuthType WRAP
-require affiliation ncsu.edu
-require user jnstaddo yyang21 lvue
+require valid-user
