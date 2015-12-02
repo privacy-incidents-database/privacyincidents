@@ -9,7 +9,8 @@
 		$today = date("Y-m-d");
 	    $description = $_POST['description'];
 	    $PublicLink = $_POST['PublicLink'];
-	    $occurred_date = $_POST['Occurred_Date'];
+	    $occurred_date = date("Y-m-d",$_POST['Occurred_Date'];
+
 	    // this is the section help handle multiple company selection and the input data.
 	    if(isset($_POST['which_company'])){
 	    	$frontSY = "#";
