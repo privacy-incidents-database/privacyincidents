@@ -633,15 +633,19 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
     <div class="checkbox">
         <div class="col-sm-7">
         <laber>
-        <input type="checkbox" name= "where_Location_checkbox">
+        <input type="checkbox" id="where_Location_checkbox" name= "where_Location_checkbox">
         other:
         </laber>
         <label>
-        <input type="text" class="form-control input-sm" name = "where_Location_custom">
+        <input type="text" class="form-control input-sm" id="where_Location_custom" name = "where_Location_custom">
         </label>
         <script>
-        $('input[type="text"]').keypress(function(){
-        $('input[type="checkbox"]').attr("checked","checked");
+        //$('input[type="text"]').keypress(function(){
+        //$('input[type="checkbox"]').attr("checked","checked");
+        $('#where_Location_custom').change(function () {
+        $('#where_Location_checkbox').prop('checked', true); // Checks it
+        alert($('#where_Location_custom').val());
+        }); 
         });
         </script>
         </div>
