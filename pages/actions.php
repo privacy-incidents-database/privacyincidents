@@ -10,7 +10,8 @@
 	    $description = $_POST['description'];
 	    $PublicLink = $_POST['PublicLink'];
 	    $date = $_POST['Occurred_Date'];
-	    $occurred_date = date_create_from_format("Y-m-d","$date");
+	    $date2 = "-00";
+	    $occurred_date = $date.$date2;
 
 	    // this is the section help handle multiple company selection and the input data.
 	    if(isset($_POST['which_company'])){
