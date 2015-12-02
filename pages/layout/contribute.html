@@ -641,7 +641,7 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
         </label>
         </div>
         <script>
-         $("#location_custom").keyup(function(){
+         $("#location_custom").on("keyup", function(){
            if(this.value!=""){
                 $("#location_checkbox").prop("checked","checked");
               } else{
