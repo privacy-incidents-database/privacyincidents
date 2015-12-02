@@ -640,6 +640,15 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
         <input type="text" class="form-control input-sm"  id = "location_custom" name = "where_Location_custom">
         </label>
         </div>
+        <script>
+         $('#location_custom').keyup(function(){
+           if(this.value!=""){
+                $('#location_checkbox').prop("checked","checked");
+              } else{
+                $('#location_checkbox').prop("checked","");
+              }
+            });
+        </script>
     </div>  
     </div>
   </div>
@@ -677,14 +686,5 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
         </div>
     </div>
 </form>
-<script>
-            $('#location_custom').keyup(function(){
-              if(this.value!=""){
-                $('#location_checkbox').prop("checked","checked");
-              } else{
-                $('#location_checkbox').prop("checked","");
-              }
-            });
-</script>
 </body>
 </html>
