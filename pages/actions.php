@@ -137,7 +137,10 @@
 	    if (mysql_num_rows($query) != 0) {
 		echo 'INSERT FAILURE!'; 
 		die();
-	}
+		}
+		if(isset($_POST['another_contribution'])){
+	    	header('Location: contribute.php');   
+	    }
 ?>
 <html>
 <div class="col-sm-offset-1 col-sm-10">
