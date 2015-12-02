@@ -640,11 +640,11 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
         <input type="text" class="form-control input-sm"  id = "location_custom" name = "where_Location_custom">
         </label>
         <script>
-            $("#location_custom").on("keyup", function(e){
+            $('#location_custom').keyup(function(){
               if(this.value!=""){
-                $("#location_checkbox").prop("checked", "checked");
-              }else{
-                $("#location_checkbox").prop('checked', ""); 
+                $('#location_checkbox').prop("checked","checked");
+              } else{
+                $('#location_checkbox').prop("checked","");
               }
             });
         </script>
