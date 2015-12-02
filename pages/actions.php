@@ -12,7 +12,7 @@
 	    $date = $_POST['Occurred_Date'];
 	    $date2 = "-00";
 	    $occurred_date = $date.$date2;
-
+	    echo '<td>' . $occurred_date . '</td>';
 	    // this is the section help handle multiple company selection and the input data.
 	    if(isset($_POST['which_company'])){
 	    	$frontSY = "#";
