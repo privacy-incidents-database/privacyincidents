@@ -175,6 +175,15 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
         <input type="text" class="form-control input-sm" name = "which_company_custom">
         </label>
         </div>
+        <script>
+            $("input[type='text'][name='which_company_custom']").on("keyup", function(){
+              if(this.value!=""){
+                $("input[type='checkbox'][name='which_company_checkbox']").prop("checked", "checked");
+              }else{
+                $("input[type='checkbox'][name='which_company_checkbox']").prop('checked', ""); 
+              }
+            });
+        </script>
     </div>  
     </div>
 	</div>
