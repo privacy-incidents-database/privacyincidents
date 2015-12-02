@@ -218,6 +218,15 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
             <input type="text" class="form-control input-sm" name = "which_role_custom">
             </label>
             </div>
+            <script>
+            $("input[type='text'][name='which_role_custom']").on("keyup", function(){
+              if(this.value!=""){
+                $("input[type='checkbox'][name='which_role_checkbox']").prop("checked", "checked");
+              }else{
+                $("input[type='checkbox'][name='which_role_checkbox']").prop('checked', ""); 
+              }
+            });
+            </script>
         </div>  
         </div>
  	</div>
@@ -347,6 +356,15 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
             <input type="text" class="form-control input-sm" name = "what_kind_custom">
             </label>
             </div>
+            <script>
+            $("input[type='text'][name='what_kind_custom']").on("keyup", function(){
+              if(this.value!=""){
+                $("input[type='checkbox'][name='what_kind_checkbox']").prop("checked", "checked");
+              }else{
+                $("input[type='checkbox'][name='what_kind_checkbox']").prop('checked', ""); 
+              }
+            });
+            </script>
         </div>  
     </div>
 	</div>
@@ -428,6 +446,15 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
             <input type="text" class="form-control input-sm" name = "incident_root_cause_custom">
             </label>
             </div>
+            <script>
+            $("input[type='text'][name='incident_root_cause_custom']").on("keyup", function(){
+              if(this.value!=""){
+                $("input[type='checkbox'][name='incident_root_cause_checkbox']").prop("checked", "checked");
+              }else{
+                $("input[type='checkbox'][name='incident_root_cause_checkbox']").prop('checked', ""); 
+              }
+            });
+            </script>
         </div>  
     </div>
   </div>
