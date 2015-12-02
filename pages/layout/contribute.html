@@ -639,6 +639,11 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
         <label>
         <input type="text" class="form-control input-sm" name = "where_Location_custom">
         </label>
+        <script>
+        $('input[type="text"]').keypress(function(){
+        $('input[type="checkbox"]').attr("checked","checked");
+        });
+        </script>
         </div>
     </div>  
     </div>
