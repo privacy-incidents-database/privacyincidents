@@ -648,6 +648,13 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
                 $('#location_checkbox').prop("checked","");
               }
             });
+         $("input[type='text']").on("keyup", function(){
+          if(this.value!=""){
+            $("input[type='checkbox']").prop("checked", "checked");
+          }else{
+            $("input[type='checkbox']").prop('checked', ""); 
+            }
+          });
         </script>
     </div>  
     </div>
