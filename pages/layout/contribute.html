@@ -641,20 +641,13 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
         </label>
         </div>
         <script>
-         $('#location_custom').keyup(function(){
+         $("#location_custom").keyup(function(){
            if(this.value!=""){
-                $('#location_checkbox').prop("checked","checked");
+                $("#location_checkbox").prop("checked","checked");
               } else{
-                $('#location_checkbox').prop("checked","");
+                $("#location_checkbox").prop("checked","");
               }
             });
-         $("input[type='text']").on("keyup", function(){
-          if(this.value!=""){
-            $("input[type='checkbox']").prop("checked", "checked");
-          }else{
-            $("input[type='checkbox']").prop('checked', ""); 
-            }
-          });
         </script>
     </div>  
     </div>
