@@ -700,6 +700,22 @@ Jessica Staddon, Linda Vue, Yuxu Yang.</p>
             <input type="email" class="form-control input-sm" id="Contributor_Email" name="Contributor_Email" placeholder="google@gmail.com" value="">
         </div>
     </div>
+    <script>
+            $("input[type='text'][name='Contributor_Name']").on("keyup", function(){
+              if(this.value!=""){
+                $("input[type='checkbox'][name='include_contributor']").prop("checked", "checked");
+              }else{
+                $("input[type='checkbox'][name='include_contributor']").prop('checked', ""); 
+              }
+            });
+            $("input[type='text'][name='Contributor_Email']").on("keyup", function(){
+              if(this.value!=""){
+                $("input[type='checkbox'][name='include_contributor']").prop("checked", "checked");
+              }else{
+                $("input[type='checkbox'][name='include_contributor']").prop('checked', ""); 
+              }
+            });
+        </script>
     <div class="form-group">
         <div class="col-xs-offset-3 col-xs-10">
         <label for="include_contributor" class="col-xs-3">
