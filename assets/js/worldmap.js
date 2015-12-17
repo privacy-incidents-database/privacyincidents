@@ -27,9 +27,10 @@ var map = d3.geomap.choropleth()
     .width("1250");
 
 //CSV file forbidden ):
-d3.csv('../pages/data/incident_counts.csv', function(error, data) {
+d3.csv('data/incident_counts.csv', function(error, data) {
     d3.select('#map')
         .datum(data)
         .call(map.draw, map); 
 });
 
+//alert("Hello");
