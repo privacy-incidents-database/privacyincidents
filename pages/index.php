@@ -119,7 +119,7 @@ In this initial stage, the database is not public and contributions are by invit
 	<div id="use">
 		<h3>What can I do with the database?</h3>
 		
-		<p><b><i>Contribute</b></i>: We need your incident suggestions. Please add them using the form below.</p>
+		<p><b><i>Contribute</b></i>: We need your incident suggestions. Please add them using the form below.<b><i>[Coming soon!]</b></i></p>
 		
 		<p><b><i>Feedback</b></i>: <a href="https://docs.google.com/a/ncsu.edu/forms/d/17VLUHAU5hiJGkZVZ1uxkHmzQ0cmV3Ljv798RlbQanK4/viewform">Send us comments, ideas and questions.</a></p>
 
@@ -153,5 +153,4 @@ Example: <a href="http://www.cultofmac.com/157641/this-creepy-app-isnt-just-stal
 			<p>We are currently in the works of examining online resources for privacy incidents to be included in our database. </p>-->
 		</div>
 		
-<iframe src="https://docs.google.com/a/ncsu.edu/forms/d/1ycbugMdf8ROaCRO0oGS52o0k-2Rd3mloE302NeRu44I/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 <?php include 'layout/footer.html';?>
