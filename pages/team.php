@@ -12,7 +12,7 @@
 				<div class="img">
 					<img src="/privacyincidents/assets/imgs/jnstaddo.png">
 				</div>
-				<h4>Dr. Jessica Staddon</h4>
+				<h4><a href="http://home.jessicastaddon.com/">Jessica Staddon</a></h4>
 				<p>NCSU</p>
 			</div>
 				
@@ -36,7 +36,7 @@
 				<div class="img">
 					<img src="/privacyincidents/assets/imgs/Richter-thumb.jpg">
 				</div>
-				<h4>Heather Lipford</h4>
+				<h4><a href="http://hci.uncc.edu/~richter/">Heather Lipford</a></h4>
 				<p>UNCC</p>
 			</div>
 			
@@ -44,7 +44,7 @@
 				<div class="img">
 					<img src="/privacyincidents/assets/imgs/bart.jpg">
 				</div>
-				<h4>Bart Knijnenburg</h4>
+				<h4><a href="http://www.usabart.nl/portfolio/#home.html">Bart Knijnenburg</a></h4>
 				<p>Clemson</p>
 			</div>		
 		</div>	
