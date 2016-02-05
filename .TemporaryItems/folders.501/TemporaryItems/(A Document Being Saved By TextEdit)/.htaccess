@@ -1,3 +1,0 @@
-AuthType WRAP
-require affiliation ncsu.edu
-require known-user
