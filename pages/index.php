@@ -117,7 +117,7 @@ In this initial stage, the database is not public and contributions are by invit
 	</div>
 	
 	<div id="use">
-		<h3>What with the database?</h3>
+		<h3>What can I do with the database?</h3>
 		
 		<p><b><i>Contribute</b></i>: We need your incident suggestions. Please add them using the form below.<b><i>[Coming soon!]</b></i></p>
 		
