@@ -1,10 +1,10 @@
 <?php include 'pages/layout/header.html';?>
 
   <!-- Header Carousel -->
-  <header id="myCarousel" class="carousel slide" data-interval="false">
+  <header id="myCarousel" class="carousel slide" data-interval="false" data-warp="false">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="0"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
           <li data-target="#myCarousel" data-slide-to="3"></li>
