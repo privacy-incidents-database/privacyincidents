@@ -154,4 +154,3 @@ Example: <a href="http://www.cultofmac.com/157641/this-creepy-app-isnt-just-stal
 		</div>
 		
 <?php include 'pages/layout/footer.html';?>
->>>>>>> parent of 08702cb... a
