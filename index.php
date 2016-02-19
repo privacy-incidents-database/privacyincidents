@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<?php include 'pages/index.php';?>
-=======
 <?php include 'pages/layout/header.html';?>
 
   <!-- Header Carousel -->
