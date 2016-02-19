@@ -1,45 +1,35 @@
 <?php include 'pages/layout/header.html';?>
-
+  
   <!-- Header Carousel -->
-  <header id="myCarousel" class="carousel slide" data-interval="false" data-warp="false">
+  <header id="myCarousel" class="carousel slide" data-interval="false">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0"></li>
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
           <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner">
+      <div class="carousel-inner" role="listbox">
           <div class="item active">
-              <!--<div class="fill" style="background-image:url('/privacyincidents/assets/imgs/snapchat.jpg');">
-              </div>
-              <div class="carousel-img">
-              	<img src="/privacyincidents/assets/imgs/snapchat.jpg" alt="Snapchat">
-              </div>
-              <div class="carousel-caption">
-                <h3 class="caption">Snapchat's claims of the ephemerality of snaps found to be misleading.</h3>
-                <p class="tags">#5/2014, #World, #SnapChat, #UnexpectedProductBehavior, #Citizens</p>
-              </div>-->
-
               <div class="row">
               	<div class="col-md-6" style="margin-left: 20%; margin-right: -25%; margin-top: 3.5%;">
               		<img src="/privacyincidents/assets/imgs/snapchat.jpg" alt="Snapchat" style="width: 45%;">
               	</div>
-              	<div class="col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
-              		<h3 class="caption">Snapchat's claims of the ephemerality of snaps found to be misleading.</h3>
+              	<div class="carousel-caption col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
+              		<h3>Snapchat's claims of the ephemerality of snaps found to be misleading.</h3>
                 	<p class="tags">#5/2014 #World #SnapChat #UnexpectedProductBehavior #Citizens</p>
               	</div>
               </div>
           </div>
           <div class="item">
               <div class="row">
-              	<div class="col-md-6" style="margin-left: 20%; margin-right: -25%; margin-top: 5.5%;">
+              	<div class="carousel-caption col-md-6" style="margin-left: 20%; margin-right: -25%; margin-top: 5.5%;">
               		<img src="/privacyincidents/assets/imgs/president.jpg" alt="Presidential campaigns" style="width: 45%;">
               	</div>
-              	<div class="col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
-                	<h3 class="caption">Presidential candidate web sites found to often be poor on privacy (e.g. no privacy policy or inappropriate policies).</h3>
+              	<div class="carousel-caption col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
+                	<h3 >Presidential candidate web sites found to often be poor on privacy (e.g. no privacy policy or inappropriate policies).</h3>
                 	<p class="tags">#9/2015 #World #PresidentialCandidateSites #PrivacyPolicy #Citizens</p>
               	</div>
               </div>
@@ -49,8 +39,8 @@
                 <div class="col-md-6" style="margin-left: 20%; margin-right: -25%;">
                   <img src="/privacyincidents/assets/imgs/facebook.jpg" alt="Facebook like pages" style="width: 45%;">
                 </div>
-                <div class="col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
-                <h3 class="caption">Facebook begins using views of pages containing the Like button to target advertising.</h3>
+                <div class="carousel-caption col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
+                <h3>Facebook begins using views of pages containing the Like button to target advertising.</h3>
                 <p class="tags">#9/2015 #World #Facebook #Ads #UnexpectedProductBehavior #Citizens</p>
                 </div>
               </div>
@@ -62,8 +52,8 @@
                 <div class="col-md-6" style="margin-left: 20%; margin-right: -25%; margin-top: 5.5%;">
                   <img src="/privacyincidents/assets/imgs/google_transgender.jpg" alt="Google transgender" style="width: 45%;">
                 </div>
-                <div class="col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
-                  <h3 class="caption">Unexpected linking of text to a Google+ account accidentally outed a transgender women when sending a text.</h3>
+                <div class="carousel-caption col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
+                  <h3>Unexpected linking of text to a Google+ account accidentally outed a transgender women when sending a text.</h3>
                 <p class="tags">#1/2014 #USA, #Google #Misunderstanding #Citizens</p>
                 </div>
               </div>
