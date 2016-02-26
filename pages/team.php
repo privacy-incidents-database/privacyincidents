@@ -13,11 +13,15 @@
 				</ul>
 			<p class="rteleft"><strong>Student Members:</strong></p>
 			<ul>
-			<li class="rteleft">Kaustubh Sant</a></li>
-			<li class="rteleft">Pradeep Murukannaiah</a></li>
-			<li class="rteleft">Sarvesh Rangnekar</a></li>
-			<li class="rteleft">Shiqian Xu</a></li>
-			<li class="rteleft">Yuxu Yang</a></li>
+			<li class="rteleft">Kaustubh Sant</li>
+			<li class="rteleft"><a href="http://www4.ncsu.edu/~pmuruka/">Pradeep Murukannaiah</a></li>
+			<li class="rteleft">Sarvesh Rangnekar</li>
+			<li class="rteleft"><a href="www4.ncsu.edu/~sxu11/">Shiqian Xu</a></li>
+			<li class="rteleft">Yuxu Yang</li>
+			</ul>
+			<p class="rteleft"><strong>Past Student:</strong></p>
+			<ul>
+			<li class="rteleft">Linda Vue</li>
 			</ul>
 			<p class="rteleft">UNCC:</p>
 			<p class="rteleft"><strong>Faculty Members:</strong></p>
