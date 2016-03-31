@@ -5,7 +5,7 @@
 	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
 	mysql_select_db(database);
 
-	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC");
+	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC");
 	if (mysql_num_rows($incidents) == 0) {
 		echo 'No incidents found!'; 
 		die();
@@ -25,6 +25,7 @@
 					<th class="descr">Description</th>
 					<th class="resource">Resource</th>
 					<th class="tags">Tags</th>
+					<th class="incidentID">Incident ID</th>
 				</tr>
 			</thead>
 			<tbody class="incidents-content">
@@ -42,7 +43,7 @@
 				// get last two segments of host name
 				preg_match('/[^.]+\.[^.]+$/', $host, $matches);
 				$tags = $i[3] . "&nbsp" . $i[4] . "&nbsp" . $i[5] . "&nbsp" . $i[6] . "&nbsp" . $i[7];
-
+				$incidentID = $i[8];
 				/*
 				$who_company = $i[3];
 				$who_role = $i[4];
@@ -78,6 +79,7 @@
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $link2 . '</a></td>';
 				echo '<td>' . $tags2 . '</td>';
+				echo '<td>' . $incidentID.'</td>';
 				echo '</tr>';		
 
 			}
