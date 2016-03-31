@@ -29,10 +29,18 @@
 			</thead>
 			<tbody class="incidents-content">
 		<?php 
-			while ($i = mysql_fetch_row($incidents)) {
-				$date = $i[0];
+			while ($i = mysql_fetch_row($incidents)) {		
+				$date =  $i[0];
+				$newDate = date("Y-m", strtotime($date));	
 				$descr = $i[1];
 				$link = $i[2];
+				$link2 =parse_url($link, PHP_URL_HOST);
+				// get host name from URL
+				preg_match('@^(?:http://)?([^/]+)@i',
+    				$link, $matches);
+				$host = $matches[1];
+				// get last two segments of host name
+				preg_match('/[^.]+\.[^.]+$/', $host, $matches);
 				$tags = $i[3] . "&nbsp" . $i[4] . "&nbsp" . $i[5] . "&nbsp" . $i[6] . "&nbsp" . $i[7];
 
 				/*
@@ -66,9 +74,9 @@
 				$tags2 = implode("&nbsp", $newTags);
 				
 				echo '<tr>';
-				echo '<td>' . $date . '</td>';
+				echo '<td>' .$newDate. '</td>';
 				echo '<td>' . $descr. '</td>';
-				echo '<td><a href="' . $link . '" target=_blank>' . $link . '</a></td>';
+				echo '<td><a href="' . $link . '" target=_blank>' . $link2 . '</a></td>';
 				echo '<td>' . $tags2 . '</td>';
 				echo '</tr>';		
 
