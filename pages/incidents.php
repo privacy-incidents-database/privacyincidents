@@ -22,10 +22,10 @@
 			<thead>
 				<tr>
 					<th>Date </th>
+					<th class="tags">Tags</th>
 					<th class="descr">Description</th>
 					<th class="resource">Resource</th>
-					<th class="tags">Tags</th>
-					<th class="incidentID">Incident ID</th>
+					<th class="incidentID">ID</th>
 				</tr>
 			</thead>
 			<tbody class="incidents-content">
@@ -44,6 +44,23 @@
 				preg_match('/[^.]+\.[^.]+$/', $host, $matches);
 				$tags = $i[3] . "&nbsp" . $i[4] . "&nbsp" . $i[5] . "&nbsp" . $i[6] . "&nbsp" . $i[7];
 				$incidentID = $i[8];
+				$publication="";
+				if (strcmp($link2,"www.nytimes.com" ) == 0){
+					$publication = "New York Times";
+				} else if (strcmp($link2, "arstechnica.com") == 0) {
+					$publication = "Ars Technica";
+				} else if (strcmp($link2, "www.ecns.cn")== 0){
+					$publication = "CNS Wire";
+				} else if (strcmp($link2, "www.reddit.com")== 0){
+					$publication = "Reddit";
+				} else if (strcmp($link2, "www.engadget.com")==0){
+					$publication = "Engadget";
+				} else if (strcmp($link2, "www.usatoday.com")==0){
+					$publication = "USA Today";
+				}
+				else {
+					$publication = $link2;
+				}
 				/*
 				$who_company = $i[3];
 				$who_role = $i[4];
@@ -76,9 +93,9 @@
 				
 				echo '<tr>';
 				echo '<td>' .$newDate. '</td>';
+				echo '<td>' .$tags2. '</td>';
 				echo '<td>' . $descr. '</td>';
-				echo '<td><a href="' . $link . '" target=_blank>' . $link2 . '</a></td>';
-				echo '<td>' . $tags2 . '</td>';
+				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
 				echo '<td>' . $incidentID.'</td>';
 				echo '</tr>';		
 
