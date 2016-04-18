@@ -5,7 +5,7 @@
 	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
 	mysql_select_db(database);
 
-	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC");
+	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID`, `case study` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC");
 	if (mysql_num_rows($incidents) == 0) {
 		echo 'No incidents found!'; 
 		die();
@@ -30,6 +30,8 @@
 			</thead>
 			<tbody class="incidents-content">
 		<?php 
+			$numbers = mysql_num_rows($incidents);
+			echo "numbers: $numbers";
 			while ($i = mysql_fetch_row($incidents)) {		
 				$date =  $i[0];
 				$newDate = date("Y-m", strtotime($date));	
@@ -44,6 +46,7 @@
 				preg_match('/[^.]+\.[^.]+$/', $host, $matches);
 				$tags = $i[3] . "&nbsp" . $i[4] . "&nbsp" . $i[5] . "&nbsp" . $i[6] . "&nbsp" . $i[7];
 				$incidentID = $i[8];
+				$caseStudy = $i[9];
 				$publication="";
 				if (strcmp($link2,"www.nytimes.com" ) == 0){
 					$publication = "New York Times";
@@ -96,7 +99,7 @@
 				echo '<td>' .$tags2. '</td>';
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
-				echo '<td>' . $incidentID.'</td>';
+				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID. '</a></td>';
 				echo '</tr>';		
 
 			}
