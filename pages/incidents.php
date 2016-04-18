@@ -18,14 +18,14 @@
 		<h2 id="incidents-title">Privacy Incidents</h2>
 	</div>
 	<div>
-		<table class="table table-striped">
+		<table class="table table-striped table-bordered">
 			<thead>
 				<tr>
-					<th>Date </th>
-					<th class="tags">Tags</th>
+					<th class ="col-md-1">Date </th>
+					<th class="tags col-md-4">Tags</th>
 					<th class="descr">Description</th>
-					<th class="resource">Resource</th>
-					<th class="incidentID">ID</th>
+					<th class="resource col-md-1">Resource</th>
+					<th class="incidentID col-md-2">ID</th>
 				</tr>
 			</thead>
 			<tbody class="incidents-content">
