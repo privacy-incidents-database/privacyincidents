@@ -31,7 +31,7 @@
 			<tbody class="incidents-content">
 		<?php 
 			$numbers = mysql_num_rows($incidents);
-			echo "numbers: $numbers";
+			echo "Number of Entries: $numbers";
 			while ($i = mysql_fetch_row($incidents)) {		
 				$date =  $i[0];
 				$newDate = date("Y-m", strtotime($date));	
