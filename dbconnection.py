@@ -101,7 +101,16 @@ class DBconnection:
 
 	def queryallincidents(self):
 		'''returns all incidents from DB'''
-		pass
+		try:
+			self.cnx = mysql.connector.connect(**self.config)
+		except:
+			print "Error connecting to DB"
+		self.incidents = []		
+		query("SELECT DISTINCT incidentID FROM incidents")
+		self.cursor.execute()
+		for row in self.cursor:
+			self.incidents.append(self.queryincident(row[0]))
+		return self.incidents
 
 
 
