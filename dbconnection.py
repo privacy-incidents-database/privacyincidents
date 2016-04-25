@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # pass list of json objects to functions for updating in DB
 # Each json object for 1 incident
 # json object example:
@@ -107,26 +109,23 @@ class DBconnection:
 			print "Error connecting to DB"
 		self.incidents = []		
 		query("SELECT DISTINCT incidentID FROM incidents")
-		self.cursor.execute()
+		self.cursor.execute(query)
 		for row in self.cursor:
 			self.incidents.append(self.queryincident(row[0]))
 		return self.incidents
-
 
 
 	def queryincident(self,incidentID):
 		'''returns json object of data for given incidentID'''
 
 		try:
-			self.cnx = mysql.connector.connect(user=self.user, password=self.pwd,
-                              host=self.host,
-                              database=self.database)
+			self.cnx = mysql.connector.connect(**self.config)
 		except:
 			print "Error connecting to DB"
 
 		self.cursor = self.cnx.cursor()
 		query = ("SELECT * FROM incidents WHERE incidentID={}".format(incidentID))
-		self.cursor.execute()
+		self.cursor.execute(query)
 		self.incident = {"incidentID":incidentID,"incidenttypeID":[],"companyID":[],"peopleID":[],"rootcauseID":[]}
 		for row in self.cursor:
 			self.incident["incidenttypeID"].append(row[1])
@@ -136,7 +135,7 @@ class DBconnection:
 
 		self.outputrow = {"incidentID":incidentID}
 		query = ("SELECT * FROM incidentdetails WHERE incidentID={}".format(incidentID))
-		self.cursor.execute()
+		self.cursor.execute(query)
 		for row in self.cursor:
 			self.incident["locationID"] = row[8]
 			self.outputrow["date_submitted"] = row[1]
@@ -178,8 +177,8 @@ class DBconnection:
 
 if __name__ == "__main__":
 		config = {
-  	'user': 'user',
-  	'password': 'passwd',
+  	'user': 'root',
+  	'password': 'zoro123',
   	'host': '127.0.0.1',
 		'database':'Privacyincidents'
 		}
@@ -188,5 +187,6 @@ if __name__ == "__main__":
 	
 		incidentids = db.insert("inputdata.json")
 		for ID in incidentids:
-				db.queryincident(ID)
+				print db.queryincident(ID)
 
+		print db.queryallincidents()
