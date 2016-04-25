@@ -1,0 +1,74 @@
+INCIDENTSDB = 'Privacyincidents'
+TABLES = {}
+TABLES['location'] = (
+	"CREATE TABLE `location` ("
+	"	`locationID` int NOT NULL, AUTO_INCREMENT,"
+	"	`location` varchar(100) NOT NULL,"
+	"	PRIMARY_KEY (`ID`)"
+	")ENGINE=InnoDB")
+
+TABLES['company'] = (
+	"CREATE TABLE `company` ("
+	"	`companyID` int NOT NULL, AUTO_INCREMENT,"
+	"	`company` varchar(100) NOT NULL,"
+	"	PRIMARY_KEY (`ID`)"
+	")ENGINE=InnoDB")
+
+TABLES['incidenttype'] = (
+	"CREATE TABLE `incidenttype` ("
+	"	`incidenttypeID` int NOT NULL, AUTO_INCREMENT,"
+	"	`type` varchar(100) NOT NULL,"
+	"	PRIMARY_KEY (`ID`)"
+	")ENGINE=InnoDB")
+
+TABLES['rootcause'] = (
+	"CREATE TABLE `rootcause` ("
+	"	`rootcauseID` int NOT NULL, AUTO_INCREMENT,"
+	"	`rootcause` varchar(100) NOT NULL,"
+	"	PRIMARY_KEY (`ID`)"
+	")ENGINE=InnoDB")
+
+TABLES['people'] = (
+	"CREATE TABLE `people` ("
+	"	`peopleID` int NOT NULL, AUTO_INCREMENT,"
+	"	`peopleaffected` varchar(100) NOT NULL,"
+	"	PRIMARY_KEY (`ID`)"
+	")ENGINE=InnoDB")
+
+TABLES['incidentdetails'] = (
+	"CREATE TABLE `incidents` ("
+	"	`incidentID` bigint NOT NULL, AUTO_INCREMENT,"
+	"	`date_submitted` date,"
+	"	`date_occured` date,"
+	"	`casestudy` varchar(100)",
+	"	`contributor_name` varchar(100),"
+	"	`contributor_email` varchar(100),"
+	"	`description` varchar(1000),"
+	"	`link` varchar(1000),"
+	"	`source` varchar(100),"
+	"	`locationID` int NOT NULL,"
+	"	`review` tinyint,"
+	"	PRIMARY_KEY (`ID`)"
+	"	CONSTRAINT FOREIGN KEY (`locationID`)"
+	"		REFERENCES `location` (`locationID`) ON DELETE CASCADE"
+	")ENGINE=InnoDB")
+
+TABLES['incidents'] = (
+	"CREATE TABLE `incidents` ("
+	"	`incidentID` bigint NOT NULL,"	
+	"	`incidenttypeID` int NOT NULL,"
+	"	`companyID` int NOT NULL,"
+	"	`peopleID` int NOT NULL,"
+	"	`rootcauseID` int NOT NULL,"
+	"	PRIMARY_KEY (`incidentID`,`incidenttypeID`,`companyID`,`peopleID`,`rootcauseID`)"
+	"	CONSTRAINT FOREIGN KEY (`incidentID`)"
+	"		REFERENCES `incidentdetails` (`incidentID`) ON DELETE CASCADE"
+	"	CONSTRAINT FOREIGN KEY (`incidenttypeID`)"
+	"		REFERENCES `incidenttype` (`incidenttypeID`) ON DELETE CASCADE"
+	"	CONSTRAINT FOREIGN KEY (`companyID`)"
+	"		REFERENCES `company` (`companyID`) ON DELETE CASCADE"
+	"	CONSTRAINT FOREIGN KEY (`peopleID`)"
+	"		REFERENCES `people` (`peopleID`) ON DELETE CASCADE"
+	"	CONSTRAINT FOREIGN KEY (`rootcauseID`)"
+	"		REFERENCES `rootcause` (`rootcauseID`) ON DELETE CASCADE"
+	")ENGINE=InnoDB")
