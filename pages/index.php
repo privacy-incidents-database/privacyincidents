@@ -111,9 +111,9 @@ In the context of this research project, a privacy incident is:
 
 	<div id="need">
 		<h3>Why do we need a database?</h3>
-		<p>With a shared database we can answer questions like, "What are common causes of privacy incidents?”, “How do privacy incidents vary by country?” and “Which entities (e.g. companies, governments, etc.) are commonly involved in privacy incidents?" in a repeatable, transparent manner. 
+		<p>With a shared database we can answer questions like, "What are common causes of privacy incidents?”, “How do privacy incidents vary by country?” and “Which entities (e.g. companies, governments, etc.) are commonly involved in privacy incidents?" in a repeatable, transparent manner. </p>
 
-In this initial stage, the database is not public and contributions are by invitation only, but eventually it will be publicly accessible and crowd-sourced to ensure broad coverage of privacy incidents.</p>
+<p>In this initial stage, the database is not public and contributions are by invitation only, but eventually it will be publicly accessible and crowd-sourced to ensure broad coverage of privacy incidents.</p>
 	</div>
 	
 	<div id="use">
