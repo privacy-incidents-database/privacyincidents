@@ -119,7 +119,7 @@ In this initial stage, the database is not public and contributions are by invit
 	<div id="use">
 		<h3>What can I do with the database?</h3>
 		
-		<p><b><i>Contribute</b></i>: We need your incident suggestions. Please add them using them here:</b></i> <a href="https://docs.google.com/forms/d/1ycbugMdf8ROaCRO0oGS52o0k-2Rd3mloE302NeRu44I/viewform">Incident input form</a></p>
+		<p><b><i>Contribute</b></i>: We need your incident suggestions. Please add them here:</b></i> <a href="https://docs.google.com/forms/d/1ycbugMdf8ROaCRO0oGS52o0k-2Rd3mloE302NeRu44I/viewform">Incident input form</a></p>
 		
 		<p><b><i>Feedback</b></i>: <a href="https://docs.google.com/a/ncsu.edu/forms/d/17VLUHAU5hiJGkZVZ1uxkHmzQ0cmV3Ljv798RlbQanK4/viewform">Send us comments, ideas and questions.</a></p>
 
