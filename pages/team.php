@@ -14,7 +14,7 @@
 			<p class="rteleft"><strong>Student Members:</strong></p>
 			<ul>
 			<li class="rteleft">Kaustubh Sant</li>
-			<li class="rteleft"><a href="http://www4.ncsu.edu/~pmuruka/">Pradeep Murukannaiah</a></li>
+			<li class="rteleft"><a href="http://www4.ncsu.edu/~pmuruka/">Pradeep Kumar Murukannaiah</a></li>
 			<li class="rteleft">Sarvesh Rangnekar</li>
 			<li class="rteleft"><a href="http://www4.ncsu.edu/~sxu11/">Shiqian Xu</a></li>
 			<li class="rteleft">Yuxu Yang</li>
