@@ -90,7 +90,7 @@
 -->
 		<div id="definitions">
 			<h3>What is a privacy incident?</h3>
-In the context of this research project, a privacy incident is:
+In this research project, a privacy incident is:
 <ul>
 	<li>An instance of accidental or unauthorized collection, use or exposure of sensitive information</li>
 </ul>
