@@ -7,25 +7,25 @@
 		</div>
 		<div class="content ol-md-4">
 			<p class="rteleft"><strong>Leads</strong></p> <a href="http://home.jessicastaddon.com/">Jessica Staddon</a>, <a href="http://hci.uncc.edu/~richter/">Heather Richter Lipford</a>, <a href="http://www.usabart.nl/portfolio/#home.html">Bart Knijnenburg</a> and <a href="http://www.se.rit.edu/~pkm/">Pradeep Kumar Murukannaiah</a></p>
-    		<p class="rteleft">NCSU:</p>
-			<p class="rteleft"><strong>Faculty Members:</strong></p>
-				<ul>
+    		<!--<p class="rteleft">NCSU:</p>-->
+			<p class="rteleft"><strong>Current and Past Project Members</strong></p> Sarvesh Rangnekar, Kaustubh Sant, Linda Vue, Yuxu Yang</p>
+				<!--<ul>
 					<li class="rteleft"><a href="http://home.jessicastaddon.com/">Jessica Staddon</a></li>
 				</ul>
 			<p class="rteleft"><strong>Student Members:</strong></p>
 			<ul>
 			<li class="rteleft">Kaustubh Sant</li>
 			<li class="rteleft"><a href="http://www4.ncsu.edu/~pmuruka/">Pradeep Kumar Murukannaiah</a></li>
-			<li class="rteleft">Sarvesh Rangnekar</li>
+			<li class="rteleft"></li>
 			<li class="rteleft"><a href="http://www4.ncsu.edu/~sxu11/">Shiqian Xu</a></li>
 			<li class="rteleft">Yuxu Yang</li>
 			</ul>
 			<p class="rteleft"><strong>Past Student:</strong></p>
 			<ul>
 			<li class="rteleft">Linda Vue</li>
-			</ul>
-			<p class="rteleft">UNCC:</p>
-			<p class="rteleft"><strong>Faculty Members:</strong></p>
+			</ul>-->
+			<p class="rteleft">Contributors</p> Simson Garfinkel, Karthik Sheshadri</p>
+		<!--	<p class="rteleft"><strong>Faculty Members:</strong></p>
 				<ul>
 					<li class="rteleft"><a href="http://hci.uncc.edu/~richter/">Heather Richter Lipford</a></li>
 				</ul>
@@ -33,7 +33,7 @@
 			<p class="rteleft"><strong>Faculty Members:</strong></p>
 				<ul>
 					<li class="rteleft"><a href="http://www.usabart.nl/portfolio/#home.html">Bart Knijnenburg</a></li>
-				</ul>
+				</ul>-->
   		</div>
   		<!--
 		<div class="row">	
