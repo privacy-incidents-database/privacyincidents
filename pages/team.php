@@ -3,7 +3,7 @@
   <div class="container team">	
 		<div id="team-info">
 			<h2>About the team </h2>
-			<p> We are based at <a href="http://www.ncsu.edu">North Carolina State University</a>, UNC Charlotte and Clemson University</p>
+			<p> We are based at <a href="http://www.ncsu.edu">North Carolina State University</a>, UNC Charlotte, Clemson University and Rochester Institute of Technology</p>
 		</div>
 		<div class="content ol-md-4">
     		<p class="rteleft">NCSU:</p>
