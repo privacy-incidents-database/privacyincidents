@@ -24,7 +24,7 @@
 			<ul>
 			<li class="rteleft">Linda Vue</li>
 			</ul>-->
-			<p class="rteleft"><strong>Contributors</strong></p> Simson Garfinkel, Omkar Ghanekar, Andrew McNamara, Karthik Sheshadri, Akash Verma, Feifei Wang</p>
+			<p class="rteleft"><strong>Contributors</strong></p> Simson Garfinkel, Omkar Ghanekar, Andrew McNamara, Karthik Sheshadri, Mary Frances Theofanos, Akash Verma, Feifei Wang</p>
 		<!--	<p class="rteleft"><strong>Faculty Members:</strong></p>
 				<ul>
 					<li class="rteleft"><a href="http://hci.uncc.edu/~richter/">Heather Richter Lipford</a></li>
