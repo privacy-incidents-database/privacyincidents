@@ -64,9 +64,9 @@
 				}
 				else { 
 					$url_name1  = $link2;
-					//$url_name=explode('.', $urlname1) ;
-					//$publication= $url_name[1] ; 
-					$publication= $url_name1 ;
+				        $pub1 = file_get_contents($link2);
+				        preg_match("/\<title\>(.*)\<\/title\>/i",$pub1,$pub2);
+                                        publication= $pub2[1] ;
 
 				}
 				// adding changes to remove ID when no case study exists
