@@ -97,7 +97,7 @@
 					$tag = str_replace(' ', '', $tag);
 				}
                                 // changes the way the tags are displayed 
-				$tags2 = implode("&nbsp", $newTags);
+				$tags2 = implode(",", $newTags);
 				
 				echo '<tr>';
 				echo '<td>' .$newDate. '</td>';
