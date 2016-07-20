@@ -96,8 +96,8 @@
 					//Removes white space within a tag
 					$tag = str_replace(' ', '', $tag);
 				}
-
-				$tags2 = implode("&nbsp", $newTags);
+                                // changes the way the tags are displayed 
+				$tags2 = implode(" , ", $newTags);
 				
 				echo '<tr>';
 				echo '<td>' .$newDate. '</td>';
