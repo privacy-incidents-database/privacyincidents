@@ -65,7 +65,7 @@
 				else { 
 					$url_name1  = $link2;
 					$read_page=file_get_contents($link2);
-                                        preg_match("/<title.*?>[\n\r\s]*(.*)[\n\r\s]*<\/title>/", $read_page, $page_title);
+                                        
 				        publication= $page_title ;
 
 				}
