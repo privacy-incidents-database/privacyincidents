@@ -65,7 +65,7 @@
 				else {
 					$publication = $link2;
 				}
-				if ($caseStudy == "abc")
+				if ($caseStudy == "abc"){
 				        $incidentID1="" ;
 			        }
 				/*
@@ -103,7 +103,7 @@
 				echo '<td>' .$tags2. '</td>';
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
-				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID. '</a></td>';
+				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
 				echo '</tr>';		
 
 			}
