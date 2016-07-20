@@ -63,10 +63,7 @@
 					$publication = "USA Today";
 				}
 				else { 
-					$url_name1  = $link2;
-					$urlContents = file_get_contents($link2);
-                                        preg_match("/<title>(.*)<\/title>/i", $urlContents, $matches);
-				        $publication= $matches ;
+					$publication= $link2 ;
 
 				}
 				// adding changes to remove ID when no case study exists
