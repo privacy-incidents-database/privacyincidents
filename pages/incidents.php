@@ -62,8 +62,11 @@
 				} else if (strcmp($link2, "www.usatoday.com")==0){
 					$publication = "USA Today";
 				}
-				else {
-					$publication = basename($link2);
+				else { 
+					$url_name1  = $link2';
+					$url_name=explode('.', $urlname1) ;
+					$publication= $url_name[1]
+
 				}
 				// adding changes to remove ID when no case study exists
 				if ($caseStudy == "" ){
