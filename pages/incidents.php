@@ -65,6 +65,7 @@
 				else { 
 					$url_name1  = $link2;
 				        $pub1 = file_get_contents($link2);
+				        $pub1 = trim(preg_replace('/\s+/', ' ', $pub1));
 				        preg_match("/\<title\>(.*)\<\/title\>/i",$pub1,$pub2);
                                         publication= $pub2[1] ;
 
