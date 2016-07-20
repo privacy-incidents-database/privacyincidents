@@ -64,9 +64,7 @@
 				}
 				else { 
 					$url_name1  = $link2;
-					$read_page=file_get_contents($link2);
-                                        
-				        publication= $read_page ;
+				        publication= $link2 ;
 
 				}
 				// adding changes to remove ID when no case study exists
