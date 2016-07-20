@@ -48,6 +48,7 @@
 				$incidentID = $i[8];
 				$caseStudy = $i[9];
 				$publication="";
+				$incidentID1 =$incidentID;
 				if (strcmp($link2,"www.nytimes.com" ) == 0){
 					$publication = "New York Times";
 				} else if (strcmp($link2, "arstechnica.com") == 0) {
@@ -64,6 +65,9 @@
 				else {
 					$publication = $link2;
 				}
+				if ($caseStudy == " ")
+				        $incidentID1=" " ;
+			        }
 				/*
 				$who_company = $i[3];
 				$who_role = $i[4];
@@ -99,7 +103,7 @@
 				echo '<td>' .$tags2. '</td>';
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
-				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID. '</a></td>';
+				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
 				echo '</tr>';		
 
 			}
