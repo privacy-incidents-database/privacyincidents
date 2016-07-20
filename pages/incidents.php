@@ -63,7 +63,7 @@
 					$publication = "USA Today";
 				}
 				else { 
-					$url_name1  = $link2';
+					$url_name1  = $link2;
 					$url_name=explode('.', $urlname1) ;
 					$publication= $url_name[1] ; 
 
