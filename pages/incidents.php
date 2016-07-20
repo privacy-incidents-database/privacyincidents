@@ -63,7 +63,7 @@
 					$publication = "USA Today";
 				}
 				else {
-					$publication = $link2;
+					$publication = basename($link2);
 				}
 				// adding changes to remove ID when no case study exists
 				if ($caseStudy == "" ){
