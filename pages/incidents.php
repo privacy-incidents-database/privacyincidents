@@ -48,7 +48,7 @@
 				$incidentID = $i[8];
 				$caseStudy = $i[9];
 				$publication="";
-				$incidentID1 =$i[8];
+				$incidentID1 =$incidentID;
 				if (strcmp($link2,"www.nytimes.com" ) == 0){
 					$publication = "New York Times";
 				} else if (strcmp($link2, "arstechnica.com") == 0) {
@@ -65,7 +65,7 @@
 				else {
 					$publication = $link2;
 				}
-				if ($caseStudy == "abc"){
+				if ($caseStudy == " "){
 				        $incidentID1="" ;
 			        }
 				/*
