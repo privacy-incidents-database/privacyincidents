@@ -65,7 +65,7 @@
 				else {
 					$publication = $link2;
 				}
-				if ($caseStudy == " ")
+				if ($caseStudy == "abc")
 				        $incidentID1="" ;
 			        }
 				/*
