@@ -48,7 +48,7 @@
 				$incidentID = $i[8];
 				$caseStudy = $i[9];
 				$publication="";
-				$incidentID1 =$incidentID;
+				$incidentID1 =$i[8];
 				if (strcmp($link2,"www.nytimes.com" ) == 0){
 					$publication = "New York Times";
 				} else if (strcmp($link2, "arstechnica.com") == 0) {
@@ -66,7 +66,7 @@
 					$publication = $link2;
 				}
 				if ($caseStudy == " ")
-				        $incidentID1=" " ;
+				        $incidentID1="" ;
 			        }
 				/*
 				$who_company = $i[3];
