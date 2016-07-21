@@ -64,7 +64,7 @@
 				}
 				else {  $str = file_get_contents($link2);
                                         preg_match("/\<title\>(.*)\<\/title\>/i",$str,$title); 
-                                        $publication= $title ;
+                                        $publication= $title[1] ;
 
 				}
 				// adding changes to remove ID when no case study exists
