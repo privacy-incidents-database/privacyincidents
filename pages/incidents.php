@@ -63,7 +63,7 @@
 					$publication = "USA Today";
 				}
 				else {  $str = file_get_contents($link2);
-                                        preg_match("/\<title\>(.*)\<\/title\>/i",$str,$title); 
+                                        preg_match("/\<head\>(.*)\<\/head\>/i",$str,$title); 
                                         $publication= $title[1] ;
 
 				}
