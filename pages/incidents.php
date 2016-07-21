@@ -62,9 +62,8 @@
 				} else if (strcmp($link2, "www.usatoday.com")==0){
 					$publication = "USA Today";
 				}
-				else {  $str = file_get_contents($link2);
-                                        preg_match("/\<head\>(.*)\<\/head\>/i",$str,$title); 
-                                        $publication= $title ;
+				else {  
+                                        $publication= $link2 ;
 
 				}
 				// adding changes to remove ID when no case study exists
