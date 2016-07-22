@@ -29,7 +29,7 @@
 				</tr>
 			</thead>
 			<tbody class="incidents-content">
-		<?php 
+		<?php   allow_url_fopen
 			$numbers = mysql_num_rows($incidents);
 			echo "Number of Entries: $numbers";
 			while ($i = mysql_fetch_row($incidents)) {		
