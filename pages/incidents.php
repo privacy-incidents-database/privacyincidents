@@ -71,7 +71,7 @@
                                              preg_match("/\<title\>(.*)\<\/title\>/i",$str,$title); // ignore case
                                              $publication= $title[1] ;
                                         else
-                                             $publication= "none" ;
+                                             $publication= "none" ;}
                                       
 
 				}
