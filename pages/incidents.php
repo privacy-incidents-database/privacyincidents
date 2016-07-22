@@ -62,7 +62,7 @@
 				} else if (strcmp($link2, "www.usatoday.com")==0){
 					$publication = "USA Today";
 				}
-				else {  $str = readfile($link2);
+				else {  $str = file_get_contents($link2);
 				       
 				        //$tg2 = implode("", $title); 
 				        // $publication= $tg2 ;
