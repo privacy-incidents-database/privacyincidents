@@ -62,7 +62,18 @@
 				} else if (strcmp($link2, "www.usatoday.com")==0){
 					$publication = "USA Today";
 				}
-				else {  $publication= $link2 ;
+				else {  //$publication= $link2 ;
+				        $ch = curl_init();
+                                        $site = "http://mcdonalds.com/";
+                                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+                                        curl_setopt($ch, CURLOPT_URL, $site);
+                                        $result= curl_exec($ch);
+                                        curl_close($ch);		
+
+                                        $dom = new DOMDocument();
+                                        @$dom->loadHTML($result);
+                                        $title = $dom->getElementsByTagName("title");
+                                        $publication = $title[1];
                                       
 
 				}
