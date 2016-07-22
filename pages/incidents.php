@@ -29,7 +29,7 @@
 				</tr>
 			</thead>
 			<tbody class="incidents-content">
-		<?php   allow_url_fopen ;
+		<?php   
 			$numbers = mysql_num_rows($incidents);
 			echo "Number of Entries: $numbers";
 			while ($i = mysql_fetch_row($incidents)) {		
@@ -63,15 +63,15 @@
 					$publication = "USA Today";
 				}
 				else {  $str = file_get_contents($link2);
-				       
+				        publication=$str
 				        //$tg2 = implode("", $title); 
 				        // $publication= $tg2 ;
 				        if(strlen($str)>0){
                                              $str = trim(preg_replace('/\s+/', ' ', $str)); // supports line breaks inside <title>
                                              preg_match("/\<title\>(.*)\<\/title\>/i",$str,$title); // ignore case
                                              $publication= $title[1] ;}
-                                        else
-                                             $publication= "none" ;
+                                        //else
+                                           ///  $publication= "none" ;
                                       
 
 				}
