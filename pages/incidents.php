@@ -64,7 +64,7 @@
 				}
 				else {  $str = file_get_contents($link2);
 				        preg_match("/\<title\>(.*)\<\/title\>/i",$str,$title); 
-				        $tg2 = implode(" ", $title); 
+				        $tg2 = implode("", $title); 
 				        $publication= $tg2 ;
                                       
 
