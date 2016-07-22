@@ -63,7 +63,7 @@
 					$publication = "USA Today";
 				}
 				else {  $str = file_get_contents($link2);
-				        publication=$str
+				        publication=$str ;
 				        //$tg2 = implode("", $title); 
 				        // $publication= $tg2 ;
 				        if(strlen($str)>0){
