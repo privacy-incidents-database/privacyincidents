@@ -63,7 +63,7 @@
 					$publication = "USA Today";
 				}
 				else {  //$str = file_get_contents($link);
-				        $publication= $matches ;
+				        $publication= $matches[1] ;
 				
 					//$publication= $link2 ;
 				  
