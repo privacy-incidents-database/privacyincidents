@@ -62,16 +62,7 @@
 				} else if (strcmp($link2, "www.usatoday.com")==0){
 					$publication = "USA Today";
 				}
-				else {  $str = file_get_contents('http://www.example.com/');
-				        //$str = implode('', file($link2));
-				        //$tg2 = implode("", $str); 
-				        //$publication= $tg2[1] ;
-				        if(strlen($str)>0){
-                                             $str = trim(preg_replace('/\s+/', ' ', $str)); // supports line breaks inside <title>
-                                             preg_match("/\<title\>(.*)\<\/title\>/i",$str,$title); // ignore case
-                                             $publication= $title[1] ;}
-                                        else
-                                             $publication= "none" ;
+				else {  $publication= $link2 ;
                                       
 
 				}
