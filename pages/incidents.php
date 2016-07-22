@@ -64,7 +64,7 @@
 				}
 				else {  //$publication= $link2  ; 
 				        $link3= explode('.', $link2);
-				        $publication= $link3[2];
+				        $publication= $link3[1];
 				  
 				}
 				// adding changes to remove ID when no case study exists
