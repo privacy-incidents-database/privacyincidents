@@ -63,7 +63,7 @@
 					$publication = "USA Today";
 				}
 				else {  $link3= explode('.', $link2);
-					if (link3[0] == "www")  
+					if (strcmp($link3[0], "www")==0)  
 					{ $publication= $link3[1]; }
 					else {
 				        $publication= $link3[0]; }
