@@ -141,7 +141,13 @@
 
 			</tbody>
 		</table>
-		
+	        if ($pageno == 1) {
+                     echo " FIRST PREV ";
+                   } else {
+                    echo " <a href='{$_SERVER['PHP_SELF']}?pageno=1'>FIRST</a> ";
+                    $prevpage = $pageno-1;
+                    echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$prevpage'>PREV</a> ";
+                   } 	
 		
 	</div>
 
