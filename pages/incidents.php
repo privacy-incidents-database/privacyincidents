@@ -165,7 +165,7 @@
                  
         <?php
          
-	$word = window.getSelection().toString() ; 
+	$word = document.getSelection().toString() ; 
 	echo $word
         
         ?>
