@@ -36,9 +36,6 @@
 		die();
 	}
 	
-	$word = window.getSelection().toString() ; 
-	echo $word
-
 ?>
 
 <div class="container container-fluid">
@@ -165,4 +162,11 @@
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
                  } 
                  ?>
+                 
+        <?php
+         
+	$word = window.getSelection().toString() ; 
+	echo $word
+        
+        ?>
 <?php include 'layout/footer.html';?>
