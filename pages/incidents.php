@@ -11,7 +11,7 @@
             $pageno = 1;
             } 
             
-        $query = "SELECT count(*) FROM table WHERE review=1 ORDER BY date_occurred DESC";
+        $query = "SELECT count(*) FROM `Privacy incidents` WHERE review=1 ORDER BY date_occurred DESC";
         $result = mysql_query($query, $db) or trigger_error("SQL", E_USER_ERROR);
         $query_data = mysql_fetch_row($result);
         $numrows = $query_data[0];
