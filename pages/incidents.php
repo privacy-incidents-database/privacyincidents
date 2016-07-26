@@ -26,9 +26,10 @@
         if ($pageno < 1) {
             $pageno = 1;
         } // if
-        
        
-	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID`, `case study` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC LIMIT $rows_per_page");
+       $limit = 'LIMIT ' .($pageno - 1) * $rows_per_page .',' .$rows_per_page; 
+       
+	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID`, `case study` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC $limit");
 	if (mysql_num_rows($incidents) == 0) {
 		echo 'No incidents found!'; 
 		die();
