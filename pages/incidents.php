@@ -4,12 +4,38 @@
 
 	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
 	mysql_select_db(database);
+        
+        if (isset($_GET['pageno'])) {
+            $pageno = $_GET['pageno'];
+            } else {
+            $pageno = 1;
+            } 
+            
+        $query = "SELECT count(*) FROM table WHERE review=1 ORDER BY date_occurred DESC";
+        $result = mysql_query($query, $db) or trigger_error("SQL", E_USER_ERROR);
+        $query_data = mysql_fetch_row($result);
+        $numrows = $query_data[0];
+        
+        $rows_per_page = 15;
+        $lastpage      = ceil($numrows/$rows_per_page);
+        
+        $pageno = (int)$pageno;
+        if ($pageno > $lastpage) {
+            $pageno = $lastpage;
+        } // if
+        if ($pageno < 1) {
+            $pageno = 1;
+        } // if
+        
+        $limit = 'LIMIT ' .($pageno - 1) * $rows_per_page .',' .$rows_per_page;
 
-	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID`, `case study` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC");
+	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID`, `case study` FROM `Privacy incidents` $limit where review=1 ORDER BY date_occurred DESC");
 	if (mysql_num_rows($incidents) == 0) {
 		echo 'No incidents found!'; 
 		die();
 	}
+	
+	
 
 ?>
 
@@ -116,6 +142,14 @@
 
 			</tbody>
 		</table>
+		
+		if ($pageno == 1) {
+                    echo " FIRST PREV ";
+                } else {
+                  echo " <a href='{$_SERVER['PHP_SELF']}?pageno=1'>FIRST</a> ";
+                  $prevpage = $pageno-1;
+                  echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$prevpage'>PREV</a> ";
+}
 	</div>
 
 <?php include 'layout/footer.html';?>
