@@ -62,12 +62,12 @@
 				} else if (strcmp($link2, "www.usatoday.com")==0){
 					$publication = "USA Today";
 				}
-				else {  $link3= explode('.', $link2);
-					if (strcmp($link3[0], "www")==0)  
-					{ $publication= $link3[1]; }
-					else {
-				        $publication= $link3[0]; }
-				  
+				else { // $link3= explode('.', $link2);
+				//	if (strcmp($link3[0], "www")==0)  
+				//	{ $publication= $link3[1]; }
+				//	else {
+				  //      $publication= $link3[0]; }
+				          $publication= $link2 ; 
 				}
 				// adding changes to remove ID when no case study exists
 				if ($caseStudy == "" ){
