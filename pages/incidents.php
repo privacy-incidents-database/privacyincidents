@@ -15,7 +15,7 @@
         $result = mysql_query($query) or trigger_error("SQL", E_USER_ERROR);
         $query_data = mysql_fetch_row($result);
         $numrows = $query_data[0];
-        
+        echo "Total number of Entries: $numrows";
         $rows_per_page = 5;
         $lastpage      = ceil($numrows/$rows_per_page);
         
@@ -57,7 +57,7 @@
 			<tbody class="incidents-content">
 		<?php   
 			$numbers = mysql_num_rows($incidents);
-			echo "Number of Entries: $numbers";
+			//echo "Number of Entries: $numbers";
 			while ($i = mysql_fetch_row($incidents)) {		
 				$date =  $i[0];
 				$newDate = date("Y-m", strtotime($date));	
