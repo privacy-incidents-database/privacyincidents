@@ -4,7 +4,8 @@
 
 	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
 	mysql_select_db(database);
-        
+        // adding changes to accomodate pagination 
+        // reference : http://www.tonymarston.net/php-mysql/pagination.html 
         if (isset($_GET['pageno'])) {
             $pageno = $_GET['pageno'];
             } else {
