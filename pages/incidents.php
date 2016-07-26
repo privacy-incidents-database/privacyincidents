@@ -29,7 +29,7 @@
         
         $limit = 'LIMIT ' .$rows_per_page;
         echo $limit ; 
-	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID`, `case study` FROM `Privacy incidents` LIMIT 15 where review=1 ORDER BY date_occurred DESC");
+	$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID`, `case study` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC LIMIT 15");
 	if (mysql_num_rows($incidents) == 0) {
 		echo 'No incidents found!'; 
 		die();
@@ -143,13 +143,7 @@
 			</tbody>
 		</table>
 		
-		if ($pageno == 1) {
-                    echo " FIRST PREV ";
-                } else {
-                  echo " <a href='{$_SERVER['PHP_SELF']}?pageno=1'>FIRST</a> ";
-                  $prevpage = $pageno-1;
-                  echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$prevpage'>PREV</a> ";
-}
+		
 	</div>
 
 <?php include 'layout/footer.html';?>
