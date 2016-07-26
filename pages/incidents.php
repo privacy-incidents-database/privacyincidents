@@ -148,6 +148,15 @@
                     $prevpage = $pageno-1;
                     echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$prevpage'>PREV</a> ";
                    } 	
+                echo " ( Page $pageno of $lastpage ) ";
+                
+                if ($pageno == $lastpage) {
+                   echo " NEXT LAST ";
+                  } else {
+                 $nextpage = $pageno+1;
+                echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
+                echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
+                 } 
 		
 	</div>
 
