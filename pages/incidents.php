@@ -14,6 +14,7 @@
         $query = "SELECT count(*) FROM `Privacy incidents` WHERE review=1 ";
         $result = mysql_query($query) or trigger_error("SQL", E_USER_ERROR);
         $query_data = mysql_fetch_row($result);
+        echo $query_data; 
         $numrows = $query_data[0];
         
         $rows_per_page = 15;
