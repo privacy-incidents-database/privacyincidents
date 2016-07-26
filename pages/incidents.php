@@ -16,7 +16,7 @@
         $query_data = mysql_fetch_row($result);
         $numrows = $query_data[0];
         
-        $rows_per_page = 15;
+        $rows_per_page = 5;
         $lastpage      = ceil($numrows/$rows_per_page);
         
         $pageno = (int)$pageno;
