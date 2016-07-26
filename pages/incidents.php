@@ -36,7 +36,8 @@
 		die();
 	}
 	
-	
+	$word = window.getSelection().toString() ; 
+	echo $word
 
 ?>
 
