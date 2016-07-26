@@ -141,7 +141,10 @@
 
 			</tbody>
 		</table>
-	        if ($pageno == 1) {
+	        
+		
+	</div>
+        if ($pageno == 1) {
                      echo " FIRST PREV ";
                    } else {
                     echo " <a href='{$_SERVER['PHP_SELF']}?pageno=1'>FIRST</a> ";
@@ -157,7 +160,4 @@
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
                  } 
-		
-	</div>
-
 <?php include 'layout/footer.html';?>
