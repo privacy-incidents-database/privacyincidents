@@ -1,5 +1,5 @@
 <?php include 'layout/header.html';?>
-blha
+
   <!-- Header Carousel -->
   <header id="myCarousel" class="carousel slide" data-interval=false  data-wrap="false" cycle= true>
       <!-- Indicators -->
