@@ -11,7 +11,7 @@
       </ol>
  
       <!-- Wrapper for slides -->
-      <div class="carousel-inner">
+      <div class="carousel-inner" data-interval=false pause=true>
           <div class="item active">
               <!--<div class="fill" style="background-image:url('/privacyincidents/assets/imgs/snapchat.jpg');">
               </div>
