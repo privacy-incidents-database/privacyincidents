@@ -1,7 +1,7 @@
 <?php include 'pages/layout/header.html';?>
 
   <!-- Header Carousel -->
-  <header id="myCarousel" class="carousel slide" data-interval=6000 pause= 'hover' data-wrap="false" cycle= false>
+  <header id="myCarousel" class="carousel slide" data-interval=false pause= 'hover' data-wrap="false" cycle= false>
       <!-- Indicators -->
       <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0"></li>
