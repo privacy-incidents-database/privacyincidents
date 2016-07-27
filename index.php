@@ -11,7 +11,7 @@
       </ol>
  <?php $(function () {
           $('#myCarousel').carousel('pause');
-    });?>
+    })?>
 
       
       <!-- Wrapper for slides -->
