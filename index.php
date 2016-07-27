@@ -1,7 +1,7 @@
 <?php include 'pages/layout/header.html';?>
 
   <!-- Header Carousel -->
-  <header id="myCarousel" class="carousel slide" data-interval=false pause=false >
+  <header id="myCarousel" class="carousel slide" data-interval=false pause=true>
       <!-- Indicators -->
       <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0"></li>
@@ -9,11 +9,7 @@
           <li data-target="#myCarousel" data-slide-to="2"></li>
           <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
- <?php $(function () {
-          $('#myCarousel').carousel('pause');
-    })?>
-
-      
+ 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
           <div class="item active">
