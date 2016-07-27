@@ -326,7 +326,7 @@ if (typeof jQuery === 'undefined') {
 
   Carousel.DEFAULTS = {
     interval: false,
-    pause: 'hover',
+    pause: false,
     wrap: false,
     keyboard: true
   }
@@ -421,7 +421,7 @@ if (typeof jQuery === 'undefined') {
     this.$element.trigger(slideEvent)
     if (slideEvent.isDefaultPrevented()) return
 
-    this.sliding = true
+    this.sliding = false
 
     isCycling && this.pause()
 
