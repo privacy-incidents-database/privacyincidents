@@ -28,7 +28,7 @@
               		<img src="/privacyincidents/assets/imgs/snapchat.jpg" alt="Snapchat" style="width: 45%;">
               	</div>
               	<div class="col-md-6" style="float: left; margin-top: 10.5%; padding-right: 10%;">
-              		<h3 class="caption">enapchat's claims of the ephemerality of snaps found to be misleading.</h3>
+              		<h3 class="caption">Snapchat's claims of the ephemerality of snaps found to be misleading.</h3>
                 	<p class="tags">#5/2014 #World #SnapChat #UnexpectedProductBehavior #Citizens</p>
               	</div>
               </div>
