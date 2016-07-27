@@ -77,6 +77,8 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">
           <span class="icon-next"></span>
       </a>
+      <a  $('#homeCarousel').carousel('pause')>
+      	 </a>
   </header>
 
 
