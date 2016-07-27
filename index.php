@@ -9,7 +9,10 @@
           <li data-target="#myCarousel" data-slide-to="2"></li>
           <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
-      
+    $(function () {
+          $('#myCarousel').carousel('pause');
+    });
+
       
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
