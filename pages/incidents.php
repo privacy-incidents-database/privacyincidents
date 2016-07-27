@@ -17,7 +17,7 @@
         $query_data = mysql_fetch_row($result);
         $numrows = $query_data[0];
         echo "Total number of Entries: $numrows";
-        $rows_per_page = 5;
+        $rows_per_page = 10;
         $lastpage      = ceil($numrows/$rows_per_page);
         
         $pageno = (int)$pageno;
@@ -50,7 +50,7 @@
 					<th class="tags col-md-4">Tags</th>
 					<th class="descr">Description</th>
 					<th class="resource col-md-1">Resource</th>
-					<th class="incidentID col-md-2">ID</th>
+					<th class="incidentID col-md-2">Case Study</th>
 				</tr>
 			</thead>
 			<tbody class="incidents-content">
