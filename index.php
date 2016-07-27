@@ -9,7 +9,14 @@
           <li data-target="#myCarousel" data-slide-to="2"></li>
           <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
-
+      
+      $(function() {
+             $('.myCarousel').each(function(){
+                   $(this).carousel({
+                            interval: false
+                                         });
+                    });
+                  });​
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
           <div class="item active">
