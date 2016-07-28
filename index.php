@@ -1,7 +1,7 @@
 <?php include 'pages/layout/header.html';?>
 
   <!-- Header Carousel -->
-  <header id="myCarousel" class="carousel slide" data-ride="carousel" data-interval=false pause=true>
+  <header id="myCarousel" class="carousel slide"  data-interval=false pause=true>
       <!-- Indicators -->
       <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0"></li>
@@ -11,7 +11,7 @@
       </ol>
  
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" data-interval=false pause=true>
+      <div class="carousel-inner" >
           <div class="item active">
               <!--<div class="fill" style="background-image:url('/privacyincidents/assets/imgs/snapchat.jpg');">
               </div>
@@ -77,8 +77,7 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">
           <span class="icon-next"></span>
       </a>
-      <a  $('#myCarousel').carousel('pause')>
-      	 </a>
+     
   </header>
 
 
