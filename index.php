@@ -1,7 +1,7 @@
 <?php include 'pages/layout/header.html';?>
 
   <!-- Header Carousel -->
-  <header id="myCarousel" class="carousel slide"  data-interval=false pause=true>
+  <header id="myCarousel" class="carousel slide"  data-interval=false pause=true data-wrap="false">
       <!-- Indicators -->
       <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0"></li>
@@ -77,8 +77,7 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">
           <span class="icon-next"></span>
       </a>
-     
-  </header>
+ </header>
 
 
   <div class="container container-fluid">
