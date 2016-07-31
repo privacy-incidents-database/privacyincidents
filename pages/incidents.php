@@ -138,9 +138,12 @@
 					
 				echo '<tr>';
 				echo '<td>' .$newDate. '</td>';
+				
+				echo '<td>'
 				foreach ($tags2 as &$tag_each) { 
-				echo '<td><button>' .$tag_each. '</button></td>'; 
+				    '<button>' .$tag_each. '</button>'; 
 				}
+				'</td>'
 				//echo '<td>' .$tags2. '</td>';
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
