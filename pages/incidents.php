@@ -134,10 +134,11 @@
 				echo '<tr>';
 				echo '<td>' .$newDate. '</td>';
 				//echo '<td><button>' .$tags2. '</button></td>'; 
-			        //'<td>'
+			        echo '<td>'
 			        foreach ($newTags as &$tag1){
-				   echo '<td><button>' .$tag1. '</button><td>'; 
+				  '<button>' .$tag1. '</button>'; 
 				}
+				<'/td'>
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
