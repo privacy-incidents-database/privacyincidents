@@ -38,8 +38,7 @@
 	
 ?>
  
-       <div>
-        <script type=\"text/javascript\">
+       <script type=\"text/javascript\">
            x.Selector = {};
            x.Selector.getSelected = function() {
            var t = '';
@@ -60,7 +59,7 @@
            });
            });
       </script>
-     </div>
+     
 
 <div class="container container-fluid">
 	<div>
