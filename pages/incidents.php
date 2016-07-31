@@ -131,9 +131,7 @@
                                 // changes the way the tags are displayed 
 				$tags2 = implode(" , ", array_filter($newTags));
 				
-				foreach ($tags2 as &$tag_new) {
-					<input type="submit" value=$tag_new> ;
-				}
+				
 					
 					
 					
