@@ -130,6 +130,7 @@
                                 
 				$tags2 = implode(" , ", array_filter($newTags));
 			        foreach (array_filter($newTags) as &$tag1){
+			           echo $tag1; 
 			           if (strcmp($tag1, " ")!==0){
 			           $button_panel =$button_panel .'<button>' .$tag1. '</button>'.","; 
   				}	}
