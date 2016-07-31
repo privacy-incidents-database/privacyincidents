@@ -37,29 +37,11 @@
 	}
 	
 ?>
- 
-       <script type=\"text/javascript\">
-           x.Selector = {};
-           x.Selector.getSelected = function() {
-           var t = '';
-           if (window.getSelection) {
-               t = window.getSelection();
-            } else if (document.getSelection) {
-               t = document.getSelection();
-             } else if (document.selection) {
-               t = document.selection.createRange().text;
-             }
-           return t;
-            }
-
-          $(document).ready(function() {
-          $(document).bind("mouseup", function() {
-             var mytext = x.Selector.getSelected();
-             alert(mytext);
-           });
-           });
-      </script>
-     
+   <p>
+       document.getElementById("myBtn").addEventListener("click", function(){
+    document.getElementById("demo").innerHTML = "Hello World";
+});
+   </p>     
 
 <div class="container container-fluid">
 	<div>
