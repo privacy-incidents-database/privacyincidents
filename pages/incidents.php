@@ -129,7 +129,7 @@
                                 // changes the way the tags are displayed 
 				$tags2 = implode(" , ", array_filter($newTags));
 			        foreach ($newTags as &$tag1){
- 				   $button_panel ='<button>' .$tag1. '</button>';
+ 				   $button_panel =$button_panel .'<button>' .$tag1. '</button>';
   				}	
 				echo $button_panel ;
 					
