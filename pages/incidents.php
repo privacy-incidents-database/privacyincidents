@@ -163,7 +163,7 @@
                  } 
                  ?>
                  
-        
+        <?php
          
 	$('#showSelected').on('click', function(){
     
@@ -176,6 +176,6 @@
     
        alert(text);       
        });
-        
+       ?>
        
 <?php include 'layout/footer.html';?>
