@@ -141,9 +141,9 @@
 				
 				echo '<td>'
 				foreach ($tags2 as &$tag_each) { 
-				    '<button>' .$tag_each. '</button>'; 
+				    '<button>' .$tag_each. '</button>' 
 				}
-				'</td>'
+				'</td>' ;
 				//echo '<td>' .$tags2. '</td>';
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
