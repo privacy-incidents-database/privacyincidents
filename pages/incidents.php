@@ -39,27 +39,28 @@
 ?>
  
        <div>
+        <script type=\"text/javascript\">
+           x.Selector = {};
+           x.Selector.getSelected = function() {
+           var t = '';
+           if (window.getSelection) {
+               t = window.getSelection();
+            } else if (document.getSelection) {
+               t = document.getSelection();
+             } else if (document.selection) {
+               t = document.selection.createRange().text;
+             }
+           return t;
+            }
 
-x.Selector = {};
-x.Selector.getSelected = function() {
-    var t = '';
-    if (window.getSelection) {
-        t = window.getSelection();
-    } else if (document.getSelection) {
-        t = document.getSelection();
-    } else if (document.selection) {
-        t = document.selection.createRange().text;
-    }
-    return t;
-}
-
-$(document).ready(function() {
-    $(document).bind("mouseup", function() {
-        var mytext = x.Selector.getSelected();
-        alert(mytext);
-    });
-});
-</div>
+          $(document).ready(function() {
+          $(document).bind("mouseup", function() {
+             var mytext = x.Selector.getSelected();
+             alert(mytext);
+           });
+           });
+      </script>
+     </div>
 
 <div class="container container-fluid">
 	<div>
