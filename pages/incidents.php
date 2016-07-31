@@ -130,9 +130,9 @@
 				$tags2 = implode(" , ", array_filter($newTags));
 				
 				foreach ($newTags as &$tag1){
-				   echo $tag1 ;
+				   $button_panel =<button> $tag1 </button> ;
 				}
-				//echo $button_panel ; 
+				echo $button_panel ; 
 					
 				
 				
