@@ -163,7 +163,7 @@
                  } 
                  ?>
                  
-        <?php
+        <script>
          
 	$('#showSelected').on('click', function(){
     
@@ -176,6 +176,6 @@
     
        alert(text);       
        });
-       ?>
+       </script>
        
 <?php include 'layout/footer.html';?>
