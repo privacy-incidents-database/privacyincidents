@@ -131,7 +131,7 @@
 			        foreach ($newTags as &$tag1){
  				   $button_panel ='<button>' $tag1 '</button>';
   				}	
-				echo $button_panel
+				echo $button_panel ;
 					
 				echo '<tr>';
 				echo '<td>' .$newDate. '</td>';
