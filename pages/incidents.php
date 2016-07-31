@@ -130,9 +130,9 @@
 				$tags2 = implode(" , ", array_filter($newTags));
 				
 				for each ($newTags as &$tag1){
-				   $button_panel= <button >$tag1</button> ;
+				   echo $tag1 ;
 				}
-				echo $button_panel ; 
+				//echo $button_panel ; 
 					
 				
 				
