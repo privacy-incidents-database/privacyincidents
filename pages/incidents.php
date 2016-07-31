@@ -138,7 +138,7 @@
 			        foreach ($newTags as &$tag1){
 				  '<button>' .$tag1. '</button>'; 
 				}
-				<'/td'>
+			        '</td>'
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
