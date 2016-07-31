@@ -128,17 +128,15 @@
 				}
                                 // changes the way the tags are displayed 
 				$tags2 = implode(" , ", array_filter($newTags));
-				
-				
+			        foreach ($newTags as &$tag1){
+ 				   $button_panel ='<button>' $tag1 '</button>';
+  				}	
+				echo $button_panel
 					
 				echo '<tr>';
 				echo '<td>' .$newDate. '</td>';
-				//echo '<td><button>' .$tags2. '</button></td>'; 
-			        echo '<td>'
-			        foreach ($newTags as &$tag1){
-				  '<button>' .$tag1. '</button>' 
-				}
-			        '</td>' ;
+				echo '<td><button>' .$tags2. '</button></td>'; 
+			        
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
