@@ -136,7 +136,7 @@
 				//echo '<td><button>' .$tags2. '</button></td>'; 
 			        //'<td>'
 			        foreach ($newTags as &$tag1){
-				   echo '<td><button>' .$tags1. '</button><td>'; 
+				   echo '<td><button>' .$tag1. '</button><td>'; 
 				}
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
