@@ -131,15 +131,16 @@
                                 // changes the way the tags are displayed 
 				$tags2 = implode(" , ", array_filter($newTags));
 				
-				for each $tags2 as $tag{
-					<button >$tag</button> ;
-				}
+				//for each $tags2 as $tag{
+			//		<button >$tag</button> ;
+			//	}
 					
 					
 					
 					
 				echo '<tr>';
 				echo '<td>' .$newDate. '</td>';
+				echo '<button' .$tags2. '<button>'; 
 				echo '<td>' .$tags2. '</td>';
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
