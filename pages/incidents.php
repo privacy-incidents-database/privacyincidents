@@ -37,22 +37,28 @@
 	}
 	
 ?>
-       <head>
-       <script type="text/javascript">
-         
-	$('#showSelected').on('click', function(){
-    
-        var text = "";
-        if (window.getSelection) {
-           text = window.getSelection().toString();
-        } else if (document.selection && document.selection.type != "Control") {
-           text = document.selection.createRange().text;
-        }
-    
-       alert(text);       
-       });
-       </script>
-       </head>
+       <div>
+
+x.Selector = {};
+x.Selector.getSelected = function() {
+    var t = '';
+    if (window.getSelection) {
+        t = window.getSelection();
+    } else if (document.getSelection) {
+        t = document.getSelection();
+    } else if (document.selection) {
+        t = document.selection.createRange().text;
+    }
+    return t;
+}
+
+$(document).ready(function() {
+    $(document).bind("mouseup", function() {
+        var mytext = x.Selector.getSelected();
+        alert(mytext);
+    });
+});
+</div>
 <div class="container container-fluid">
 	<div>
 		<h2 id="incidents-title">Privacy Incidents</h2>
