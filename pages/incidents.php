@@ -142,7 +142,7 @@
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
 				echo '</tr>';		
-                                $button_panel="" ;
+                                unset $button_panel ;
 			}
 		?>	
 
