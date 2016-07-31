@@ -133,7 +133,7 @@
 			           $button_panel =$button_panel .'<button>' .$tag1. '</button>'.","; 
   				}	
 				//echo $button_panel ;
-					
+				array_filter($button_panel) ;	
 				echo '<tr>';
 				echo '<td>' .$newDate. '</td>';
 				//echo '<td><button>' .$tags2. '</button></td>'; 
