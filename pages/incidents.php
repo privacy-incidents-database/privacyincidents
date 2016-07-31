@@ -131,12 +131,12 @@
 			        foreach ($newTags as &$tag1){
  				   $button_panel =$button_panel .'<button>' .$tag1. '</button>';
   				}	
-				echo $button_panel ;
+				//echo $button_panel ;
 					
 				echo '<tr>';
 				echo '<td>' .$newDate. '</td>';
-				echo '<td><button>' .$tags2. '</button></td>'; 
-			        
+				//echo '<td><button>' .$tags2. '</button></td>'; 
+			        echo '<td><button>' .$button_panel. '</button></td>'; 
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
