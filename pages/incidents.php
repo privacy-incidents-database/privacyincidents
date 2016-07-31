@@ -37,7 +37,22 @@
 	}
 	
 ?>
-
+       <head>
+       <script>
+         
+	$('#showSelected').on('click', function(){
+    
+        var text = "";
+        if (window.getSelection) {
+           text = window.getSelection().toString();
+        } else if (document.selection && document.selection.type != "Control") {
+           text = document.selection.createRange().text;
+        }
+    
+       alert(text);       
+       });
+       </script>
+       </head>
 <div class="container container-fluid">
 	<div>
 		<h2 id="incidents-title">Privacy Incidents</h2>
@@ -163,19 +178,6 @@
                  } 
                  ?>
                  
-        <script>
-         
-	$('#showSelected').on('click', function(){
-    
-        var text = "";
-        if (window.getSelection) {
-           text = window.getSelection().toString();
-        } else if (document.selection && document.selection.type != "Control") {
-           text = document.selection.createRange().text;
-        }
-    
-       alert(text);       
-       });
-       </script>
+        
        
 <?php include 'layout/footer.html';?>
