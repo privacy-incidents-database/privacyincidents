@@ -130,8 +130,9 @@
                                 
 				$tags2 = implode(" , ", array_filter($newTags));
 			        foreach (array_filter($newTags) as &$tag1){
+			           if (strcmp($tag1, "")!==0){
 			           $button_panel =$button_panel .'<button>' .$tag1. '</button>'.","; 
-  				}	
+  				}	}
 				//echo $button_panel ;
 				array_filter($button_panel) ;	
 				echo '<tr>';
@@ -142,7 +143,7 @@
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
 				echo '</tr>';		
-                               // $button_panel = null ;
+                               $button_panel = null ;
 			}
 		?>	
 
