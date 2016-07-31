@@ -132,7 +132,7 @@
 				$tags2 = implode(" , ", array_filter($newTags));
 				
 				for each tags2 as tag{
-					<button >tag</button>
+					<button >tag</button> ;
 				}
 					
 					
