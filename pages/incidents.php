@@ -37,11 +37,9 @@
 	}
 	
 ?>
-   <p>
-       document.getElementById("myBtn").addEventListener("click", function(){
-    document.getElementById("demo").innerHTML = "Hello World";
-});
-   </p>     
+   <div>
+      <button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+   </div>     
 
 <div class="container container-fluid">
 	<div>
