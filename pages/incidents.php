@@ -37,7 +37,8 @@
 	}
 	
 ?>
-       <div>
+ <script>
+       <head>
 
 x.Selector = {};
 x.Selector.getSelected = function() {
@@ -58,7 +59,8 @@ $(document).ready(function() {
         alert(mytext);
     });
 });
-</div>
+</head>
+</script>
 <div class="container container-fluid">
 	<div>
 		<h2 id="incidents-title">Privacy Incidents</h2>
