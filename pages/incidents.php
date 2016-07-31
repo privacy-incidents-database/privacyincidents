@@ -38,7 +38,7 @@
 	
 ?>
        <head>
-       <script>
+       <script type="text/javascript">
          
 	$('#showSelected').on('click', function(){
     
