@@ -127,7 +127,7 @@
 					$tag = str_replace(' ', '', $tag);
 				}
                                 // changes the way the tags are displayed 
-                                $button_panel=""
+                                $button_panel="" ;
 				$tags2 = implode(" , ", array_filter($newTags));
 			        foreach ($tags2 as &$tag1){
  				   $button_panel =$button_panel .'<button>' .$tag1. '</button>';
