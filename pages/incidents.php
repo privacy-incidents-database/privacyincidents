@@ -36,13 +36,7 @@
 	}
 	
 ?>
-       <head>
-       <script>
-         function changeColor($element) {
-           echo $element;
-        }
-        </script> 
-       </head>
+       
 <div class="container container-fluid">
 	<div>
 		<h2 id="incidents-title">Privacy Incidents</h2>
@@ -197,7 +191,10 @@
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
                  } 
                  ?>
-                 
+        <?php
+          function changeColor($fname) {
+          echo "$fname ";
+        }        
         
        
 <?php include 'layout/footer.html';?>
