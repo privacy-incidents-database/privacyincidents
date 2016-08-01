@@ -143,14 +143,16 @@
                                //    }
                                //array_shift($tags1) ;
 			        foreach ($tags1 as &$tag1){
-			           $position = array_search($tag1, $tags1);
+			           //$position = array_search($tag1, $tags1);
 			           //echo $position  ;
-			           if ($position == 0) {
+			           //if ($position == 0) {
 			           	//echo $tag1; 
-			           	$button_panel='<button>'.$tag1.'</button>' ; 
-			           }
-			           else {
-			             $button_panel =$button_panel." , ".'<button>'.$tag1.'</button>'; }
+			           //	$button_panel='<button>'.$tag1.'</button>' ; 
+			           //}
+			           //else {
+			             $button_panel =$button_panel." , ".'<button>'.$tag1.'</button>'; 
+			        	
+			        //}
   				}
   				
 				//echo $button_panel ;
@@ -164,7 +166,7 @@
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
 				echo '</tr>';	
 				//reset($button_panel);
-                                //$button_panel = array(); ;
+                                $button_panel = "" ;
 			}
 		?>	
 
