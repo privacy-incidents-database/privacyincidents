@@ -144,9 +144,9 @@
                                //array_shift($tags1) ;
 			        foreach ($tags1 as &$tag1){
 			           $position = array_search($tag1, $tags1);
-			           echo $position  ;
+			           //echo $position  ;
 			           if ($position == 0) {
-			           	echo $tag1; 
+			           	//echo $tag1; 
 			           	$button_panel='<button>'.$tag1.'</button>' ; 
 			           }
 			           else {
@@ -158,7 +158,7 @@
 				echo '<tr>';
 				echo '<td>' .$newDate. '</td>';
 				//echo '<td><button>' .$tags2. '</button></td>'; 
-			        echo '<td><button>' .$button_panel. '</button></td>'; 
+			        echo '<td> .$button_panel. </td>'; 
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
