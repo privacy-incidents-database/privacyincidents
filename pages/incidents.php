@@ -129,7 +129,8 @@
                                 // changes the way the tags are displayed 
                                 
 				$tags2 = implode(" , ", array_filter($newTags));
-				$tags1= array_filter($newTags) ; 
+				//print_r(array_filter($linksArray, function($value) { return $value !== ''; }));
+				$tags1= array_filter($newTags,function($value) { return $value !== ''; })) ; 
 				$first= $tags1[0] ; 
 				$button_panel ='<button>' .$first. '</button>'." , ";
 				
