@@ -150,7 +150,7 @@
 			           //	$button_panel='<button>'.$tag1.'</button>' ; 
 			           //}
 			           //else {
-			             $button_panel =$button_panel." , ".'<button>'.$tag1.'</button>'; 
+			             $button_panel =$button_panel."   ".'<button>'.$tag1.'</button>'; 
 			        	
 			        //}
   				}
