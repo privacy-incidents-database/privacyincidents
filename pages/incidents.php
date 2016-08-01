@@ -146,6 +146,7 @@
 			           $position = array_search($tag1, $tags1);
 			           echo $position  ;
 			           if ($position == 0) {
+			           	echo $tag1; 
 			           	$button_panel='<button>' .$tag1. '</button>' ; 
 			           }
 			           else {
