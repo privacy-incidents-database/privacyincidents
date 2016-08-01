@@ -36,12 +36,13 @@
 	}
 	
 ?>
+       <head>
        <script>
          function changeColor($element) {
            echo $element;
         }
         </script> 
-
+       </head>
 <div class="container container-fluid">
 	<div>
 		<h2 id="incidents-title">Privacy Incidents</h2>
