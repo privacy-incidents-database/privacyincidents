@@ -194,7 +194,8 @@
         <?php
           function changeColor($fname) {
           echo "$fname ";
-        }        
+        }    
+        ?>
         
        
 <?php include 'layout/footer.html';?>
