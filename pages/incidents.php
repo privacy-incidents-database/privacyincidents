@@ -143,7 +143,8 @@
                                //    }
                                //array_shift($tags1) ;
 			        foreach ($tags1 as &$tag1){
-			           echo key($tag1) ; 
+			           $position = array_search($tag1, $tags1);
+			           echo $position  ;
 			           $button_panel =$button_panel."  ".'<button>' .$tag1. '</button>'; 
   				}
   				
@@ -158,7 +159,7 @@
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
 				echo '</tr>';	
 				//reset($button_panel);
-                                $button_panel = array(); ;
+                                //$button_panel = array(); ;
 			}
 		?>	
 
