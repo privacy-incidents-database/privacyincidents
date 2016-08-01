@@ -157,8 +157,8 @@
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
 				echo '</tr>';	
-				reset($button_panel);
-                                //$button_panel = null ;
+				//reset($button_panel);
+                                $button_panel = array(); ;
 			}
 		?>	
 
