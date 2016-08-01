@@ -146,9 +146,7 @@
 			           //echo $tag1 ; 
 			           $button_panel =$button_panel."  ".'<button>' .$tag1. '</button>'; 
   				}
-  				array_shift($button_panel) ;
-  				array_shift($button_panel) ;
-  				array_shift($button_panel) ;
+  				
 				//echo $button_panel ;
 				//array_filter($button_panel) ;	
 				echo '<tr>';
@@ -158,8 +156,9 @@
 				echo '<td>' . $descr. '</td>';
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
-				echo '</tr>';		
-                                $button_panel = null ;
+				echo '</tr>';	
+				reset($button_panel);
+                                //$button_panel = null ;
 			}
 		?>	
 
