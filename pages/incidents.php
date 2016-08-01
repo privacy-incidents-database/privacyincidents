@@ -11,7 +11,6 @@
             } else {
             $pageno = 1;
             } 
-            
         $query = "SELECT count(*) FROM `Privacy incidents` WHERE review=1 ";
         $result = mysql_query($query) or trigger_error("SQL", E_USER_ERROR);
         $query_data = mysql_fetch_row($result);
@@ -37,7 +36,11 @@
 	}
 	
 ?>
-      
+       <script>
+         function changeColor($element) {
+           echo $element;
+        }
+        </script> 
 
 <div class="container container-fluid">
 	<div>
@@ -150,7 +153,7 @@
 			           //	$button_panel='<button>'.$tag1.'</button>' ; 
 			           //}
 			           //else {
-			             $button_panel =$button_panel."  ".'<button>'.$tag1.'</button>'; 
+			             $button_panel =$button_panel."  ".'<button onclick="changeColor($tag1)">'.$tag1.'</button>'; 
 			        	
 			        //}
   				}
