@@ -130,9 +130,9 @@
                                 //print_r(array_filter($linksArray, function($value) { return $value !== ''; }));
 				$tags2 = implode(" , ", array_filter($newTags));
 				//print_r(array_filter($linksArray, function($value) { return $value !== ''; }));
-				$tags1= array_filter($newTags,function($value) { return $value !== ' '; }) ; 
-				$first= $tags1[0] ; 
-				$button_panel ='<button>' .$first. '</button>'." , ";
+				$tags1= array_filter($newTags,function($value) { return $value !== ''; }) ; 
+			        //	$first= $tags1[0] ; 
+				//$button_panel ='<button>' .$first. '</button>'." , ";
 				
 				//for ($i = 1; $i < count($tags1); $i++) {
 				//     $button_panel =$button_panel.",".'<button>'.$tags1[$i].'</button>'; 
@@ -153,7 +153,7 @@
 				echo '<td><a href="' . $link . '" target=_blank>' . $publication. '</a></td>';
 				echo '<td><a href= "'. $caseStudy. '" target=_blank>'.$incidentID1. '</a></td>';
 				echo '</tr>';		
-                               $button_panel = null ;
+                               //$button_panel = null ;
 			}
 		?>	
 
