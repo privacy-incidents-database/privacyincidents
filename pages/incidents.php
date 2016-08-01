@@ -145,6 +145,7 @@
 			           //echo $tag1 ; 
 			           $button_panel =$button_panel." , ".'<button>' .$tag1. '</button>'; 
   				}
+  				array_shift($button_panel) ;
 				//echo $button_panel ;
 				//array_filter($button_panel) ;	
 				echo '<tr>';
