@@ -130,9 +130,9 @@
                                 //print_r(array_filter($linksArray, function($value) { return $value !== ''; }));
 				$tags2 = implode(" , ", array_filter($newTags));
 				//print_r(array_filter($linksArray, function($value) { return $value !== ''; }));
-				//$tags1= array_filter($newTags,function($value) { return $value !== ''; }) ; 
-				$arr2 = str_split($tags2, ",");
-				echo arr2[0] ; 
+				$tags1= array_filter($newTags)  ; 
+			        //$arr2 = str_split($tags2, ",");
+				//echo arr2[0] ; 
 			        //	$first= $tags1[0] ; 
 				//$button_panel ='<button>' .$first. '</button>'." , ";
 				
@@ -142,7 +142,7 @@
                                      //echo $array[$i]['filepath'];
                                //    }
 			        foreach ($tags1 as &$tag1){
-			           echo $tag1 ; 
+			           //echo $tag1 ; 
 			           $button_panel =$button_panel.'<button>' .$tag1. '</button>'." , "; 
   				}
 				//echo $button_panel ;
