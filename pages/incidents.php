@@ -134,7 +134,7 @@
 				$button_panel ='<button>' .$first. '</button>'." , ";
 				
 				for ($i = 1; $i < count($tags1); $i++) {
-				     $button_panel =",".$button_panel.'<button>' .$tags1[$i].'</button>'; 
+				     $button_panel =$button_panel.",".'<button>'.$tags1[$i].'</button>'; 
                                     // echo $array[$i]['filename'];
                                      //echo $array[$i]['filepath'];
                                    }
