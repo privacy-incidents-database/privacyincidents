@@ -143,7 +143,7 @@
                                //    }
 			        foreach ($tags1 as &$tag1){
 			           //echo $tag1 ; 
-			           $button_panel =$button_panel.'<button>' .$tag1. '</button>'." , "; 
+			           $button_panel =$button_panel." , ".'<button>' .$tag1. '</button>'; 
   				}
 				//echo $button_panel ;
 				//array_filter($button_panel) ;	
