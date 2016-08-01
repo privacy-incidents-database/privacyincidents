@@ -139,7 +139,7 @@
                                     // echo $array[$i]['filename'];
                                      //echo $array[$i]['filepath'];
                                //    }
-			        foreach (tags1 as &$tag1){
+			        foreach ($tags1 as &$tag1){
 			           echo $tag1 ; 
 			           $button_panel =$button_panel.'<button>' .$tag1. '</button>'." , "; 
   				}
