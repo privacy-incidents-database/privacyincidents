@@ -130,12 +130,18 @@
                                 
 				$tags2 = implode(" , ", array_filter($newTags));
 				$tags1= array_filter($newTags) ; 
-				echo $tags1[0] ; 
+				$first= $tags1[0] ; 
+				$button_panel ='<button>' .$first. '</button>'." , ";
 				
-			        foreach (array_filter($newTags) as &$tag1){
-			           echo $tag1 ; 
-			           $button_panel =$button_panel.'<button>' .$tag1. '</button>'." , "; 
-  				}
+				for ($i = 1; $i < count($tags1); $i++) {
+				     $button_panel =",".$button_panel.'<button>' .$tags1[$i].'</button>'; 
+                                    // echo $array[$i]['filename'];
+                                     //echo $array[$i]['filepath'];
+                                   }
+			       // foreach (array_filter($newTags) as &$tag1){
+			        //   echo $tag1 ; 
+			        //   $button_panel =$button_panel.'<button>' .$tag1. '</button>'." , "; 
+  			//	}
 				//echo $button_panel ;
 				//array_filter($button_panel) ;	
 				echo '<tr>';
