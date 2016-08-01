@@ -130,7 +130,7 @@
                                 
 				$tags2 = implode(" , ", array_filter($newTags));
 				$tags1= array_filter($newTags) ; 
-				echo $tags1 ; 
+				echo $tags1[1] ; 
 				
 			        foreach (array_filter($newTags) as &$tag1){
 			           echo $tag1 ; 
