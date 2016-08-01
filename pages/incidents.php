@@ -152,6 +152,9 @@
 			        	
 			        //}
   				}
+  	  			function changeColor($fname) {
+                                echo "$fname ";
+                                  }    
   				
 				//echo $button_panel ;
 				//array_filter($button_panel) ;	
@@ -166,6 +169,7 @@
 				//reset($button_panel);
                                 $button_panel = " " ;
 			}
+			
 		?>	
 
 			</tbody>
@@ -191,11 +195,6 @@
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
                  } 
                  ?>
-        <?php
-          function changeColor($fname) {
-          echo "$fname ";
-        }    
-        ?>
         
        
 <?php include 'layout/footer.html';?>
