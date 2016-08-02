@@ -108,7 +108,9 @@
 				$location = $i[6];
 				$root_cause = $i[7];*/
 
-
+                                function changeColor($tag) {
+                                          echo $tag;
+                                                     } 
 				$tags = str_replace(", ", "&nbsp", $tags);
 				$newTags = explode("&nbsp", $tags);
 
