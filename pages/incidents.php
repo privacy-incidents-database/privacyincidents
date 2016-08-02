@@ -59,7 +59,7 @@
 	     
 		<?php   
 		          function changeColor($tag) {
-                                          echo $tag;
+                                          echo "hi";
                                                      } 
 			$numbers = mysql_num_rows($incidents);
 			//echo "Number of Entries: $numbers";
