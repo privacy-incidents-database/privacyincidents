@@ -167,7 +167,13 @@
 				//reset($button_panel);
                                 $button_panel = " " ;
 			}
-			
+			<script>
+
+                              function changeColor(elmnt,$tag) {
+                              elmnt.style.color = "red";
+                               }
+
+                        </script>
 		?>	
 
 			</tbody>
@@ -194,17 +200,6 @@
                  } 
                  ?>
         
-<html>
-<head>
-<script>
-
-function changeColor(elmnt,$tag) {
-    elmnt.style.color = "red";
-}
-
-</script>
-
-</head>
-</html>        
+       
 <?php include 'layout/footer.html';?>
 
