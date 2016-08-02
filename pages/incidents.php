@@ -194,8 +194,6 @@
                  } 
                  ?>
         
-        
-<?php include 'layout/footer.html';?>
 <html>
 <head>
 <script>
@@ -207,4 +205,6 @@ function changeColor(elmnt,$tag) {
 </script>
 
 </head>
-</html>
+</html>        
+<?php include 'layout/footer.html';?>
+
