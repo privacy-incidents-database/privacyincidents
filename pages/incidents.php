@@ -58,9 +58,7 @@
 				
 	     
 		<?php   
-		          function changeColor() {
-                                          echo "hi";
-                                                     } 
+		         
 			$numbers = mysql_num_rows($incidents);
 			//echo "Number of Entries: $numbers";
 			while ($i = mysql_fetch_row($incidents)) {		
@@ -156,7 +154,9 @@
 			           //}
 			           //else {
 			             $button_panel =$button_panel."  ".'<button onclick="changeColor()">'.$tag1.'</button>'; 
-			            
+			             function changeColor() {
+                                          echo "hi";
+                                                     } 
  
 			        //}
   				}
