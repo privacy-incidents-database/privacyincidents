@@ -152,7 +152,12 @@
 			        	
 			        //}
   				}
-  	  			  
+  	  			  <script>
+                                   function changeColor($fname){
+                                        alert("<?PHP $fname ; ?>");
+                                             }
+                                  </script>
+ 
   				
 				//echo $button_panel ;
 				//array_filter($button_panel) ;	
@@ -194,9 +199,5 @@
                  } 
                  ?>
         
-        <?php
-        function changeColor($fname) {
-                                echo $fname ;
-                                  }  ?>
-       
+        
 <?php include 'layout/footer.html';?>
