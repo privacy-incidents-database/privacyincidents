@@ -152,12 +152,7 @@
 			        	
 			        //}
   				}
-  	  			  <script>
-                                   function changeColor($fname){
-                                        alert("<?PHP $fname ; ?>");
-                                             }
-                                  </script>
- 
+  	  			 
   				
 				//echo $button_panel ;
 				//array_filter($button_panel) ;	
