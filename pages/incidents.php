@@ -156,7 +156,7 @@
 			           //}
 			           //else {
 			             $button_panel =$button_panel."  ".'<button onclick="changeColor()">'.$tag1.'</button>'; 
-			             
+			            
  
 			        //}
   				}
