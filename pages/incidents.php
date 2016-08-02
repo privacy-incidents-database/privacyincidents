@@ -168,19 +168,17 @@
 				//reset($button_panel);
                                 $button_panel = " " ;
 			}
-			
-		?>	
-
-			</tbody>
-		</table>
-	        <script>
+	               	<script>
  
                                          function changeColor(elmnt,$tag) {
                                           elmnt.style.color = "red";
                                                     }
  
-                                       </script>
-		
+                        </script>	
+		?>	
+
+			</tbody>
+		</table>
 	</div>
 	<?php
         if ($pageno == 1) {
