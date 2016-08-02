@@ -58,6 +58,9 @@
 				
 	     
 		<?php   
+		          function changeColor($tag) {
+                                          echo $tag;
+                                                     } 
 			$numbers = mysql_num_rows($incidents);
 			//echo "Number of Entries: $numbers";
 			while ($i = mysql_fetch_row($incidents)) {		
@@ -108,9 +111,7 @@
 				$location = $i[6];
 				$root_cause = $i[7];*/
 
-                                function changeColor($tag) {
-                                          echo $tag;
-                                                     } 
+                              
 				$tags = str_replace(", ", "&nbsp", $tags);
 				$newTags = explode("&nbsp", $tags);
 
