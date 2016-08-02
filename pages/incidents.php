@@ -196,3 +196,10 @@
         
         
 <?php include 'layout/footer.html';?>
+<html>
+<head>
+<script>
+</script>
+
+</head>
+</html>
