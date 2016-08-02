@@ -167,13 +167,7 @@
 				//reset($button_panel);
                                 $button_panel = " " ;
 			}
-			<script>
-
-                              function changeColor(elmnt,$tag) {
-                              elmnt.style.color = "red";
-                               }
-
-                        </script>
+			
 		?>	
 
 			</tbody>
