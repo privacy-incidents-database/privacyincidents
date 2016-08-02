@@ -169,7 +169,7 @@
                                 $button_panel = " " ;
 			}
 	               	function changeColor(elmnt,$tag) {
-                                          elmnt.style.color = "red";
+                                          echo $tag;
                                                     }
  
                        	
