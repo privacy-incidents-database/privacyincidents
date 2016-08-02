@@ -37,10 +37,7 @@
 	
 ?>
 
-          <?php
-	        function changeColor(elmnt,$tag) {
-                                          echo $tag;
-                                                    } ?>
+    
        
 <div class="container container-fluid">
 	<div>
