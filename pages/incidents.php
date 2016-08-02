@@ -153,7 +153,7 @@
 			           //	$button_panel='<button>'.$tag1.'</button>' ; 
 			           //}
 			           //else {
-			             $button_panel =$button_panel."  ".'<button id=$tag1 onclick="changeColor(this,'$tag1')">'.$tag1.'</button>'; 
+			             $button_panel =$button_panel."  ".'<button id=$tag1 onclick="changeColor(this,$tag1)">'.$tag1.'</button>'; 
 			            
 			        //}
   				}
