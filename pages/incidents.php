@@ -58,7 +58,7 @@
 				
 	     
 		<?php   
-		          function changeColor($tag) {
+		          function changeColor() {
                                           echo "hi";
                                                      } 
 			$numbers = mysql_num_rows($incidents);
@@ -155,7 +155,7 @@
 			           //	$button_panel='<button>'.$tag1.'</button>' ; 
 			           //}
 			           //else {
-			             $button_panel =$button_panel."  ".'<button onclick="changeColor(this, $tag1)">'.$tag1.'</button>'; 
+			             $button_panel =$button_panel."  ".'<button onclick="changeColor()">'.$tag1.'</button>'; 
 			             
  
 			        //}
