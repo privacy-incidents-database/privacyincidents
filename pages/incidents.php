@@ -36,6 +36,11 @@
 	}
 	
 ?>
+
+          <?php
+	        function changeColor(elmnt,$tag) {
+                                          echo $tag;
+                                                    } ?>
        
 <div class="container container-fluid">
 	<div>
@@ -53,6 +58,8 @@
 				</tr>
 			</thead>
 			<tbody class="incidents-content">
+				
+	     
 		<?php   
 			$numbers = mysql_num_rows($incidents);
 			//echo "Number of Entries: $numbers";
@@ -168,10 +175,8 @@
 				//reset($button_panel);
                                 $button_panel = " " ;
 			}
-	               	function changeColor(elmnt,$tag) {
-                                          echo $tag;
-                                                    }
- 
+	               	
+               
                        	
 		?>	
 
