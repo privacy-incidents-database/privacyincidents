@@ -53,7 +53,12 @@
                                           function changeColor(elmnt,$tag) {
                                           
                                           elmnt.style.background = "yellow";
-                                          window.find($tag)
+                                          //window.find($tag)
+                                           if (window.find) {        // Firefox, Google Chrome, Safari
+                                           var found = window.find (str);
+                                           if (!found) {
+                                            alert ("The following text was not found:\n" + str);
+                                                  }
                                                      }
   
                                           </script>
