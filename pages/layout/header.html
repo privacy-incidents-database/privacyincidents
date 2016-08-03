@@ -54,12 +54,8 @@
                                           
                                           elmnt.style.background = "yellow";
                                           //window.find($tag)
-                                           if (window.find) {        // Firefox, Google Chrome, Safari
-                                           var found = window.find (str);
-                                           if (!found) {
-                                            alert ("The following text was not found:\n" + str);
-                                                  }
-                                                     }
+                                          find(elmnt, matchcase, searchBackward)
+                                           
   
                                           </script>
 </head>
