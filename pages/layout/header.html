@@ -52,13 +52,8 @@
  
                                           function changeColor(elmnt,$tag) {
                                           elmnt.style.background = "yellow";
-                                          if (window.find && window.getSelection) {
-                                                 
-                                                while (window.find($tag)) {
-                                                document.execCommand("BackColor", false, "yellow");
-                                                sel.collapseToEnd();
-                                                  }}}
-                                                
+                                          document.getElementById("$tag").style.background = "yellow";
+                                          }
         </script>
 </head>
 <body>
