@@ -146,7 +146,7 @@
                                //    }
                                //array_shift($tags1) ;
 			        foreach ($tags1 as &$tag1){   
-			           $button_panel =$button_panel."  ".'<button class=$tag1 onclick="changeColor(this,class,$tag1)">'.$tag1.'</button>'; 
+			           $button_panel =$button_panel."  ".'<button class=$tag1 onclick="changeColor(this,$tag1,$tag1)">'.$tag1.'</button>'; 
 			            
 			       
   				}
