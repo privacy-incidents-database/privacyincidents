@@ -146,16 +146,9 @@
                                //    }
                                //array_shift($tags1) ;
 			        foreach ($tags1 as &$tag1){
-			           //$position = array_search($tag1, $tags1);
-			           //echo $position  ;
-			           //if ($position == 0) {
-			           	//echo $tag1; 
-			           //	$button_panel='<button>'.$tag1.'</button>' ; 
-			           //}
-			           //else {
-			             $button_panel =$button_panel."  ".'<button id=$tag1 onclick="changeColor(this,$tag1)">'.$tag1.'</button>'; 
+			           $button_panel =$button_panel."  ".'<button id=$tag1 onclick="changeColor(this,id,$tag1)">'.$tag1.'</button>'; 
 			            
-			        //}
+			       
   				}
   	  			 
   				
