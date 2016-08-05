@@ -145,8 +145,8 @@
                                      //echo $array[$i]['filepath'];
                                //    }
                                //array_shift($tags1) ;
-			        foreach ($tags1 as &$tag1){
-			           $button_panel =$button_panel."  ".'<button id=$tag1 onclick="changeColor(this,$tag1)">'.$tag1.'</button>'; 
+			        foreach ($tags1 as &$tag1){   
+			           $button_panel =$button_panel."  ".'<button class=$tag1 onclick="changeColor(this,$tag1)">'.$tag1.'</button>'; 
 			            
 			       
   				}
