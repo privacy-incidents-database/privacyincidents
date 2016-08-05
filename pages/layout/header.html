@@ -50,9 +50,9 @@
 
   <script>
  
-                                          function changeColor(elmnt,cls) {
+                                          function changeColor(elmnt,elmnt.name) {
                                           elmnt.style.background = "yellow";
-                                          elements1=document.getElementsByName(cls);
+                                          elements1=document.getElementsByName(elmnt.name);
                                           n = elements1.length;
                                           for (var i = 0; i < n; i++) {
                                             var e = elements1[i];
