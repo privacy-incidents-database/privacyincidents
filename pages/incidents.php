@@ -147,7 +147,7 @@
                                //array_shift($tags1) ;class="A" id="A"
 			        foreach ($tags1 as &$tag1){   
 			           $button_panel =$button_panel."  ".'<button class=$tag1 id=$tag1 onclick="changeColor(this)">'.$tag1.'</button>'; 
-			           echo $tag1 ;
+			           echo $tag1." " ;
 			       
   				}
   	  			 
