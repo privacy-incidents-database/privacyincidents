@@ -46,7 +46,7 @@
 	<div>
 		<table class="table table-striped table-bordered">
 			<thead>
-				<tr>    <th class ="col-md-1">Date </th><td sortable="yes"></td>
+				<tr>    <th class ="col-md-1">Date </th>
 					<th class="tags col-md-4">Tags</th>
 					<th class="descr">Description</th>
 					<th class="resource col-md-1">Resource</th>
