@@ -44,7 +44,7 @@
 		<h2 id="incidents-title">Privacy Incidents</h2>
 	</div>
 	<div>
-		<table class="table table-striped table-bordered">
+		<table class="table table-striped table-bordered table-sortable" >
 			<thead>
 				<tr>    <th class ="col-md-1">Date </th>
 					<th class="tags col-md-4">Tags</th>
