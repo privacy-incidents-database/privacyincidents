@@ -8,7 +8,7 @@
 		<div class="content ol-md-4">
 			<p class="rteleft"><strong>Leads</strong></p> <a href="http://home.jessicastaddon.com/">Jessica Staddon</a>, <a href="http://hci.uncc.edu/~richter/">Heather Richter Lipford</a>, <a href="http://www.usabart.nl/portfolio/#home.html">Bart Knijnenburg</a> and <a href="http://www.se.rit.edu/~pkm/">Pradeep Kumar Murukannaiah</a></p>
     		<!--<p class="rteleft">NCSU:</p>-->
-			<p class="rteleft"><strong>Current and Past Project Members</strong></p> Sarvesh Rangnekar, Kaustubh Sant, Linda Vue, Shiqian (Jesse) Xu,Yuxu Yang</p>
+			<p class="rteleft"><strong>Current and Past Project Members</strong></p> Esha Sharma, Sarvesh Rangnekar, Kaustubh Sant, Linda Vue, Shiqian (Jesse) Xu,Yuxu Yang</p>
 				<!--<ul>
 					<li class="rteleft"><a href="http://home.jessicastaddon.com/">Jessica Staddon</a></li>
 				</ul>
