@@ -130,7 +130,7 @@ In this initial phase, the database is not public and contributions are by invit
    
    <script>
       function openAddModal() {
-         document.getElementById("addModal").modal();
+         $("#addModal").modal();
       }
    </script>
    
@@ -145,22 +145,34 @@ In this initial phase, the database is not public and contributions are by invit
                <form action="addIncident.php" method="post" name="addForm" novalidate>
                   To add new, enter information below:<br><br>
                   <ul id="add-information" class="list-group">
-                     <li class='list-group-item'>
-                        <div class='form-group'>
+                     <li class="list-group-item">
+                        <div class="form-group">
                            <label>Description: </label>
-                           <input type='text' class='form-control'>
+                           <input type="text" class="form-control">
                         </div>
                      </li>
-                     <li class='list-group-item'>
-                        <div class='form-group'>
+                     <li class="list-group-item">
+                        <div class="form-group">
                            <label>Public Link: </label>
-                           <input type='text' class='form-control'>
+                           <input type="text" class="form-control">
                         </div>
                      </li>
-                     <li class='list-group-item'>
-                        <div class='form-group'>
+                     <li class="list-group-item">
+                        <div class="form-group">
                            <label>Your email address: </label>
-                           <input type='text' class='form-control'>
+                           <input type="text" class="form-control">
+                        </div>
+                     </li>
+                     <li class="list-group-item">
+                        <div class="form-group">
+                           <label>Your email address: </label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </li>
+                     <li class="list-group-item">
+                        <div class="form-group">
+                           <label>Date: </label>
+                           <input type="text" class="form-control">
                         </div>
                      </li>
                   </ul>
