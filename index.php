@@ -119,7 +119,7 @@ In this initial phase, the database is not public and contributions are by invit
 	<div id="use">
 		<h3>What can I do with the database?</h3>
 		
-		<p><b><i>Contribute</b></i>: We need your incident suggestions. Please add them here:</b></i> <a href="https://docs.google.com/forms/d/1ycbugMdf8ROaCRO0oGS52o0k-2Rd3mloE302NeRu44I/viewform">Incident input form</a></p>
+		<p><b><i>Contribute</b></i>: We need your incident suggestions. Please add them here:</b></i> <a href="https://docs.google.com/forms/d/1ycbugMdf8ROaCRO0oGS52o0k-2Rd3mloE302NeRu44I/viewform">Incident input form</a> <a onclick="openAddModal)()">Alt Link</a></p>
 		
 		<p><b><i>Feedback</b></i>: <a href="https://docs.google.com/a/ncsu.edu/forms/d/17VLUHAU5hiJGkZVZ1uxkHmzQ0cmV3Ljv798RlbQanK4/viewform">Send us comments, ideas and questions.</a></p>
 
@@ -127,6 +127,52 @@ In this initial phase, the database is not public and contributions are by invit
 		
 		<p><b><i>Download</b></i>: Grab a csv of the incidents to do your own analysis. <b><i>[Coming soon!]</b></i></p>
 	</div>
+   
+   <script>
+      function openAddModal() {
+         document.getElementById("addModal").modal();
+      }
+   </script>
+   
+   <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MODALS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+   <div id="addModal" class="modal fade">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header" style="background-color: #5cb85c">
+               <h3>Add Incident Entry</h3>
+            </div>
+            <div class="modal-body">
+               <form action="addIncident.php" method="post" name="addForm" novalidate>
+                  To add new, enter information below:<br><br>
+                  <ul id="add-information" class="list-group">
+                     <li class='list-group-item'>
+                        <div class='form-group'>
+                           <label>Description: </label>
+                           <input type='text' class='form-control'>
+                        </div>
+                     </li>
+                     <li class='list-group-item'>
+                        <div class='form-group'>
+                           <label>Public Link: </label>
+                           <input type='text' class='form-control'>
+                        </div>
+                     </li>
+                     <li class='list-group-item'>
+                        <div class='form-group'>
+                           <label>Your email address: </label>
+                           <input type='text' class='form-control'>
+                        </div>
+                     </li>
+                  </ul>
+               </form>
+            </div>
+            <div class="modal-footer">
+               <button class="form-group btn btn-success" type="button">Submit</button>
+               <button class="btn btn-danger" type="button" data-dismiss="modal">Cancel</button>
+            </div>
+         </div>
+      </div>
+   </div>
 		
 
 
