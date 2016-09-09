@@ -141,13 +141,21 @@ In this initial phase, the database is not public and contributions are by invit
             <div class="modal-header" style="background-color: #5cb85c">
                <h3>Add Incident Entry</h3>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" ng-app="incidentsApp" ng-controller="incidentsCtrl">
                <form action="addIncident.php" method="post" name="addForm" novalidate>
                   To add new, enter information below:<br><br>
                   <ul id="add-information" class="list-group">
-                     <li class="list-group-item">
+                     <li class="list-group-item" ng-repeat="field in formFields">
+                        <div class="form-group">
+                           <label>{{ field.header }}: </label>
+                           <p>{{ field.desc }}</p>
+                           <input type="{{{{ field.type }}}}" class="form-control">
+                        </div>
+                     </li>
+                     <!-- <li class="list-group-item">
                         <div class="form-group">
                            <label>Description: </label>
+                           <p>Enter a description here</p>
                            <input type="text" class="form-control">
                         </div>
                      </li>
@@ -174,7 +182,7 @@ In this initial phase, the database is not public and contributions are by invit
                            <label>Date: </label>
                            <input type="text" class="form-control">
                         </div>
-                     </li>
+                     </li> -->
                   </ul>
                </form>
             </div>
