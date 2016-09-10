@@ -149,7 +149,7 @@ In this initial phase, the database is not public and contributions are by invit
                         <div class="form-group">
                            <label>{{ field.header }}: </label>
                            <p>{{ field.desc }}</p>
-                           <input type="{{{{ field.type }}}}" class="form-control">
+                           <input type="{{ field.type }}" class="form-control">
                         </div>
                      </li>
                      <!-- <li class="list-group-item">
