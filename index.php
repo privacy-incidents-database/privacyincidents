@@ -158,7 +158,9 @@ In this initial phase, the database is not public and contributions are by invit
                            <label>(Optional) Entities: </label>
                            <p>What entities or types of entities were involved in the incident? Please select as many tags as needed 
                               from the list below, or add your own after "Other".</p>
-                           <input type="checkbox" class="form-control" ng-repeat="entity in entities" name="{{ entity }}" value="{{ entity }}">
+                           <div ng-repeat="entity in entities">
+                              <input type="checkbox" class="form-control" name="{{ entity }}" value="{{ entity }}">{{ entity }}
+                           </div>
                            <!-- "other" input option -->
                         </div>
                      </li>
@@ -168,7 +170,9 @@ In this initial phase, the database is not public and contributions are by invit
                            <label>(Optional) Type: </label>
                            <p>Which of these terms describe the incident? Please select as many tags as needed from the list below or 
                               add your own after "Other".</p>
-                           <input type="checkbox" class="form-control" ng-repeat="type in types" name="{{ type }}" value="{{ type }}">
+                           <div ng-repeat="type in types">
+                              <input type="checkbox" class="form-control" name="{{ type }}" value="{{ type }}">{{ type }}
+                           </div>
                            <!-- "other" input option -->
                         </div>
                      </li>
@@ -177,7 +181,9 @@ In this initial phase, the database is not public and contributions are by invit
                         <div class="form-group">
                            <label>(Optional) Cause: </label>
                            <p>How did the incident happen? Please select as many tags as needed from the list below or add your own after "Other".</p>
-                           <input type="checkbox" class="form-control" ng-repeat="cause in causes" name="{{ cause }}" value="{{ cause }}">
+                           <div ng-repeat="cause in causes">
+                              <input type="checkbox" class="form-control" name="{{ cause }}" value="{{ cause }}">{{ cause }}
+                           </div>
                            <!-- "other" input option -->
                         </div>
                      </li>
@@ -187,7 +193,9 @@ In this initial phase, the database is not public and contributions are by invit
                            <label>(Optional) Location: </label>
                            <p>Where are most of the people affected by the incident located? Please select as many tags as needed from the list below. 
                               Note there is a #world option for incidents with a non-specific location.</p>
-                           <input type="checkbox" class="form-control" ng-repeat="location in locations" name="{{ location }}" value="{{ location }}">
+                           <div ng-repeat="location in locations">
+                              <input type="checkbox" class="form-control" name="{{ location }}" value="{{ location }}">{{ location }}
+                           </div>
                            <!-- "other" input option -->
                         </div>
                      </li>
