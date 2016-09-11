@@ -152,37 +152,56 @@ In this initial phase, the database is not public and contributions are by invit
                            <input type="{{ field.type }}" class="form-control">
                         </div>
                      </li>
-                     <!-- <li class="list-group-item">
-                        <div class="form-group">
-                           <label>Description: </label>
-                           <p>Enter a description here</p>
-                           <input type="text" class="form-control">
-                        </div>
-                     </li>
+                     
                      <li class="list-group-item">
                         <div class="form-group">
-                           <label>Public Link: </label>
-                           <input type="text" class="form-control">
+                           <label>(Optional) Entities: </label>
+                           <p>What entities or types of entities were involved in the incident? Please select as many tags as needed 
+                              from the list below, or add your own after "Other".</p>
+                           <input type="checkbox" class="form-control" ng-repeat="entity in entities" name="{{ entity }}" value="{{ entity }}">
+                           <!-- "other" input option -->
                         </div>
                      </li>
+                     
                      <li class="list-group-item">
                         <div class="form-group">
-                           <label>Your email address: </label>
-                           <input type="text" class="form-control">
+                           <label>(Optional) Type: </label>
+                           <p>Which of these terms describe the incident? Please select as many tags as needed from the list below or 
+                              add your own after "Other".</p>
+                           <input type="checkbox" class="form-control" ng-repeat="type in types" name="{{ type }}" value="{{ type }}">
+                           <!-- "other" input option -->
                         </div>
                      </li>
+                     
                      <li class="list-group-item">
                         <div class="form-group">
-                           <label>Your email address: </label>
-                           <input type="text" class="form-control">
+                           <label>(Optional) Cause: </label>
+                           <p>How did the incident happen? Please select as many tags as needed from the list below or add your own after "Other".</p>
+                           <input type="checkbox" class="form-control" ng-repeat="cause in causes" name="{{ cause }}" value="{{ cause }}">
+                           <!-- "other" input option -->
                         </div>
                      </li>
+                     
                      <li class="list-group-item">
                         <div class="form-group">
-                           <label>Date: </label>
-                           <input type="text" class="form-control">
+                           <label>(Optional) Location: </label>
+                           <p>Where are most of the people affected by the incident located? Please select as many tags as needed from the list below. 
+                              Note there is a #world option for incidents with a non-specific location.</p>
+                           <input type="checkbox" class="form-control" ng-repeat="location in locations" name="{{ location }}" value="{{ location }}">
+                           <!-- "other" input option -->
                         </div>
-                     </li> -->
+                     </li>
+                     
+                     <li class="list-group-item">
+                        <div class="form-group">
+                           <label>(Optional) Suggestions: </label>
+                           <p>Do you have any suggestions for improving this form? If so, please enter them below.</p>
+                           <input type="text" class="form-control">
+                           <!-- "other" input option -->
+                        </div>
+                     </li>
+                     
+                     <!-- suggestions -->
                   </ul>
                </form>
             </div>

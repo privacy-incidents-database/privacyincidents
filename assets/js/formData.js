@@ -23,4 +23,31 @@ app.controller('incidentsCtrl', function($scope, $compile){
          type: "text"
       }
    ];
+   
+   $scope.entities = ["#Alibaba", "#Amazon", "#Asos", "#Baidu", "#Ebay", "#Expedia",
+      "#Facebook", "#Google", "#GooglePlay", "#Government", "#Groupon", "#Healthcare",
+      "#InternetCompany", "#Jd.com", "#Linkedin", "#Netease", "#Netflix", "#PhoneCompany",
+      "#Pricline", "#Rakuten", "#Salesforce", "#Tandex", "#Tripadvisor", "#Twitter",
+      "#Yahoo"
+   ];
+   
+   $scope.types = ["#Ads", "#ContactAccess", "#Cookies", "#CyberBullying", "#CyberStalking",
+      "#DataAggregation", "#DataCollection", "#DataSharing", "#DataUsage", "#Defamation",
+      "#DocumentAccess", "#Drone", "#EmailAccess", "#Hipaa", "#LocationSharing", "#OverSharing",
+      "#PersonalInfoLeak", "#PhotoAccess", "#PrivacyPolicy", "#RemovedPrivacyToolOrFeature",
+      "#RevengePorn", "#RightToBeForgotten", "#Surveillance", "#TextAccess", "#VideoAccess"
+   ];
+   
+   $scope.causes = ["#3rdPartyApps", "#Accident", "#Attack", "#Bug", "#InsiderAttack",
+      "#LawEnforcement", "#Legal", "#Malware", "#Misunderstanding", "#SecurityVulnerability",
+      "#SocialMedia", "#StolenDevice", "#UnexpectedProductBehavior", "#UnclearConsent"
+   ];
+   
+   $scope.locations = ["#Algeria", "#Argentina", "#Bangladesh", "#Brazil", "#Canada", "#China", 
+      "#Colombia", "#Congo", "#Egypt", "#Ethiopia", "#France", "#Germany", "#India", "#Indoesia", 
+      "#Iran", "#Iraq", "#Italy", "#Japan", "#Kenya", "#Mexico", "#Morocco", "#Myanmar", "#Nigeria", 
+      "#Pakistan", "#Philippines", "#Poland", "#Russia", "#Saudiarabia", "#SouthAfrica", "#SouthKorea", 
+      "#Spain", "#Sudan", "#Tanzania", "#Thailand", "#Turkey", "#Uganda", "#UK", "#Ukraine", "#USA", 
+      "#Vietnam", "#World"
+   ];
 });
