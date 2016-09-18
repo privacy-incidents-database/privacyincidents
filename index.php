@@ -119,7 +119,7 @@ In this initial phase, the database is not public and contributions are by invit
 	<div id="use">
 		<h3>What can I do with the database?</h3>
 		
-		<p><b><i>Contribute</b></i>: We need your incident suggestions. Please add them here:</b></i> <a href="https://docs.google.com/forms/d/1ycbugMdf8ROaCRO0oGS52o0k-2Rd3mloE302NeRu44I/viewform">Incident input form</a> <a onclick="openAddModal()">Alt Link</a></p>
+		<p><b><i>Contribute</b></i>: We need your incident suggestions. Please add them here:</b></i> <a href="https://docs.google.com/forms/d/1ycbugMdf8ROaCRO0oGS52o0k-2Rd3mloE302NeRu44I/viewform">Incident input form</a><!-- <a onclick="openAddModal()">Alt Link</a>--></p>
 		
 		<p><b><i>Feedback</b></i>: <a href="https://docs.google.com/a/ncsu.edu/forms/d/17VLUHAU5hiJGkZVZ1uxkHmzQ0cmV3Ljv798RlbQanK4/viewform">Send us comments, ideas and questions.</a></p>
 
@@ -128,14 +128,14 @@ In this initial phase, the database is not public and contributions are by invit
 		<p><b><i>Download</b></i>: Grab a csv of the incidents to do your own analysis. <b><i>[Coming soon!]</b></i></p>
 	</div>
    
-   <script>
+   <!--<script>
       function openAddModal() {
          $("#addModal").modal();
       }
-   </script>
+   </script>-->
    
    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MODALS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-   <div id="addModal" class="modal fade">
+   <!--<div id="addModal" class="modal fade">
       <div class="modal-dialog">
          <div class="modal-content">
             <div class="modal-header" style="background-color: #5cb85c">
@@ -161,7 +161,6 @@ In this initial phase, the database is not public and contributions are by invit
                            <div ng-repeat="entity in entities">
                               <input type="checkbox" class="form-control" name="{{ entity }}" value="{{ entity }}">{{ entity }}
                            </div>
-                           <!-- "other" input option -->
                         </div>
                      </li>
                      
@@ -173,7 +172,6 @@ In this initial phase, the database is not public and contributions are by invit
                            <div ng-repeat="type in types">
                               <input type="checkbox" class="form-control" name="{{ type }}" value="{{ type }}">{{ type }}
                            </div>
-                           <!-- "other" input option -->
                         </div>
                      </li>
                      
@@ -184,7 +182,6 @@ In this initial phase, the database is not public and contributions are by invit
                            <div ng-repeat="cause in causes">
                               <input type="checkbox" class="form-control" name="{{ cause }}" value="{{ cause }}">{{ cause }}
                            </div>
-                           <!-- "other" input option -->
                         </div>
                      </li>
                      
@@ -196,7 +193,6 @@ In this initial phase, the database is not public and contributions are by invit
                            <div ng-repeat="location in locations">
                               <input type="checkbox" class="form-control" name="{{ location }}" value="{{ location }}">{{ location }}
                            </div>
-                           <!-- "other" input option -->
                         </div>
                      </li>
                      
@@ -205,11 +201,9 @@ In this initial phase, the database is not public and contributions are by invit
                            <label>(Optional) Suggestions: </label>
                            <p>Do you have any suggestions for improving this form? If so, please enter them below.</p>
                            <input type="text" class="form-control">
-                           <!-- "other" input option -->
                         </div>
                      </li>
                      
-                     <!-- suggestions -->
                   </ul>
                </form>
             </div>
@@ -219,7 +213,7 @@ In this initial phase, the database is not public and contributions are by invit
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
 		
 
 
