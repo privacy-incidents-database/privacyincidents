@@ -189,7 +189,7 @@
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
                  } 
-	        echo "<a href='{$_SERVER['PHP_SELF']}?pageno=$1'>SHOW ALL</a>" ; 
+	        echo "<a href='{$_SERVER['PHP_SELF']}?limit=255'>SHOW ALL</a>" ; 
                  ?>
         
        
