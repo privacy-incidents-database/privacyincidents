@@ -17,8 +17,12 @@
             } else {
             $pageno = 1;
             } 
-     
-        
+       if (isset($_GET['show_all'])) {
+	       $flag=TRUE
+       }
+       if (isset($_GET['show_few'])) {
+	       $flag=TRUE
+        }
         $query = "SELECT count(*) FROM `Privacy incidents` WHERE review=1 ";
         $result = mysql_query($query) or trigger_error("SQL", E_USER_ERROR);
         $query_data = mysql_fetch_row($result);
