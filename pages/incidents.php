@@ -12,36 +12,15 @@
             $pageno = 1;
             } 
         
+        
         $query = "SELECT count(*) FROM `Privacy incidents` WHERE review=1 ";
         $result = mysql_query($query) or trigger_error("SQL", E_USER_ERROR);
         $query_data = mysql_fetch_row($result);
         $numrows = $query_data[0];
         echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> ";
-        echo " <a href='{$_SERVER['PHP_SELF']}?show_few=' '>SHOW FEW</a> ";
         echo "Total number of Entries: $numrows";
-        if (isset($_GET['show_few'])) {
         $rows_per_page = 10;
         $lastpage      = ceil($numrows/$rows_per_page);
-        
-        if ($pageno == 1) {
-                     echo " FIRST PREV ";
-                   } else {
-                    echo " <a href='{$_SERVER['PHP_SELF']}?pageno=1'>FIRST</a> ";
-                    $prevpage = $pageno-1;
-                    echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$prevpage'>PREV</a> ";
-                   } 	
-                echo " ( Page $pageno of $lastpage ) ";
-                
-                if ($pageno == $lastpage) {
-                   echo " NEXT LAST ";
-                  } else {
-                 $nextpage = $pageno+1;
-                echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
-                echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
-                 } 
-	   
-	          
-     
         
         $pageno = (int)$pageno;
         if ($pageno > $lastpage) {
@@ -52,19 +31,17 @@
         } // if
        
        $limit = 'LIMIT ' .($pageno - 1) * $rows_per_page .',' .$rows_per_page; 
-        
-	       $incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID`, `case study` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC $limit");
-
-	}
-	if (isset($_GET['show_all'])){
+       if (isset($_GET['show_all'])){
 		$incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID`, `case study` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC");
+	} else {
+	       $incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID`, `case study` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC $limit");
 	}
 	
 	if (mysql_num_rows($incidents) == 0) {
 		echo 'No incidents found!'; 
 		die();
 	}
-    
+	
 ?>
 
     
@@ -137,11 +114,9 @@
 				$what_kind = $i[5];
 				$location = $i[6];
 				$root_cause = $i[7];*/
-
                               
 				$tags = str_replace(", ", "&nbsp", $tags);
 				$newTags = explode("&nbsp", $tags);
-
 				foreach ($newTags as &$tag) {
 					//Adds # symbol to beginning of tag if it's missing
 					$firstLetter = substr($tag, 0, 1);
@@ -149,12 +124,10 @@
 						$newTag = "#" . $tag; 
 						$tag = $newTag; 
 					}
-
 					//Removes the unnecessary comments in paranthesis
 					if ($index = strpos($tag, "(select the country below)")) {
 						$tag = substr($tag, 0, $index);
 					}
-
 					//Removes white space within a tag
 					$tag = str_replace(' ', '', $tag);
 				}
@@ -202,8 +175,25 @@
 			</tbody>
 		</table>
 	</div>
-	
+	<?php
+        if ($pageno == 1) {
+                     echo " FIRST PREV ";
+                   } else {
+                    echo " <a href='{$_SERVER['PHP_SELF']}?pageno=1'>FIRST</a> ";
+                    $prevpage = $pageno-1;
+                    echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$prevpage'>PREV</a> ";
+                   } 	
+                echo " ( Page $pageno of $lastpage ) ";
+                
+                if ($pageno == $lastpage) {
+                   echo " NEXT LAST ";
+                  } else {
+                 $nextpage = $pageno+1;
+                echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
+                echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
+                 } 
+	   echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> ";
+	          ?>
         
        
 <?php include 'layout/footer.html';?>
-
