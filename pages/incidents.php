@@ -183,7 +183,7 @@
 		</table>
 	</div>
 	<?php
-	if (isset($_GET['show_few'])){
+        if (isset($_GET['show_few'])) {
         if ($pageno == 1) {
                      echo " FIRST PREV ";
                    } else {
@@ -200,8 +200,8 @@
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
                  } 
-	  
+	}
 	          ?>
-        }
+        
        
 <?php include 'layout/footer.html';?>
