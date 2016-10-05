@@ -189,7 +189,7 @@ session_start();
 		</table>
 	</div>
 	<?php
-        
+        if (!(isset($_GET['show_all']))){
         if ($pageno == 1) {
                      echo " FIRST PREV ";
                    } else {
@@ -205,7 +205,7 @@ session_start();
                  $nextpage = $pageno+1;
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
-                 } 
+                 } }
 		
 	
 	          ?>
