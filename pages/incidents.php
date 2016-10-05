@@ -1,7 +1,13 @@
 <?php
+// Start the session
+session_start();
+?>
+
+<?php
 	include 'layout/header.html';
 	include 'db.php';
         ?>
+
 <?php  
         echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> "; 
         echo " <a href='{$_SERVER['PHP_SELF']}?show_few=' '>SHOW FEW</a> ";       
