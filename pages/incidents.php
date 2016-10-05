@@ -4,7 +4,8 @@
         ?>
 <?php  
         echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> "; 
-  
+?>
+<?php
         echo " <a href='{$_SERVER['PHP_SELF']}?show_few=' '>SHOW FEW</a> ";       
 ?>
 
