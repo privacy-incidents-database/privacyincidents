@@ -9,9 +9,9 @@ session_start();
         ?>
 
 <?php  
-        echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> "; 
-        echo " Shows all by default " ;
-        echo " <a href='{$_SERVER['PHP_SELF']}?show_few=' '>SHOW FEW</a> ";       
+        echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL INCIDENTS</a> "; 
+        
+        echo " <a href='{$_SERVER['PHP_SELF']}?show_few=' '>SHOW 15 INCIDENTS PER PAGE/a> ";       
 ?>
 
 <?php
