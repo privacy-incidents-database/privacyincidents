@@ -18,6 +18,7 @@
         $query_data = mysql_fetch_row($result);
         $numrows = $query_data[0];
         echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> ";
+        echo " <a href='{$_SERVER['PHP_SELF']}?show_few=' '>SHOW FEW</a> ";
         echo "Total number of Entries: $numrows";
         $rows_per_page = 10;
         $lastpage      = ceil($numrows/$rows_per_page);
@@ -181,6 +182,8 @@
 		</table>
 	</div>
 	<?php
+	if (isset($_GET['show_few'])'])
+	{
         if ($pageno == 1) {
                      echo " FIRST PREV ";
                    } else {
@@ -196,8 +199,8 @@
                  $nextpage = $pageno+1;
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
-                 } 
-	   echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> ";
+                 } }
+	   
 	          ?>
         
        
