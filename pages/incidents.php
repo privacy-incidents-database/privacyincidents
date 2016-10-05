@@ -1,7 +1,15 @@
 <?php
 	include 'layout/header.html';
 	include 'db.php';
-        
+        ?>
+<?php  
+        echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> "; 
+?>
+<?php
+       echo " <a href='{$_SERVER['PHP_SELF']}?show_few=' '>SHOW FEW</a> ";       
+?>
+
+<?php
 	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
 	mysql_select_db(database);
         // adding changes to accomodate pagination 
@@ -11,13 +19,13 @@
             } else {
             $pageno = 1;
             } 
-        
+     
         
         $query = "SELECT count(*) FROM `Privacy incidents` WHERE review=1 ";
         $result = mysql_query($query) or trigger_error("SQL", E_USER_ERROR);
         $query_data = mysql_fetch_row($result);
         $numrows = $query_data[0];
-        echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> ";
+        
         echo "Total number of Entries: $numrows";
         $rows_per_page = 10;
         $lastpage      = ceil($numrows/$rows_per_page);
@@ -176,6 +184,7 @@
 		</table>
 	</div>
 	<?php
+	if (isset($_GET['show_all'])){
         if ($pageno == 1) {
                      echo " FIRST PREV ";
                    } else {
@@ -194,6 +203,6 @@
                  } 
 	   echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> ";
 	          ?>
-        
+        }
        
 <?php include 'layout/footer.html';?>
