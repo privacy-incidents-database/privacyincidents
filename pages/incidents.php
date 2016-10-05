@@ -19,7 +19,26 @@
         $numrows = $query_data[0];
         echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> ";
         echo " <a href='{$_SERVER['PHP_SELF']}?show_few=' '>SHOW FEW</a> ";
+       
         echo "Total number of Entries: $numrows";
+        if ($pageno == 1) {
+                     echo " FIRST PREV ";
+                   } else {
+                    echo " <a href='{$_SERVER['PHP_SELF']}?pageno=1'>FIRST</a> ";
+                    $prevpage = $pageno-1;
+                    echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$prevpage'>PREV</a> ";
+                   } 	
+                echo " ( Page $pageno of $lastpage ) ";
+                
+                if ($pageno == $lastpage) {
+                   echo " NEXT LAST ";
+                  } else {
+                 $nextpage = $pageno+1;
+                echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
+                echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
+                 } 
+	   
+	          
         $rows_per_page = 10;
         $lastpage      = ceil($numrows/$rows_per_page);
         
@@ -43,7 +62,7 @@
 		echo 'No incidents found!'; 
 		die();
 	}
-	
+    
 ?>
 
     
@@ -181,25 +200,7 @@
 			</tbody>
 		</table>
 	</div>
-	<?php
-        if ($pageno == 1) {
-                     echo " FIRST PREV ";
-                   } else {
-                    echo " <a href='{$_SERVER['PHP_SELF']}?pageno=1'>FIRST</a> ";
-                    $prevpage = $pageno-1;
-                    echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$prevpage'>PREV</a> ";
-                   } 	
-                echo " ( Page $pageno of $lastpage ) ";
-                
-                if ($pageno == $lastpage) {
-                   echo " NEXT LAST ";
-                  } else {
-                 $nextpage = $pageno+1;
-                echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
-                echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
-                 } 
-	   
-	          ?>
+	
         
        
 <?php include 'layout/footer.html';?>
