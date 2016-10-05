@@ -20,7 +20,8 @@
         echo " <a href='{$_SERVER['PHP_SELF']}?show_few=' '>SHOW FEW</a> ";
         echo "Total number of Entries: $numrows";
         if (isset($_GET['show_few'])) {
-            
+        $rows_per_page = 10;
+        $lastpage      = ceil($numrows/$rows_per_page);
         
         if ($pageno == 1) {
                      echo " FIRST PREV ";
@@ -40,8 +41,7 @@
                  } 
 	   
 	          
-        $rows_per_page = 10;
-        $lastpage      = ceil($numrows/$rows_per_page);
+     
         
         $pageno = (int)$pageno;
         if ($pageno > $lastpage) {
