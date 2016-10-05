@@ -1,7 +1,7 @@
 <?php
 	include 'layout/header.html';
 	include 'db.php';
-
+        echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> ";
 	@mysql_connect(host,user,pw) or die('Could not connect to MySQL database. ');
 	mysql_select_db(database);
         // adding changes to accomodate pagination 
