@@ -47,7 +47,7 @@
 	} else {
 	       $incidents = mysql_query("SELECT `date_occurred`, `Descr`, `link`, `who_company`, `who_role`, `what_kind`, `Location`, `incident_root_cause`, `IncidentID`, `case study` FROM `Privacy incidents` where review=1 ORDER BY date_occurred DESC $limit");
 	}
-       }
+       
 	
 	if (mysql_num_rows($incidents) == 0) {
 		echo 'No incidents found!'; 
