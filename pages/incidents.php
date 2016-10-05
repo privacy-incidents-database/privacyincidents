@@ -4,9 +4,6 @@
         ?>
 <?php  
         echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' '>SHOW ALL</a> "; 
-?>
-
-<?php
         echo " <a href='{$_SERVER['PHP_SELF']}?show_few=' '>SHOW FEW</a> ";       
 ?>
 
@@ -20,7 +17,14 @@
             } else {
             $pageno = 1;
             } 
-     
+        if (isset($_GET['show_all']))
+	{
+		$flag=FALSE
+	}
+        if (isset($_GET['show_all']))
+	{
+		$flag=TRUE
+	}
         
         $query = "SELECT count(*) FROM `Privacy incidents` WHERE review=1 ";
         $result = mysql_query($query) or trigger_error("SQL", E_USER_ERROR);
@@ -185,7 +189,7 @@
 		</table>
 	</div>
 	<?php
-        if (isset($_GET['show_few'])) {
+        if ($flag=TRUE) {
         if ($pageno == 1) {
                      echo " FIRST PREV ";
                    } else {
