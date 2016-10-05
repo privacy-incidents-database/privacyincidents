@@ -21,7 +21,7 @@
 	{
 		$flag=FALSE
 	}
-        if (isset($_GET['show_all']))
+        if (isset($_GET['show_few']))
 	{
 		$flag=TRUE
 	}
