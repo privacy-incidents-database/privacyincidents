@@ -189,8 +189,7 @@
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
                  } 
-	        echo "<a href='{$_SERVER['PHP_SELF']}?$limit= 'LIMIT ' .($pageno - 1) * $numrows.',' .$numrows'>SHOW ALL</a>" ; 
-                 ?>
+	          ?>
         
        
 <?php include 'layout/footer.html';?>
