@@ -196,6 +196,7 @@
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$nextpage'>NEXT</a> ";
                 echo " <a href='{$_SERVER['PHP_SELF']}?pageno=$lastpage'>LAST</a> ";
                  } 
+	   echo " <a href='{$_SERVER['PHP_SELF']}?showall=' '>SHOW ALL</a> ";
 	          ?>
         
        
