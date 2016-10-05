@@ -189,7 +189,7 @@
 		</table>
 	</div>
 	<?php
-        if ($flag=TRUE) {
+        if ($flag == TRUE) {
         if ($pageno == 1) {
                      echo " FIRST PREV ";
                    } else {
