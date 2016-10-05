@@ -188,7 +188,7 @@
 		</table>
 	</div>
 	<?php
-        if (isset($_GET['show_few'])) {
+        if ($flag==TRUE) {
         if ($pageno == 1) {
                      echo " FIRST PREV ";
                    } else {
