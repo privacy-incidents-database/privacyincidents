@@ -1,7 +1,3 @@
-<?php
-// Start the session
-session_start();
-?>
 
 <?php
 	include 'layout/header.html';
