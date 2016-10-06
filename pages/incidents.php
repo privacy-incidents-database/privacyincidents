@@ -8,7 +8,7 @@
         echo " <a href='{$_SERVER['PHP_SELF']}?show_all=' ''>SHOW ALL INCIDENTS</a>"; }
         if (isset($_GET['show_all'])){
         echo " <a href='{$_SERVER['PHP_SELF']}?show_few=' ''>SHOW 15 INCIDENTS PER PAGE</a>";  }    
-        echo "    " ; 
+        echo "<br>" ; 
         
 ?>
 
